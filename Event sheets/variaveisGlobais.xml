@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>variaveisGlobais</name>
+    <events>
+        <variable name="nivelTerminado" type="number">-1</variable>
+        <variable name="fluxoIntros" type="number">0</variable>
+        <variable name="gold" type="number">0</variable>
+        <variable name="vidas" type="number">0</variable>
+        <variable comment="0 para jogo pausado, qualquer outro valor nao" name="pause" type="number">1</variable>
+        <variable comment="0 para normal, 1 para acelerado" name="speed" type="number">0</variable>
+        <variable name="mouseControl" type="number">0</variable>
+        <variable name="typingSpeed" type="number">0</variable>
+        <variable name="typingSpeed2" type="number">0.025</variable>
+        <variable comment="0 ok, 1 nao tocar" name="musica" type="number">0</variable>
+        <variable comment="0 ok, 1 nao tocar" name="soundfx" type="number">0</variable>
+        <variable name="comprarTorreX" type="number">0</variable>
+        <variable name="precoTorre3" type="number">0</variable>
+        <variable name="precoTorre2" type="number">0</variable>
+        <variable name="precoTorre1" type="number">0</variable>
+        <variable name="pontuacao" type="number">0</variable>
+    </events>
+</c2eventsheet>

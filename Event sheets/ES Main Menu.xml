@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Main Menu</name>
+    <events>
+        <event-block any="1">
+            <conditions>
+                <condition id="6" name="On object clicked" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">MainMenuButton</param>
+                </condition>
+                <condition id="3" name="On touched object" type="Touch">
+                    <param id="0" name="Object">MainMenuButton</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="MainMenuButton">
+                            <param id="0" name="Instance variable">BotaoX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" type="System">
+                            <param id="0" name="Layout">Creditos</param>
+                        </action>
+                        <action id="6" name="Stop" type="Audio">
+                            <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="MainMenuButton">
+                            <param id="0" name="Instance variable">BotaoX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" type="System">
+                            <param id="0" name="Layout">Selecao Nivel</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="0" name="Compare at X" type="niveis">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" type="niveis">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="0" name="Compare at X" type="niveis">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" type="niveis">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="MainMenuButton">
+                            <param id="0" name="Instance variable">BotaoX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" type="System">
+                            <param id="0" name="Layout">Tutorial</param>
+                        </action>
+                        <action id="6" name="Stop" type="Audio">
+                            <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Coisas para Debug aqui</comment>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="MainMenuButton">
+                            <param id="0" name="Instance variable">BotaoX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" type="Audio">
+                            <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" type="System">
+                            <param id="0" name="Layout">Recompensas</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">8</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">9</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action disabled="1" id="2" name="Set at X" type="niveis">
+                            <param id="0" name="X">10</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1">
+            <conditions>
+                <condition id="7" name="Cursor is over object" type="Mouse">
+                    <param id="0" name="Object">MainMenuButton</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" type="Mouse">
+                    <param id="0" name="Object">SoundMusic</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" type="Mouse">
+                    <param id="0" name="Object">SoundFx</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-22" name="Else" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" title="SOUND">
+            <sub-events>
+                <event-group collapsed="1" description="" title="SoundMouseClick">
+                    <sub-events>
+                        <event-block any="1">
+                            <conditions>
+                                <condition id="6" name="On object clicked" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">SoundMusic</param>
+                                </condition>
+                                <condition id="3" name="On touched object" type="Touch">
+                                    <param id="0" name="Object">SoundMusic</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-22" name="Else" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1">
+                            <conditions>
+                                <condition id="6" name="On object clicked" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">SoundFx</param>
+                                </condition>
+                                <condition id="3" name="On touched object" type="Touch">
+                                    <param id="0" name="Object">SoundFx</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" type="System">
+                                            <param id="0" name="Variable">soundfx</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">soundfx</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-22" name="Else" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">soundfx</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group collapsed="1" description="" title="Atualizacao dos icones">
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-1" name="Every tick" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" type="SoundMusic">
+                                    <param id="0" name="Frame number">musica</param>
+                                </action>
+                                <action id="5" name="Set frame" type="SoundFx">
+                                    <param id="0" name="Frame number">soundfx</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" title="Musica">
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">musica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" type="Audio">
+                                    <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">musica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" type="Audio">
+                                    <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block>
+            <conditions>
+                <condition id="-2" name="On start of layout" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Clear The Way - menu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="1" name="Tag (optional)">&quot;Mmenu&quot;</param>
+                </action>
+                <action id="4" name="Preload" type="Audio">
+                    <param id="0" name="Audio file">The Magic Of Reading - historias</param>
+                </action>
+                <action id="4" name="Preload" type="Audio">
+                    <param id="0" name="Audio file">You Shall Not Pass</param>
+                </action>
+                <action id="4" name="Preload" type="Audio">
+                    <param id="0" name="Audio file">This Is All Yours - rec</param>
+                </action>
+                <action id="4" name="Preload" type="Audio">
+                    <param id="0" name="Audio file">Some Cheese And Vine - tutorial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-3" name="On end of layout" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="6" name="Stop" type="Audio">
+                    <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

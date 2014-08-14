@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Intro</name>
+    <events>
+        <event-group collapsed="1" description="" title="Inicializacao">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-2" name="On start of layout" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" type="Audio">
+                            <param id="0" name="Audio file">The Magic Of Reading - historias</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" type="JanelaBg">
+                            <param id="0" name="Opacity">90</param>
+                        </action>
+                        <action id="2" name="Setup text-typing" type="TextIntros">
+                            <param id="0" name="Timeline">TimeLine</param>
+                        </action>
+                        <action id="-9" name="Set value" type="System">
+                            <param id="0" name="Variable">fluxoIntros</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set cursor style" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" title="Fluxo Int">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-14" name="Compare variable" type="System">
+                            <param id="0" name="Variable">fluxoIntros</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" type="System">
+                            <param id="0" name="Variable">fluxoIntros</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Type text" type="TextIntros">
+                            <param id="0" name="Text">&quot;Os valentes portugueses iam navegando pelo Oceano Índico, à procura do caminho marítimo para a Índia, terra das especiarias.&quot;</param>
+                            <param id="1" name="Speed">typingSpeed2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1">
+                    <conditions>
+                        <condition id="6" name="On object clicked" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">JanelaXbutton</param>
+                        </condition>
+                        <condition id="3" name="On touched object" type="Touch">
+                            <param id="0" name="Object">JanelaXbutton</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" type="niveis">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" type="System">
+                                    <param id="0" name="Layout">Selecao Nivel</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;A reunião terminou em Júpiter mantendo sua decisão: a de que o Destino daria    glória para as Armas e os Barões assinalados!&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;Mas a deusa Vênus, que se afeiçoava aos portugueses por lembrarem seus amados romanos em coração e idioma, dizia que faria de tudo para ajudar os portugueses em sua jornada.&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-10" name="Set value" type="IntrosBg2">
+                                    <param id="0" name="Instance variable">ordem</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;Baco, o deus do vinho, não concordava com aquilo, pois os feitos dos portugueses apagariam a glória que possuía no Oriente.&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Muda Bg</comment>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" type="IntrosBg">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;Enquanto isso, os deuses se reuniam no Olimpo para decidirem sobre o futuro do Oriente. Júpiter, o pai sublime, dizia que o Destino já havia decidido que os fortes lusitanos realizariam proezas inesquecíveis e teriam o domínio dos mares orientais.&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;Nesse ponto da viagem, já haviam ultrapassado os limites conhecidos, indo por mares nunca dantes navegados.&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Type text" type="TextIntros">
+                                    <param id="0" name="Text">&quot;Eram quatro navios. O honroso Vasco da Gama comandava o navio São Gabriel e chefiava a esquadra.&quot;</param>
+                                    <param id="1" name="Speed">typingSpeed2</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">fluxoIntros</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block>
+            <conditions>
+                <condition id="-10" name="Compare opacity" type="IntrosBg2">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" type="System">
+                    <param id="0" name="Variable">fluxoIntros</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" type="IntrosBg2">
+                    <param id="0" name="Instance variable">ordem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" type="IntrosBg2">
+                            <param id="0" name="Opacity">IntrosBg2.Opacity + 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group collapsed="1" description="" title="SOUND">
+            <sub-events>
+                <event-group description="" title="SoundMouseClick">
+                    <sub-events>
+                        <event-block any="1">
+                            <conditions>
+                                <condition id="6" name="On object clicked" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">SoundMusic</param>
+                                </condition>
+                                <condition id="3" name="On touched object" type="Touch">
+                                    <param id="0" name="Object">SoundMusic</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-22" name="Else" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" type="System">
+                                            <param id="0" name="Variable">musica</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" title="Atualizacao dos icones">
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-1" name="Every tick" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" type="SoundMusic">
+                                    <param id="0" name="Frame number">musica</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" title="Musica">
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">musica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" type="Audio">
+                                    <param id="0" name="Tag">&quot;Intro&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">musica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" type="Audio">
+                                    <param id="0" name="Tag">&quot;Intro&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-3" name="On end of layout" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" type="Audio">
+                                    <param id="0" name="Tag">&quot;Intro&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" title="MouseLayoutIntro">
+            <sub-events>
+                <event-block any="1">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" type="Mouse">
+                            <param id="0" name="Object">JanelaXbutton</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" type="Mouse">
+                            <param id="0" name="Object">SoundMusic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-22" name="Else" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
