@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Intro</name>
+    <sid>2576494235427421</sid>
     <event-sheet>ES Intro</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="662434644024249">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="IntrosBg">
+                <instance type="IntrosBg" uid="784">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -43,15 +50,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="IntrosBg2">
+                <instance type="IntrosBg2" uid="785">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <ordem>1</ordem>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>513</x>
                         <y>387</y>
@@ -65,15 +75,18 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="IntrosBg2">
+                <instance type="IntrosBg2" uid="786">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <ordem>0</ordem>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>293</x>
                         <y>394</y>
@@ -87,12 +100,15 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="787">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>27</x>
                         <y>27</y>
@@ -107,8 +123,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="texto">
+        <layer name="texto" sid="5709215763534411">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -119,13 +136,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="JanelaBg">
+                <instance type="JanelaBg" uid="788">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>530</y>
@@ -139,7 +162,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextIntros">
+                <instance type="TextIntros" uid="789">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -148,6 +171,8 @@
                         <horizontal-alignment>Left</horizontal-alignment>
                         <hotspot>Center</hotspot>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>530</y>
@@ -161,11 +186,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JanelaXbutton">
+                <instance type="JanelaXbutton" uid="790">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <disable>false</disable>
@@ -173,6 +199,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>679</x>
                         <y>570</y>
@@ -187,7 +215,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

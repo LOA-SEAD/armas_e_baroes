@@ -3,23 +3,24 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Selecao Nivel</name>
     <events>
-        <event-group description="" title="ManipulacaoLeveis">
+        <event-group description="" sid="8264173440447259" title="ManipulacaoLeveis">
             <sub-events>
-                <event-block>
+                <event-block sid="9060185453160005">
                     <conditions>
-                        <condition id="-2" name="On start of layout" type="System" />
+                        <condition id="-2" name="On start of layout" sid="1870462803266338" type="System" />
                     </conditions>
                     <actions>
-                        <action disabled="1" id="0" name="Play" type="Audio">
+                        <action disabled="1" id="0" name="Play" sid="2096973026455749" type="Audio">
                             <param id="0" name="Audio file">Clear The Way - menu</param>
                             <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;Mmenu&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block>
+                        <event-block sid="8540149355058636">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="4383258921215504" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
@@ -27,29 +28,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="7047532924945601">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="3137792325210777" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="7432349873354881" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="8672015282919817" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="7602486170538388">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="3110015474153701" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
@@ -57,29 +58,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="7838807667075443">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="852124455595281" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="6388189753077945" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="1851953475504065" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="7702607899457678">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="8081239953300496" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
@@ -87,29 +88,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="7429226732134594">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="3519722312975436" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="7296508322838412" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="348303923739634" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="9398609818593487">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="4676371994788721" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
@@ -117,29 +118,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="707970333469882">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="4133120468378718" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="6155375802931765" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="1023333133774136" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="7430031270891755">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="1624891129790918" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">4</param>
@@ -147,29 +148,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="9708879664206817">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="1275428710013125" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="3831907517030355" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="6761470162276939" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="361868324397577">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="6142046406782233" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
@@ -177,29 +178,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="1996773912579171">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="6953141495020043" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="1099626703492676" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="7995717951130727" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="1799773049378327">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="5670574110321722" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">6</param>
@@ -207,29 +208,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2394101244699142">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="8877917363368202" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="1354541222725929" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="4369501407226588" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3753451741220724">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="1217537917045615" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">7</param>
@@ -237,29 +238,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2953133999291641">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="8754053465344041" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="836057833340145" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="6503234068980134" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2771317311531375">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="7561851457827977" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">8</param>
@@ -267,29 +268,29 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="3744831177430147">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="3706321284273703" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="5527246437962114" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="7654046952232554" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="373720341492668">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="3150250321971466" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">9</param>
@@ -297,20 +298,20 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="7377440420255561">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="niveis">
+                                        <condition id="0" name="Compare at X" sid="5863638991035756" type="niveis">
                                             <param id="0" name="X">SNbtnNivel.nivel</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" type="SNbtnNivel">
+                                        <action id="4" name="Set animation" sid="6917802990067776" type="SNbtnNivel">
                                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="5" name="Set frame" type="SNbtnNivel">
+                                        <action id="5" name="Set frame" sid="6859230806714829" type="SNbtnNivel">
                                             <param id="0" name="Frame number">SNbtnNivel.nivel</param>
                                         </action>
                                     </actions>
@@ -321,207 +322,207 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="GUI">
+        <event-group description="" sid="9791084989308947" title="GUI">
             <sub-events>
-                <event-block>
+                <event-block sid="3462379490293768">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="4391201182492184" type="Mouse">
                             <param id="0" name="Object">SNbtnNivel</param>
                         </condition>
-                        <condition id="2" name="Is playing" type="SNbtnNivel">
+                        <condition id="2" name="Is playing" sid="2271626410554205" type="SNbtnNivel">
                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block>
+                        <event-block sid="3879008098795332">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="2927383381915125" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="4552987891758386" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Introdução&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3886731080512853">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="3355317545613458" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="2036909915229335" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que os bravos portugueses enfrentam os mouros de Moçambique&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="4773402292893332">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="6503408536898262" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="857279049485342" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que Vasco da Gama conta ao rei de Melinde sobre a histórica Batalha de Aljubarrota&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="8575397639677331">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="7806609515840648" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="7119953049805585" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que, depois de partirem de Portugal, Fernão Veloso entrou em apuros numa praia de Santa Maria&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3091091749066939">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="7667679259471135" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">4</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="9634372071534665" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que Vasco da Gama conta ao rei de Melinde sobre o encontro com o Gigante Adamastor&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="4792780640039898">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="4449215701175252" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="3599475549788613" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que Fernão Veloso conta aos tripulantes a história dos Doze de Inglaterra&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2029919247835626">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="6364902895059037" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="8413807374119114" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que os Portugueses enfrentam uma tempestade provocada pelos deuses&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2854750363819353">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="3051828099121227" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">7</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="9152645307381988" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que Vênus prepara a Ilha dos Amores com a ajuda de seu filho Cupido&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="7585112494731275">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="4032872213495005" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">8</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="5065623238145691" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Em que os assinalados Barões vislumbram a Máquina do Mundo, fabricada pelo ilimitado Saber&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="9341060964522352">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                <condition id="-7" name="Compare instance variable" sid="4155643560432763" type="SNbtnNivel">
                                     <param id="0" name="Instance variable">nivel</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">9</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="TextNomeNiveis">
+                                <action id="0" name="Set text" sid="8469623334031286" type="TextNomeNiveis">
                                     <param id="0" name="Text">&quot;Encerramento&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block>
+                <event-block sid="9415346046703982">
                     <conditions>
-                        <condition id="7" inverted="1" name="Cursor is over object" type="Mouse">
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="7553607564076742" type="Mouse">
                             <param id="0" name="Object">SNbtnNivel</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" type="TextNomeNiveis">
+                        <action id="0" name="Set text" sid="624824718654361" type="TextNomeNiveis">
                             <param id="0" name="Text">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="3715714157994397">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="8506733566570308" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">BotaoVoltar</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="5293604742612306" type="Touch">
                             <param id="0" name="Object">BotaoVoltar</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="9223176228336945" type="System">
                             <param id="0" name="Layout">Main Menu</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="3184011484518779">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="7446450444782146" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">SNbtnNivel</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="2713622606318147" type="Touch">
                             <param id="0" name="Object">SNbtnNivel</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
                         <comment>0 bloqueado, 1 liberado, 2 terminado</comment>
-                        <event-block>
+                        <event-block sid="4300835906169106">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="5717250096421004" type="niveis">
                                     <param id="0" name="X">SNbtnNivel.nivel</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
@@ -529,142 +530,142 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="6918178434727921">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="2908637637664658" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="6990440639692171" type="System">
                                             <param id="0" name="Layout">Intro</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="7167460218366132">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="5346944878256802" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="1638439345808682" type="System">
                                             <param id="0" name="Layout">Intro Nivel 1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9561678564604594">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="6815442072885038" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="1810859779322343" type="System">
                                             <param id="0" name="Layout">Intro Nivel 2</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="8653352484522976">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="7512396978627228" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="3400723873615672" type="System">
                                             <param id="0" name="Layout">Intro Nivel 3</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9310095663117436">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="2263076394161657" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="11010946362725" type="System">
                                             <param id="0" name="Layout">Intro Nivel 4</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9991941858321909">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="7901284314332159" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="5057194934413403" type="System">
                                             <param id="0" name="Layout">Intro Nivel 5</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="4254667218817587">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="5118481096677308" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="7363160546912105" type="System">
                                             <param id="0" name="Layout">Intro Nivel 6</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="8661256363848726">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="790654183973323" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">7</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="5664236378070137" type="System">
                                             <param id="0" name="Layout">Intro Nivel 7</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="6627360534569275">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="98570955693065" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">8</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="7727623811215522" type="System">
                                             <param id="0" name="Layout">Intro Nivel 8</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="1681602291566976">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="SNbtnNivel">
+                                        <condition id="-7" name="Compare instance variable" sid="3214544510270532" type="SNbtnNivel">
                                             <param id="0" name="Instance variable">nivel</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">9</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="2260536727307286" type="System">
                                             <param id="0" name="Layout">Fim</param>
                                         </action>
                                     </actions>
@@ -675,44 +676,44 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="SOUND">
+        <event-group description="" sid="1532848287486417" title="SOUND">
             <sub-events>
-                <event-group collapsed="1" description="" title="SoundMouseClick">
+                <event-group description="" sid="8903833100477578" title="SoundMouseClick">
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="4555421091267791">
                             <conditions>
-                                <condition id="6" name="On object clicked" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="4291189613734202" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundMusic</param>
                                 </condition>
-                                <condition id="3" name="On touched object" type="Touch">
+                                <condition id="3" name="On touched object" sid="4946474241742704" type="Touch">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="9599881710077701">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="2794219495488834" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="6618766087065662" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="1506887961490088">
                                     <conditions>
-                                        <condition id="-22" name="Else" type="System" />
+                                        <condition id="-22" name="Else" sid="8307840649337224" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="4702588119161177" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -720,40 +721,40 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block any="1">
+                        <event-block any="1" sid="6831867226333939">
                             <conditions>
-                                <condition id="6" name="On object clicked" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="7057444559958774" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundFx</param>
                                 </condition>
-                                <condition id="3" name="On touched object" type="Touch">
+                                <condition id="3" name="On touched object" sid="6920975165390281" type="Touch">
                                     <param id="0" name="Object">SoundFx</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8897076488727559">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="2620174102675462" type="System">
                                             <param id="0" name="Variable">soundfx</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="6917951602978589" type="System">
                                             <param id="0" name="Variable">soundfx</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="6383166112576426">
                                     <conditions>
-                                        <condition id="-22" name="Else" type="System" />
+                                        <condition id="-22" name="Else" sid="7657852945163684" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="73709177140737" type="System">
                                             <param id="0" name="Variable">soundfx</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -763,52 +764,52 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" title="Atualizacao dos icones">
+                <event-group description="" sid="6045221658241594" title="Atualizacao dos icones">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="304394529885001">
                             <conditions>
-                                <condition id="-1" name="Every tick" type="System" />
+                                <condition id="-1" name="Every tick" sid="8098608014521545" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" type="SoundMusic">
+                                <action id="5" name="Set frame" sid="9174940393310359" type="SoundMusic">
                                     <param id="0" name="Frame number">musica</param>
                                 </action>
-                                <action id="5" name="Set frame" type="SoundFx">
+                                <action id="5" name="Set frame" sid="940085470124233" type="SoundFx">
                                     <param id="0" name="Frame number">soundfx</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" title="Musica">
+                <event-group description="" sid="4340859155134321" title="Musica">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="6815291701219218">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="2189210102332544" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="9373176399047348" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="9821539922981916" type="Audio">
                                     <param id="0" name="Tag">&quot;Mmenu&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="8450683089112888">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="6242429445527259" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="7782079140228782" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="5535297474604776" type="Audio">
                                     <param id="0" name="Tag">&quot;Mmenu&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
@@ -818,63 +819,63 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block>
+        <event-block sid="2651084017013433">
             <conditions>
-                <condition id="-3" name="On end of layout" type="System" />
+                <condition id="-3" name="On end of layout" sid="5192676839775746" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" type="Audio">
+                <action id="6" name="Stop" sid="7110078419855309" type="Audio">
                     <param id="0" name="Tag">&quot;Mmenu&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-group description="" title="MouseLayoutSN">
+        <event-group description="" sid="7570915205691404" title="MouseLayoutSN">
             <sub-events>
-                <event-block>
+                <event-block sid="1720490651905468">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="3217907269592601" type="Mouse">
                             <param id="0" name="Object">SNbtnNivel</param>
                         </condition>
-                        <condition id="2" name="Is playing" type="SNbtnNivel">
+                        <condition id="2" name="Is playing" sid="1012989794508899" type="SNbtnNivel">
                             <param id="0" name="Animation">&quot;Aberto&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="3973753055950543" type="Mouse">
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="5527706540040924">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="4656647541615108" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="8281089598748841">
                             <conditions>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="4800184119365306" type="Mouse">
                                     <param id="0" name="Object">SoundFx</param>
                                 </condition>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="7758231663292092" type="Mouse">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="2175100793504433" type="Mouse">
                                     <param id="0" name="Object">BotaoVoltar</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" type="Mouse">
+                                <action id="0" name="Set cursor style" sid="628246399267852" type="Mouse">
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="9505912475330867">
                             <conditions>
-                                <condition id="-22" name="Else" type="System" />
+                                <condition id="-22" name="Else" sid="8198515017030268" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" type="Mouse">
+                                <action id="0" name="Set cursor style" sid="4707999767223288" type="Mouse">
                                     <param id="0" name="Cursor style">0</param>
                                 </action>
                             </actions>

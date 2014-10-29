@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Game Over</name>
+    <sid>8360981590594565</sid>
     <event-sheet>ES Game Over</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0">
+        <layer name="Layer 0" sid="361867436479965">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,11 +24,13 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GO_bg_img">
+                <instance type="GO_bg_img" uid="759">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -41,6 +44,8 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>0</y>
@@ -55,7 +60,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

@@ -3,218 +3,218 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Recompensas</name>
     <events>
-        <event-group description="" title="GUI">
+        <event-group description="" sid="9687280488624753" title="GUI">
             <sub-events>
-                <event-block any="1">
+                <event-block any="1" sid="2622007395303836">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="4561218605366097" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">RecEnciclopedia</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="4064643107539926" type="Touch">
                             <param id="0" name="Object">RecEnciclopedia</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="4959414180960162" type="System">
                             <param id="0" name="Layout">Enciclopedia</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="9965818246224816">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="7100589739173582" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">RecMaquinaMundo</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="5082168502046632" type="Touch">
                             <param id="0" name="Object">RecMaquinaMundo</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="2377738459825727" type="System">
                             <param id="0" name="Layout">Poema</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="9782561223455441">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="4009075919527287" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">RecPersonagens</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="7522710447657467" type="Touch">
                             <param id="0" name="Object">RecPersonagens</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="4336494428456012" type="System">
                             <param id="0" name="Layout">Personagens</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="9342398557886187">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="8361176769720382" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">BotaoVoltar</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="3289293427518752" type="Touch">
                             <param id="0" name="Object">BotaoVoltar</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="6" name="Stop" type="Audio">
+                        <action id="6" name="Stop" sid="2101464858078242" type="Audio">
                             <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                         </action>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="892680595602499" type="System">
                             <param id="0" name="Layout">Main Menu</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1">
+                <event-block any="1" sid="8241864934396288">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="3078346399371672" type="Mouse">
                             <param id="0" name="Object">RecEnciclopedia</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="1949339427457574" type="Mouse">
                             <param id="0" name="Object">RecMaquinaMundo</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="5617402729657056" type="Mouse">
                             <param id="0" name="Object">RecPersonagens</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="7909759107700185" type="Mouse">
                             <param id="0" name="Object">BotaoVoltar</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="1806506736476498" type="Mouse">
                             <param id="0" name="Object">SoundMusic</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="9304423949154727" type="Mouse">
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="4544201176247795">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="7929939785558173" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="2420196943250561" type="Mouse">
                             <param id="0" name="Cursor style">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>TEST: verificando manualmente qual objeto foi clicado. Os eventos do mouse estão gerando um defeito na interação com o jogo. Um objeto, quando é clicado, pode realizar o evento associado ao clique de outro objeto, quando esse último se localiza abaixo do primeiro.</comment>
-                <event-block collapsed="1" disabled="1">
+                <event-block disabled="1" sid="8901138990808036">
                     <conditions>
-                        <condition disabled="1" id="0" name="On click" type="Mouse">
+                        <condition disabled="1" id="0" name="On click" sid="6387438795805605" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block>
+                        <event-block sid="7013304506189663">
                             <conditions>
-                                <condition id="-8" name="Compare two values" type="System">
+                                <condition id="-8" name="Compare two values" sid="3561611886448792" type="System">
                                     <param id="0" name="First value">Mouse.X</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Second value">RecPersonagens.X -RecPersonagens.Width/2</param>
                                 </condition>
-                                <condition id="-8" name="Compare two values" type="System">
+                                <condition id="-8" name="Compare two values" sid="8935189833684038" type="System">
                                     <param id="0" name="First value">Mouse.Y</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Second value">RecPersonagens.Y -RecPersonagens.Height/2</param>
                                 </condition>
-                                <condition id="-8" name="Compare two values" type="System">
+                                <condition id="-8" name="Compare two values" sid="1322157910213232" type="System">
                                     <param id="0" name="First value">Mouse.X</param>
                                     <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Second value">RecPersonagens.X +RecPersonagens.Width/2</param>
                                 </condition>
-                                <condition id="-8" name="Compare two values" type="System">
+                                <condition id="-8" name="Compare two values" sid="9413310676700034" type="System">
                                     <param id="0" name="First value">Mouse.Y</param>
                                     <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Second value">RecPersonagens.Y +RecPersonagens.Height/2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" type="System">
+                                <action id="-2" name="Go to layout" sid="7102149571670187" type="System">
                                     <param id="0" name="Layout">Personagens</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="1205587484666887">
                             <conditions>
-                                <condition id="-22" name="Else" type="System" />
+                                <condition id="-22" name="Else" sid="8044219632289182" type="System" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5420160882423328">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" type="System">
+                                        <condition id="-8" name="Compare two values" sid="2583139176623105" type="System">
                                             <param id="0" name="First value">Mouse.X</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">RecEnciclopedia.X -RecEnciclopedia.Width/2</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" type="System">
+                                        <condition id="-8" name="Compare two values" sid="1743646176135316" type="System">
                                             <param id="0" name="First value">Mouse.Y</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">RecEnciclopedia.Y -RecEnciclopedia.Height/2</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" type="System">
+                                        <condition id="-8" name="Compare two values" sid="7486083033032828" type="System">
                                             <param id="0" name="First value">Mouse.X</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Second value">RecEnciclopedia.X +RecEnciclopedia.Width/2</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" type="System">
+                                        <condition id="-8" name="Compare two values" sid="3246752834511786" type="System">
                                             <param id="0" name="First value">Mouse.Y</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Second value">RecEnciclopedia.Y +RecEnciclopedia.Height/2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="3433805661927873" type="System">
                                             <param id="0" name="Layout">Enciclopedia</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9857573916736834">
                                     <conditions>
-                                        <condition id="-22" name="Else" type="System" />
+                                        <condition id="-22" name="Else" sid="5307884660897461" type="System" />
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="4211314280202887">
                                             <conditions>
-                                                <condition id="-8" name="Compare two values" type="System">
+                                                <condition id="-8" name="Compare two values" sid="5996846787000625" type="System">
                                                     <param id="0" name="First value">Mouse.X</param>
                                                     <param id="1" name="Comparison">5</param>
                                                     <param id="2" name="Second value">RecMaquinaMundo.X -RecMaquinaMundo.Width/2</param>
                                                 </condition>
-                                                <condition id="-8" name="Compare two values" type="System">
+                                                <condition id="-8" name="Compare two values" sid="6143216685561227" type="System">
                                                     <param id="0" name="First value">Mouse.Y</param>
                                                     <param id="1" name="Comparison">5</param>
                                                     <param id="2" name="Second value">RecMaquinaMundo.Y -RecMaquinaMundo.Height/2</param>
                                                 </condition>
-                                                <condition id="-8" name="Compare two values" type="System">
+                                                <condition id="-8" name="Compare two values" sid="7406661369489106" type="System">
                                                     <param id="0" name="First value">Mouse.X</param>
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Second value">RecMaquinaMundo.X +RecMaquinaMundo.Width/2</param>
                                                 </condition>
-                                                <condition id="-8" name="Compare two values" type="System">
+                                                <condition id="-8" name="Compare two values" sid="2891998602036077" type="System">
                                                     <param id="0" name="First value">Mouse.Y</param>
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Second value">RecMaquinaMundo.Y +RecMaquinaMundo.Height/2</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-2" name="Go to layout" type="System">
+                                                <action id="-2" name="Go to layout" sid="8279109447032169" type="System">
                                                     <param id="0" name="Layout">Poema</param>
                                                 </action>
                                             </actions>
@@ -227,56 +227,57 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" title="SOUND">
+        <event-group description="" sid="3718168408405677" title="SOUND">
             <sub-events>
-                <event-block>
+                <event-block sid="6570107121704964">
                     <conditions>
-                        <condition id="-2" name="On start of layout" type="System" />
+                        <condition id="-2" name="On start of layout" sid="4048387058145944" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" type="Audio">
+                        <action id="0" name="Play" sid="9613051130959169" type="Audio">
                             <param id="0" name="Audio file">This Is All Yours - rec</param>
                             <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;BGmusic&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="" title="SoundMouseClick">
+                <event-group description="" sid="1037875402624941" title="SoundMouseClick">
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="586740992643632">
                             <conditions>
-                                <condition id="6" name="On object clicked" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="52992369719164" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundMusic</param>
                                 </condition>
-                                <condition id="3" name="On touched object" type="Touch">
+                                <condition id="3" name="On touched object" sid="9137666043676394" type="Touch">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8719083661264036">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="5300140620653434" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="7353868585884386" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="2554448056136218">
                                     <conditions>
-                                        <condition id="-22" name="Else" type="System" />
+                                        <condition id="-22" name="Else" sid="301472250267934" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="2066652828099866" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -286,60 +287,60 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" title="Atualizacao dos icones">
+                <event-group description="" sid="8971675333589111" title="Atualizacao dos icones">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="1012627309436862">
                             <conditions>
-                                <condition id="-1" name="Every tick" type="System" />
+                                <condition id="-1" name="Every tick" sid="3814772344639729" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" type="SoundMusic">
+                                <action id="5" name="Set frame" sid="2868629238474034" type="SoundMusic">
                                     <param id="0" name="Frame number">musica</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" title="Musica">
+                <event-group description="" sid="8212261071907137" title="Musica">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="3426396250273529">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="8444234504736759" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="3809213915129455" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="7645888871431933" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3960296670203892">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="8963967140195918" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="2407814087131545" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="7237205462228897" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="6726627595780324">
                             <conditions>
-                                <condition disabled="1" id="-3" name="On end of layout" type="System" />
+                                <condition disabled="1" id="-3" name="On end of layout" sid="8823499962284147" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="6" name="Stop" type="Audio">
+                                <action disabled="1" id="6" name="Stop" sid="1744483159904426" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                 </action>
                             </actions>
@@ -348,75 +349,75 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Descreve animacoes realizadas pelos botoes após a interação desses com o mouse." title="REC_botoes">
+        <event-group description="Descreve animacoes realizadas pelos botoes após a interação desses com o mouse." sid="8461185155751561" title="REC_botoes">
             <sub-events>
-                <event-block>
+                <event-block sid="5202083864580498">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="5089293610095726" type="Mouse">
                             <param id="0" name="Object">RecMaquinaMundo</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecMaquinaMundo">
+                        <action id="-7" name="Set size" sid="4306606554291933" type="RecMaquinaMundo">
                             <param id="0" name="Width">525</param>
                             <param id="1" name="Height">524</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="6760212194444474">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="6648825945915056" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecMaquinaMundo">
+                        <action id="-7" name="Set size" sid="6248391273497126" type="RecMaquinaMundo">
                             <param id="0" name="Width">485</param>
                             <param id="1" name="Height">484</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="7017758519884447">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="7516989038436642" type="Mouse">
                             <param id="0" name="Object">RecEnciclopedia</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecEnciclopedia">
+                        <action id="-7" name="Set size" sid="8667421312709326" type="RecEnciclopedia">
                             <param id="0" name="Width">357</param>
                             <param id="1" name="Height">372</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="6651222907659138">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="8492346831904086" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecEnciclopedia">
+                        <action id="-7" name="Set size" sid="8161790327020641" type="RecEnciclopedia">
                             <param id="0" name="Width">307</param>
                             <param id="1" name="Height">322</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="2397774384544969">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="8765244011830242" type="Mouse">
                             <param id="0" name="Object">RecPersonagens</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecPersonagens">
+                        <action id="-7" name="Set size" sid="4588990044361433" type="RecPersonagens">
                             <param id="0" name="Width">441</param>
                             <param id="1" name="Height">650</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="4244506054477029">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="7804543017064551" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" type="RecPersonagens">
+                        <action id="-7" name="Set size" sid="5732670104145317" type="RecPersonagens">
                             <param id="0" name="Width">391</param>
                             <param id="1" name="Height">600</param>
                         </action>

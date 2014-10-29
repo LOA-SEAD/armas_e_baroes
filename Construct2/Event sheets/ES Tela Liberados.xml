@@ -3,17 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Tela Liberados</name>
     <events>
-        <event-group description="" title="Inicializacao">
+        <event-group description="" sid="5606024259425957" title="Inicializacao">
             <sub-events>
-                <event-block>
+                <event-block sid="1408469695653429">
                     <conditions>
-                        <condition id="-2" name="On start of layout" type="System" />
+                        <condition id="-2" name="On start of layout" sid="7181335274782295" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block>
+                        <event-block sid="9607531542076081">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="6892196981463218" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
@@ -21,53 +21,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="6167251518094765">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1852655402015249" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="2573435817280434" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Os Lusíadas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="2016287462593217">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="8997559712937097" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="3871566151658959" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto I&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9988582776270032">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="8135284678485334" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="1889219644364234" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Vasco da Gama&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6385348088673569">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="8510101274849672" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
@@ -75,53 +75,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5859922702665762">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="6640789168421444" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7684490785666724" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Grandes Navegações&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="335378185353486">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="7498868098875642" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="4211291028389336" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto II&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="7577093617496247">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="5220547837287231" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="8064341480930794" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Baco&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="4774153030333712">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="6846609794206489" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
@@ -129,53 +129,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5822536910356354">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4254507463363398" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="6022397203633274" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Inês de Castro&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="6454742630580558">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="6799744191740999" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="9128236772502813" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto III&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="2163677133775824">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9916044326230543" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="4575612063446531" type="TextGenNum">
                                             <param id="0" name="Text">&quot;D. João&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2509043636036319">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="5142078348316181" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
@@ -183,53 +183,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="3606943467035233">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4919842084408258" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="787029504867414" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Velho do Restelo&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="1728939721165417">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="244459310911093" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="5393368873596833" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto IV&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="9630058996553278">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1097719713913191" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7515056242190119" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Inês de Castro&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="5082065235159047">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="1704568124585058" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">4</param>
@@ -237,53 +237,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2398509760910385">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="3684195287412885" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7396790454610402" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Cabo das Tormentas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="7461244473515287">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1340912496914768" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="849406295830021" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto V&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="3844095552506261">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="7209077856434528" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="5435102485117354" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Adamastor&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3905116499703305">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="9371646263131912" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
@@ -291,53 +291,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5606686577695118">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="3265769003816216" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="4102391460412596" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Doze de Inglaterra&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="2233478810489329">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="3602351152791266" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7276981553179338" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto VI&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="4587042648154873">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="685939001408322" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="2332653482199092" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Magriço&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2555999160630256">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="2691468805208142" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">6</param>
@@ -345,53 +345,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2110986339170025">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="7506762831934145" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="5881541841865184" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Conhecimentos Marítimos&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="7309483148940379">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9495402874473746" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="5213777287915861" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto VII&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="5380938707716515">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="6256893386710504" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="3000709421429766" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Netuno&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6212406198580586">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="4558502681740858" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">7</param>
@@ -399,53 +399,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="1998626084531826">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4212470388616997" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="2243001164394119" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Alegorias Mitológicas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="884454224825573">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9290660491839726" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="3983682525524564" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto VIII&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="2698146349271907">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="2690573581314323" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="5148903998851278" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Vênus&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6246465048418385">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="9941547918564815" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">8</param>
@@ -453,53 +453,53 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2761081075095775">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="996908786504363" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="72224007195877" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Máquina do Mundo&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="8724538439811205">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9625950443945668" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="8306976545012515" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto IX&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="8013767155519707">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4444142210586178" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7734904245016433" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Máquina do Mundo&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3591187562032363">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="3263020909934389" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">9</param>
@@ -507,44 +507,44 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8991065779730702">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="8732704873134624" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="6807637730828608" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Luís de Camões&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="6957348148367618">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4639173738936241" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7678010392817281" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Canto X&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="6374202061800756">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="7531550859543717" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" type="TextGenNum">
+                                        <action id="0" name="Set text" sid="7022106326535793" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Luís de Camões&quot;</param>
                                         </action>
                                     </actions>
@@ -555,44 +555,44 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" title="SOUND">
+        <event-group description="" disabled="1" sid="3200957448099845" title="SOUND">
             <sub-events>
-                <event-group description="" disabled="1" title="SoundMouseClick">
+                <event-group description="" disabled="1" sid="4621077968646368" title="SoundMouseClick">
                     <sub-events>
-                        <event-block any="1" disabled="1">
+                        <event-block any="1" disabled="1" sid="1699996771200566">
                             <conditions>
-                                <condition disabled="1" id="6" name="On object clicked" type="Mouse">
+                                <condition disabled="1" id="6" name="On object clicked" sid="6242578969954215" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundMusic</param>
                                 </condition>
-                                <condition disabled="1" id="3" name="On touched object" type="Touch">
+                                <condition disabled="1" id="3" name="On touched object" sid="4662033542048441" type="Touch">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1">
+                                <event-block disabled="1" sid="2682871309033331">
                                     <conditions>
-                                        <condition disabled="1" id="-14" name="Compare variable" type="System">
+                                        <condition disabled="1" id="-14" name="Compare variable" sid="9324479374862934" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action disabled="1" id="-9" name="Set value" type="System">
+                                        <action disabled="1" id="-9" name="Set value" sid="6276709233280346" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1">
+                                <event-block disabled="1" sid="8812585445820076">
                                     <conditions>
-                                        <condition disabled="1" id="-22" name="Else" type="System" />
+                                        <condition disabled="1" id="-22" name="Else" sid="8420274251459743" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action disabled="1" id="-9" name="Set value" type="System">
+                                        <action disabled="1" id="-9" name="Set value" sid="2748937927398881" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -602,60 +602,61 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" disabled="1" title="Atualizacao dos icones">
+                <event-group description="" disabled="1" sid="6573445044756414" title="Atualizacao dos icones">
                     <sub-events>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="2620412354474837">
                             <conditions>
-                                <condition disabled="1" id="-1" name="Every tick" type="System" />
+                                <condition disabled="1" id="-1" name="Every tick" sid="4824974263873387" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="5" name="Set frame" type="SoundMusic">
+                                <action disabled="1" id="5" name="Set frame" sid="7626811033074197" type="SoundMusic">
                                     <param id="0" name="Frame number">musica</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" disabled="1" title="Musica">
+                <event-group description="" disabled="1" sid="8329494056553698" title="Musica">
                     <sub-events>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="5586099706761162">
                             <conditions>
-                                <condition disabled="1" id="-14" name="Compare variable" type="System">
+                                <condition disabled="1" id="-14" name="Compare variable" sid="5695177618230205" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition disabled="1" id="-4" name="Trigger once while true" type="System" />
+                                <condition disabled="1" id="-4" name="Trigger once while true" sid="7697836096918747" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="0" name="Play" type="Audio">
+                                <action disabled="1" id="0" name="Play" sid="7025618521967051" type="Audio">
                                     <param id="0" name="Audio file">MusicIntro</param>
                                     <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="3099297663291958">
                             <conditions>
-                                <condition disabled="1" id="-14" name="Compare variable" type="System">
+                                <condition disabled="1" id="-14" name="Compare variable" sid="6657836299906719" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition disabled="1" id="-4" name="Trigger once while true" type="System" />
+                                <condition disabled="1" id="-4" name="Trigger once while true" sid="4998011524497411" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="6" name="Stop" type="Audio">
+                                <action disabled="1" id="6" name="Stop" sid="8818455600814454" type="Audio">
                                     <param id="0" name="Tag">&quot;Intro&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="2091533609861359">
                             <conditions>
-                                <condition disabled="1" id="-3" name="On end of layout" type="System" />
+                                <condition disabled="1" id="-3" name="On end of layout" sid="8000584726924759" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="6" name="Stop" type="Audio">
+                                <action disabled="1" id="6" name="Stop" sid="2805067681597389" type="Audio">
                                     <param id="0" name="Tag">&quot;Intro&quot;</param>
                                 </action>
                             </actions>
@@ -664,29 +665,29 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" title="GUI">
+        <event-group description="" sid="8744091880417413" title="GUI">
             <sub-events>
-                <event-block any="1">
+                <event-block any="1" sid="4453870455544652">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="2314453329816528" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">JanelaXbutton</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="9823835162031846" type="Touch">
                             <param id="0" name="Object">JanelaXbutton</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="5254467469868366">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="1102269461439811" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">9</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="877106063635904" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
@@ -694,42 +695,42 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5406400021412099">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="9215710915251943" type="System">
                                             <param id="0" name="Variable">nivelTerminado</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">9</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="1667213116150278" type="System">
                                             <param id="0" name="Layout">Creditos</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="8010206474186913">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="5893502239277987" type="System">
                                             <param id="0" name="Variable">nivelTerminado</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" type="System">
+                                        <action id="-2" name="Go to layout" sid="1638931071950027" type="System">
                                             <param id="0" name="Layout">Main Menu</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2127936934047286">
                             <conditions>
-                                <condition id="-22" name="Else" type="System" />
+                                <condition id="-22" name="Else" sid="8854409981799978" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" type="System">
+                                <action id="-2" name="Go to layout" sid="6573400899549281" type="System">
                                     <param id="0" name="Layout">Selecao Nivel</param>
                                 </action>
                             </actions>
@@ -738,29 +739,29 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="MouseLayoutTelaLib">
+        <event-group description="" sid="9508283131207987" title="MouseLayoutTelaLib">
             <sub-events>
-                <event-block any="1">
+                <event-block any="1" sid="2952594672074354">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="9957344773140253" type="Mouse">
                             <param id="0" name="Object">JanelaXbutton</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="5799058189381957" type="Mouse">
                             <param id="0" name="Object">SoundMusic</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="4104329354771111" type="Mouse">
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="7398768305105833">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="3746310137704412" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="1361868642214241" type="Mouse">
                             <param id="0" name="Cursor style">0</param>
                         </action>
                     </actions>

@@ -3,21 +3,21 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>variaveisGlobais</name>
     <events>
-        <variable name="nivelTerminado" type="number">-1</variable>
-        <variable name="fluxoIntros" type="number">0</variable>
-        <variable name="gold" type="number">0</variable>
-        <variable name="vidas" type="number">0</variable>
-        <variable comment="0 para jogo pausado, qualquer outro valor nao" name="pause" type="number">1</variable>
-        <variable comment="0 para normal, 1 para acelerado" name="speed" type="number">0</variable>
-        <variable name="mouseControl" type="number">0</variable>
-        <variable name="typingSpeed" type="number">0</variable>
-        <variable name="typingSpeed2" type="number">0.025</variable>
-        <variable comment="0 ok, 1 nao tocar" name="musica" type="number">0</variable>
-        <variable comment="0 ok, 1 nao tocar" name="soundfx" type="number">0</variable>
-        <variable name="comprarTorreX" type="number">0</variable>
-        <variable name="precoTorre3" type="number">0</variable>
-        <variable name="precoTorre2" type="number">0</variable>
-        <variable name="precoTorre1" type="number">0</variable>
-        <variable name="pontuacao" type="number">0</variable>
+        <variable constant="0" name="nivelTerminado" sid="4323968515406002" static="0" type="number">-1</variable>
+        <variable constant="0" name="fluxoIntros" sid="5243692561247942" static="0" type="number">0</variable>
+        <variable constant="0" name="gold" sid="8443632829845436" static="0" type="number">0</variable>
+        <variable constant="0" name="vidas" sid="4875332278500128" static="0" type="number">0</variable>
+        <variable comment="0 para jogo pausado, qualquer outro valor nao" constant="0" name="pause" sid="450770556141932" static="0" type="number">1</variable>
+        <variable comment="0 para normal, 1 para acelerado" constant="0" name="speed" sid="8225916675051494" static="0" type="number">0</variable>
+        <variable constant="0" name="mouseControl" sid="1231558707577779" static="0" type="number">0</variable>
+        <variable constant="0" name="typingSpeed" sid="4821222082474712" static="0" type="number">0</variable>
+        <variable constant="0" name="typingSpeed2" sid="2234398721952641" static="0" type="number">0.025</variable>
+        <variable comment="0 ok, 1 nao tocar" constant="0" name="musica" sid="6198958300903504" static="0" type="number">0</variable>
+        <variable comment="0 ok, 1 nao tocar" constant="0" name="soundfx" sid="4588754284446503" static="0" type="number">0</variable>
+        <variable constant="0" name="comprarTorreX" sid="4380614394451185" static="0" type="number">0</variable>
+        <variable constant="0" name="precoTorre3" sid="1939512127374451" static="0" type="number">0</variable>
+        <variable constant="0" name="precoTorre2" sid="3001935475331994" static="0" type="number">0</variable>
+        <variable constant="0" name="precoTorre1" sid="8702784640883597" static="0" type="number">0</variable>
+        <variable constant="0" name="pontuacao" sid="4028679835042635" static="0" type="number">0</variable>
     </events>
 </c2eventsheet>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Main Menu</name>
+    <sid>854369213834325</sid>
     <event-sheet>ES Main Menu</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background">
+        <layer name="background" sid="1301589518925591">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="MainMenuAgua">
+                <instance type="MainMenuAgua" uid="619">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -43,12 +50,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuArvores">
+                <instance type="MainMenuArvores" uid="620">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>174</x>
                         <y>303</y>
@@ -62,12 +72,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuBarco">
+                <instance type="MainMenuBarco" uid="621">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>702</x>
                         <y>145</y>
@@ -81,12 +94,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuTitulo">
+                <instance type="MainMenuTitulo" uid="622">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>395</x>
                         <y>186</y>
@@ -100,12 +116,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuAreia">
+                <instance type="MainMenuAreia" uid="623">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>308</y>
@@ -120,8 +139,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="intermediario">
+        <layer name="intermediario" sid="4323141673412617">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -132,13 +152,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="624">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -152,12 +178,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundFx">
+                <instance type="SoundFx" uid="625">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>89</x>
                         <y>32</y>
@@ -172,8 +201,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="GUI">
+        <layer name="GUI" sid="4935378569922278">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -184,16 +214,22 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="MainMenuButton">
+                <instance type="MainMenuButton" uid="626">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <BotaoX>1</BotaoX>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>350</y>
@@ -207,15 +243,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuButton">
+                <instance type="MainMenuButton" uid="627">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <BotaoX>2</BotaoX>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>420</y>
@@ -229,15 +268,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuButton">
+                <instance type="MainMenuButton" uid="628">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <BotaoX>3</BotaoX>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>490</y>
@@ -251,15 +293,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenuButton">
+                <instance type="MainMenuButton" uid="629">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>3</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <BotaoX>0</BotaoX>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>560</y>
@@ -274,7 +319,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

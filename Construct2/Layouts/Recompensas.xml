@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Recompensas</name>
+    <sid>127035087625064</sid>
     <event-sheet>ES Recompensas</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background">
+        <layer name="background" sid="7390082986235934">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,17 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="RE_bg_img">
+                <instance type="RE_bg_img" uid="687">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>0</y>
@@ -44,8 +49,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="Main">
+        <layer name="Main" sid="8592885730281827">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -56,16 +62,22 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="RecPersonagens">
+                <instance type="RecPersonagens" uid="688">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>196</x>
                         <y>300</y>
@@ -79,11 +91,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="RecMaquinaMundo">
+                <instance type="RecMaquinaMundo" uid="689">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -97,6 +110,8 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>640</x>
                         <y>153</y>
@@ -110,15 +125,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="RecEnciclopedia">
+                <instance type="RecEnciclopedia" uid="690">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>382</x>
                         <y>441</y>
@@ -132,12 +150,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="691">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -151,12 +172,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BotaoVoltar">
+                <instance type="BotaoVoltar" uid="692">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>760</x>
                         <y>590</y>
@@ -171,7 +195,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

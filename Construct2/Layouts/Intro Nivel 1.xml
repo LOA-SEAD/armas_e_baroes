@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Intro Nivel 1</name>
+    <sid>2253793293523675</sid>
     <event-sheet>ES Intro N1</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="8197900748523773">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="IntrosBg">
+                <instance type="IntrosBg" uid="556">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -43,15 +50,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="IntrosBg2">
+                <instance type="IntrosBg2" uid="557">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <ordem>0</ordem>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>150</x>
                         <y>457</y>
@@ -65,12 +75,15 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="558">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>30</x>
                         <y>30</y>
@@ -84,16 +97,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextIntrosNivel">
+                <instance type="TextIntrosNivel" uid="559">
                     <properties>
                         <text>Nível 1</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-64,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>259</y>
@@ -107,16 +124,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextIntrosNivel2">
+                <instance type="TextIntrosNivel2" uid="560">
                     <properties>
                         <text>“Em que os bravos portugueses enfrentam os mouros de Moçambique”</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-21,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403.5</x>
                         <y>322</y>
@@ -131,8 +152,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="texto">
+        <layer name="texto" sid="7090307942524414">
             <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -143,13 +165,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="JanelaBg">
+                <instance type="JanelaBg" uid="561">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>530</y>
@@ -163,7 +191,7 @@
                         <opacity>0.800000012</opacity>
                     </world>
                 </instance>
-                <instance type="TextIntros">
+                <instance type="TextIntros" uid="562">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -172,6 +200,8 @@
                         <horizontal-alignment>Left</horizontal-alignment>
                         <hotspot>Center</hotspot>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>530</y>
@@ -185,9 +215,37 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="TextIntro" uid="808">
+                    <properties>
+                        <text></text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Kristen ITC,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>110</x>
+                        <y>476</y>
+                        <z>0</z>
+                        <width>558</width>
+                        <height>101</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="Nome Nivel">
+        <layer name="Nome Nivel" sid="1175601581598263">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -198,9 +256,13 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances />
+            <effects />
         </layer>
-        <layer name="botoes">
+        <layer name="botoes" sid="6108058594026904">
             <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -211,12 +273,16 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="JanelaXbutton">
+                <instance type="JanelaXbutton" uid="563">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <disable>false</disable>
@@ -224,6 +290,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>683</x>
                         <y>573</y>
@@ -238,7 +306,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

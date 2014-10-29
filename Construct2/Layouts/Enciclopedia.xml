@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Enciclopedia</name>
+    <sid>1051983662073651</sid>
     <event-sheet>ES Enciclopedia</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="209629901020403">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,17 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="EN_bg_img">
+                <instance type="EN_bg_img" uid="743">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>0</y>
@@ -44,8 +49,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="main">
+        <layer name="main" sid="6165032275813677">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -56,9 +62,13 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances />
+            <effects />
         </layer>
-        <layer name="interativa">
+        <layer name="interativa" sid="4954358477791413">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -69,20 +79,27 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="744">
                     <properties>
                         <text>Resposta</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>99</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>936</x>
                         <y>146</y>
@@ -96,19 +113,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="745">
                     <properties>
                         <text>Os Lusíadas</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>0</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>128</y>
@@ -122,19 +143,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="746">
                     <properties>
                         <text>Velho do Restelo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>3</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>218</y>
@@ -148,12 +173,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="747">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -167,12 +195,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BotaoVoltar">
+                <instance type="BotaoVoltar" uid="748">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>760</x>
                         <y>590</y>
@@ -186,12 +217,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta">
+                <instance type="Seta" uid="749">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>592</x>
                         <y>-39</y>
@@ -205,19 +239,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="750">
                     <properties>
                         <text>Resposta</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>98</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>943</x>
                         <y>28</y>
@@ -231,19 +269,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="751">
                     <properties>
                         <text>Grandes Navegações</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>1</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>158</y>
@@ -257,19 +299,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="752">
                     <properties>
                         <text>Inês de Castro</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>2</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>188</y>
@@ -283,19 +329,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="753">
                     <properties>
                         <text>Cabo das Tormentas</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>4</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>248</y>
@@ -309,19 +359,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="754">
                     <properties>
                         <text>Doze de Inglaterra</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>5</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>278</y>
@@ -335,19 +389,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="755">
                     <properties>
                         <text>Conhecimentos Marítimos</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>6</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>308</y>
@@ -361,19 +419,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="756">
                     <properties>
                         <text>Alegorias Mitológicas</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>7</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>338</y>
@@ -387,19 +449,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="757">
                     <properties>
                         <text>Máquina do Mundo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>8</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>368</y>
@@ -413,19 +479,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="758">
                     <properties>
                         <text>Luís de Camões</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>9</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>398</y>
@@ -440,7 +510,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

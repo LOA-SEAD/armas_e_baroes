@@ -10,15 +10,87 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Creditos</layout>
-        <layout>Abertura</layout>
-        <event-sheet active="1">ES Creditos</event-sheet>
-        <event-sheet>ES Abertura</event-sheet>
+        <layout>Nivel 7</layout>
+        <event-sheet active="1">ES Nivel 7</event-sheet>
     </open-tabs>
     <properties>
+        <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Niveis/" />
+        <folder expanded="0" path="layout-folder/Intro Niveis/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Niveis/" />
+        <folder expanded="0" path="event-folder/Intro niveis/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/GUIbg/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Nivel1bg/" />
+        <folder expanded="1" path="animation-folder/Monstro/" />
+        <folder expanded="1" path="animation-folder/Spawner/" />
+        <folder expanded="1" path="animation-folder/RaioTorre/" />
+        <folder expanded="1" path="animation-folder/Torre1/" />
+        <folder expanded="1" path="animation-folder/GUIcompraTorres/" />
+        <folder expanded="1" path="animation-folder/AreaObjetivo/" />
+        <folder expanded="1" path="animation-folder/TowerConstructor/" />
+        <folder expanded="1" path="animation-folder/Torre2/" />
+        <folder expanded="1" path="animation-folder/Torre3/" />
+        <folder expanded="1" path="animation-folder/Tiro1/" />
+        <folder expanded="1" path="animation-folder/Tiro2/" />
+        <folder expanded="1" path="animation-folder/Tiro3/" />
+        <folder expanded="1" path="animation-folder/GUIavatar/" />
+        <folder expanded="1" path="animation-folder/GUImolduraNomePersonagem/" />
+        <folder expanded="1" path="animation-folder/GUImolduraTurno/" />
+        <folder expanded="1" path="animation-folder/GUIbotao/" />
+        <folder expanded="1" path="animation-folder/GUIlife/" />
+        <folder expanded="1" path="animation-folder/GUIgold/" />
+        <folder expanded="1" path="animation-folder/MainMenuButton/" />
+        <folder expanded="1" path="animation-folder/GUIbotaoPause/" />
+        <folder expanded="1" path="animation-folder/GUIbotaoSpeed/" />
+        <folder expanded="1" path="animation-folder/SoundMusic/" />
+        <folder expanded="1" path="animation-folder/SoundFx/" />
+        <folder expanded="1" path="animation-folder/JanelaBg/" />
+        <folder expanded="1" path="animation-folder/JanelaXbutton/" />
+        <folder expanded="1" path="animation-folder/Seta/" />
+        <folder expanded="1" path="animation-folder/RecPersonagens/" />
+        <folder expanded="1" path="animation-folder/RecMaquinaMundo/" />
+        <folder expanded="1" path="animation-folder/RecEnciclopedia/" />
+        <folder expanded="1" path="animation-folder/PoemaCirculos/" />
+        <folder expanded="1" path="animation-folder/BotaoVoltar/" />
+        <folder expanded="1" path="animation-folder/PoemaBoxPoesia/" />
+        <folder expanded="1" path="animation-folder/botaoFechar/" />
+        <folder expanded="1" path="animation-folder/Nivel3bg/" />
+        <folder expanded="1" path="animation-folder/SNbtnNivel/" />
+        <folder expanded="1" path="animation-folder/Nivel4bg/" />
+        <folder expanded="1" path="animation-folder/Nivel6bg/" />
+        <folder expanded="1" path="animation-folder/MainMenuAgua/" />
+        <folder expanded="1" path="animation-folder/Nivel7bg/" />
+        <folder expanded="1" path="animation-folder/Nivel5bg/" />
+        <folder expanded="1" path="animation-folder/Nivel2bg/" />
+        <folder expanded="1" path="animation-folder/Nivel8bg/" />
+        <folder expanded="1" path="animation-folder/IntrosBg/" />
+        <folder expanded="1" path="animation-folder/IntrosBg2/" />
+        <folder expanded="1" path="animation-folder/ObraArte/" />
+        <folder expanded="1" path="animation-folder/PersonagensBG/" />
+        <folder expanded="1" path="animation-folder/ResetButton/" />
+        <folder expanded="1" path="animation-folder/NivelTutorialbg/" />
+        <folder expanded="1" path="animation-folder/restartButton/" />
+        <folder expanded="1" path="animation-folder/MolduraDecTorre/" />
+        <folder expanded="1" path="animation-folder/MainMenuArvores/" />
+        <folder expanded="1" path="animation-folder/MainMenuBarco/" />
+        <folder expanded="1" path="animation-folder/MainMenuTitulo/" />
+        <folder expanded="1" path="animation-folder/MainMenuAreia/" />
+        <folder expanded="1" path="animation-folder/fundoPoema/" />
+        <folder expanded="1" path="animation-folder/selecaoNivelEmbar/" />
+        <folder expanded="1" path="animation-folder/fios/" />
+        <folder expanded="1" path="animation-folder/LogosLOA/" />
+        <folder expanded="1" path="animation-folder/Logos/" />
+    </folders-expanded>
 </c2uistate>

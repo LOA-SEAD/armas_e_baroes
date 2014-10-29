@@ -3,18 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Enciclopedia</name>
     <events>
-        <event-group description="" title="Inicializacao">
+        <event-group description="" sid="9782273485283708" title="Inicializacao">
             <sub-events>
                 <comment>Bloqueia acesso a niveis nao liberados</comment>
-                <event-block collapsed="1">
+                <event-block sid="2760809402423117">
                     <conditions>
-                        <condition id="-2" name="On start of layout" type="System" />
+                        <condition id="-2" name="On start of layout" sid="1532123606719568" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block>
+                        <event-block sid="3732363720181477">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="9098244193015633" type="niveis">
                                     <param id="0" name="X">10</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -22,23 +22,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2691029926244973">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="433069317006183" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="3643567936295845" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="9925632758336525">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="7762522287958198" type="niveis">
                                     <param id="0" name="X">1</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -46,23 +46,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="3089027437780106">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="499731741798889" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="4317526716417156" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2394457657332478">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="6811728569580127" type="niveis">
                                     <param id="0" name="X">2</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -70,23 +70,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="9079633419868948">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1309701946837122" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="2660585286067309" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6978489338635976">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="4448721734256466" type="niveis">
                                     <param id="0" name="X">3</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -94,23 +94,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="2805021588655175">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4584678518543053" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="2356552426843162" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3423646240648657">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="4571211822825701" type="niveis">
                                     <param id="0" name="X">4</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -118,23 +118,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8752952249575788">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="5608647434610515" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="637485763962995" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="5672987507947796">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="1424838016526613" type="niveis">
                                     <param id="0" name="X">5</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -142,23 +142,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="514712896406607">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="8767545347942335" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="4927536393363695" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="555880193760616">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="2547694084670899" type="niveis">
                                     <param id="0" name="X">6</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -166,23 +166,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5137793768737185">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="2031086161896659" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="5778917073270566" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3178951684557963">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="3808397974046061" type="niveis">
                                     <param id="0" name="X">7</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -190,23 +190,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="7074257375526243">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="2358392415351428" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">7</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="6151132236507416" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="4137251119817807">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="1541616786065069" type="niveis">
                                     <param id="0" name="X">8</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -214,23 +214,23 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="5419331446003254">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="2507628312053812" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">8</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="8754198090537984" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="1668947692999072">
                             <conditions>
-                                <condition id="0" name="Compare at X" type="niveis">
+                                <condition id="0" name="Compare at X" sid="1388787384763069" type="niveis">
                                     <param id="0" name="X">9</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">2</param>
@@ -238,16 +238,16 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8786232883666794">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1330559593307753" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">9</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" type="TextGenNum" />
+                                        <action id="-9" name="Destroy" sid="9236432644060268" type="TextGenNum" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -256,57 +256,57 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="GUI">
+        <event-group description="" sid="9004764774463417" title="GUI">
             <sub-events>
-                <event-block any="1">
+                <event-block any="1" sid="1912425264155393">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="5279647713352381" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">BotaoVoltar</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="1226727552824178" type="Touch">
                             <param id="0" name="Object">BotaoVoltar</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" type="System">
+                        <action id="-2" name="Go to layout" sid="9632004640603459" type="System">
                             <param id="0" name="Layout">Recompensas</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>Falta aplicar animacao do livro</comment>
-                <event-group description="" title="Categorias">
+                <event-group description="" sid="3801412453705301" title="Categorias">
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="4235933395358427">
                             <conditions>
-                                <condition id="6" name="On object clicked" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="666082609650099" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">TextGenNum</param>
                                 </condition>
-                                <condition id="3" name="On touched object" type="Touch">
+                                <condition id="3" name="On touched object" sid="7068597387776295" type="Touch">
                                     <param id="0" name="Object">TextGenNum</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" type="Seta">
+                                <action id="-3" name="Set position" sid="9500806685829044" type="Seta">
                                     <param id="0" name="X">620</param>
                                     <param id="1" name="Y">450</param>
                                 </action>
-                                <action id="-8" name="Set angle" type="Seta">
+                                <action id="-8" name="Set angle" sid="5711043552848454" type="Seta">
                                     <param id="0" name="Angle">180</param>
                                 </action>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="4147630699985446" type="System">
                                     <param id="0" name="Group name">&quot;Categorias&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                             <sub-events>
                                 <comment>Tutorial</comment>
-                                <event-block>
+                                <event-block sid="3432434744440997">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="6430131827142824" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
@@ -314,56 +314,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="9108927251095542">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="3652612900707149" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="6976526552136132" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="4792455637321677">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="9321456599804605" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="2992314040080159" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Os Lusíadas: &quot; &amp; newline &amp; newline &amp;&quot;É um poema épico escrito por Luís de Camões. Divide-se em dez cantos repartidos em 1102 estrofes de oito versos. Essa epopeia tem como tema os feitos dos portugueses: suas guerras e navegações.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="6762018221965818" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="317034904343305" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="329193962615784">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="6458527114700318" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="9504880334869147" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Por retratar o povo português de modo tão glorioso e com linguagem tão rebuscada, é considerada por alguns a obra máxima da Língua Portuguesa.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="754885981812033" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="9542696208596848" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -373,9 +373,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>1</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="4718591318229554">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9437090059481641" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
@@ -383,56 +383,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="3587187918571745">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="9385910631179304" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="7466027652137133" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="5379900356117418">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="3913507006151892" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="8289463754157709" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Grandes Navegações:&quot; &amp; newline &amp; newline &amp; &quot;Durante os séculos XV e XVI, os europeus, principalmente portugueses e espanhóis, lançaram-se nos oceanos Pacífico, Índico e Atlântico com dois objetivos principais: descobrir uma rota marítima para as Índias e encontrar novas terras.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="2469466966586931" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="2700851264841344" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="2620193271114626">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="3007405873644704" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="8865465625771761" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Esse período ficou conhecido como a Era das Grandes Navegações e Descobrimentos Marítimos.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="1370322524212711" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="6653566894636976" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -442,9 +442,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>2</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="2069213242451295">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4705014450734615" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
@@ -452,56 +452,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="3600271655590864">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="4323944309503198" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="903102846748893" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="6228517542287489">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="9628844064177904" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="5116054411347998" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Inês de Castro: &quot; &amp; newline &amp; newline &amp;&quot;A triste história de Inês de Castro  simboliza a força e a veemência do amor em Portugal. O episódio relata o assassinato de Inês de Castro, em 1355, pelos ministros do rei D. Afonso IV de Borgonha, pai de D. Pedro, seu amante. Considerado um dos mais belos momentos do poema, é, ao mesmo tempo, um episódio histórico e&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="3684803541039715" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="690914699735097" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="7460297183793376">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="7134314382609433" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="6525975795995371" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;lírico:  por trás da voz do narrador, e da própria Inês, percebem-se a voz e a expressão pessoal do poeta.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="4285305584636696" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="2611496794219186" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -511,9 +511,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>3</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="2771684289996221">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="3056826115363715" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
@@ -521,56 +521,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="8426965447675175">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="3441220052858567" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="9913203219752029" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="5150775122798259">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="430503303224155" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="3027630081242609" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Velho do Restelo: &quot; &amp;newline &amp; newline &amp;&quot;Quando a frota de Gama se preparava para partir, de entre a população que se despedia na praia surge a figura de um velho de aspecto venerável, apresentando uma opinião adversa à do projeto expansionista das navegações.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="3578495892260583" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="3648701011867036" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="7812844580507441">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="7512273651218329" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="3799114183443534" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;O Velho do Restelo, como ficou conhecido, representa as camadas do poder que preferiam continuar com a conquista do Norte da África em vez de expandir pelo mar, com medo de causar o despovoamento e o enfraquecimento do reino.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="4975973335799461" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="8778309577515866" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -580,9 +580,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>4</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="557627373113387">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9716276354661355" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
@@ -590,56 +590,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="3588413110533516">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="5684762403938632" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="5541569119551732" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="976013335396824">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="4166495409358136" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="3688266115875525" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Cabo das Tormentas&quot; &amp; newline &amp; newline &amp; &quot;O Cabo das Tormentas, atualmente conhecido como Cabo da Boa Esperança, localiza-se a sul da Cidade do Cabo e a oeste da Baía Falsa, na província do Cabo Ocidental, na África do Sul. Foi dobrado pela primeira vez em 1488, pelo navegador português Bartolomeu Dias.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="8652200350632154" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="1404529047150068" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="7122434555138069">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="4668465389385889" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="826895622440255" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Naquela época, pelo fato de a região ser desconhecida e perigosa de se navegar, acreditava-se que era habitada por monstros marinhos, como o lendário gigante Adamastor.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="2619918629106869" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="5051807724297979" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -649,9 +649,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>5</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="1819571616364652">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="8939923485608502" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
@@ -659,56 +659,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="3230797479554673">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="9662422399146896" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="7225559689407419" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="9542006537810347">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="3890553392328369" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="7528637485717133" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Doze de Inglaterra: &quot; &amp; newline &amp; newline &amp;&quot;É o nome atribuído a uma história semilendária/semifactual que teria acontecido no reinado de D. João I, de Portugal, e de Eduardo III, da Inglaterra, e demonstra algo típico da conduta de honra e comportamento de acordo com o ideal cavaleiresco da Idade Média.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="5521684539072138" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="7200665469780108" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block disabled="1">
+                                                <event-block disabled="1" sid="9428243530300602">
                                                     <conditions>
-                                                        <condition disabled="1" id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition disabled="1" id="-7" name="Compare instance variable" sid="8543506197705756" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action disabled="1" id="0" name="Set text" type="TextGenNum">
+                                                        <action disabled="1" id="0" name="Set text" sid="556610427753045" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Os Doze de Inglaterra é o nome atribuído a uma história semi-lendária/semi-factual  que teria acontecido no reinado de D. João I de Portugal e de Eduardo III de Inglaterra e demonstra uma história típica da conduta da Honra e comportamento de acordo com o Ideal cavaleiresco da Idade Média.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="2142845633690937" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action disabled="1" id="-15" name="Set visible" type="TextGenNum">
+                                                        <action disabled="1" id="-15" name="Set visible" sid="2758849795371219" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -718,9 +718,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>6</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="7264996354614544">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="9410942064394552" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
@@ -728,56 +728,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="7790601143246724">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="4359407221956689" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="7817633558183881" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="1757224101601469">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="5265335391108311" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="6274362037168329" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Conhecimentos Marítimos:&quot; &amp; newline &amp; newline&amp; &quot;Ao longo de “Os Lusíadas“, podemos observar diversas referências a instrumentos e técnicas de navegação, informações geográficas e astronômicas e fenômenos marítimos.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="1796879262138531" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="9176518569096051" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="8456648305027089">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="7131514740868883" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="5667609398708063" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Todos esses conhecimentos, que dão um tom enciclopédico ao poema, remetem ao fato de o próprio Luis de Camões ter sido um marinheiro por vários anos, tendo vivido até um naufrágio, no qual quase perdeu os manuscritos da presente obra!&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="6136082272127227" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="7837825870735244" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -787,9 +787,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>7</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="7021936139378514">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="1963013979890516" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">7</param>
@@ -797,56 +797,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="7255698576685469">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="2561623553909642" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="9369445115656732" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="4012544067167184">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="2369734775955126" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="5698657037758775" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Alegorias Mitológicas&quot; &amp;newline &amp; newline &amp;&quot;Uma característica comum ao gênero épico é a presença de elementos mitológicos, como os deuses, que, através de seus atos, desencadeiam os acontecimentos humanos. Mas como Camões poderia usar os deuses romanos para narrar os feitos de um povo cristão, fiel apenas a Deus?&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="7735760669041505" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="9548235857547937" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="983418134147942">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="4759401415199348" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="408508572324496" type="TextGenNum">
                                                             <param id="0" name="Text">&quot; Simples: os próprios deuses assumem ser apenas alegorias poéticas, e não seres reais. Podemos ver isso na fala de Tétis, na estrofe 82 do Canto X.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="4264158643798754" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="8588907070417721" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -856,9 +856,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>8</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="2740862884990133">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="2984567093261691" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">8</param>
@@ -866,56 +866,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="9898327835958852">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="9255320924640409" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="6459439656767285" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="6313036266532041">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="235659722296572" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="2377019562272906" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Máquina do Mundo: &quot; &amp; newline &amp; newline &amp;&quot;A Máquina do Mundo era uma representação de como se acreditava ser o Universo, concebida pelo cientista grego Ptolomeu, que viveu entre 90 e 168 d.C.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="9746861852524778" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="6010724024082397" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="9903198244218561">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="7164546209564902" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="949537230312633" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Por muito tempo, acreditou-se que a Terra fosse o centro do Universo, tendo ao seu redor, de dentro para fora, os planetas, o firmamento, o céu, o primeiro móbil e o Empíreo. O presente de Tétis, ao mostrar a Máquina para os navegadores, representa o domínio que os portugueses teriam sobre o mundo.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="6313511901197745" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="7504207112189177" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -925,9 +925,9 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>FIM</comment>
-                                <event-block collapsed="1">
+                                <event-block sid="4662025126913117">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                        <condition id="-7" name="Compare instance variable" sid="4065317944473698" type="TextGenNum">
                                             <param id="0" name="Instance variable">num</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">9</param>
@@ -935,56 +935,56 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block>
+                                        <event-block sid="5441399218462845">
                                             <conditions>
-                                                <condition id="-19" name="Pick all" type="System">
+                                                <condition id="-19" name="Pick all" sid="818463863010768" type="System">
                                                     <param id="0" name="Object">TextGenNum</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" type="TextGenNum">
+                                                <action id="-15" name="Set visible" sid="2426579574629291" type="TextGenNum">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block>
+                                                <event-block sid="9977138599770212">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="8004420704472522" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">99</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="2413259534768403" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;Luís de Camões: &quot; &amp; newline &amp; newline &amp;&quot;Sabe-se que o maior poeta português, Luís Vaz de Camões, nasceu provavelmente em Lisboa (Portugal), por volta de 1524, e pertenceu a uma família da pequena nobreza, de origem galega.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="8282489184116016" type="TextGenNum">
                                                             <param id="0" name="X">184</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="9417993476899148" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block>
+                                                <event-block sid="576600086601515">
                                                     <conditions>
-                                                        <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                                        <condition id="-7" name="Compare instance variable" sid="7303365391162681" type="TextGenNum">
                                                             <param id="0" name="Instance variable">num</param>
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">98</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="0" name="Set text" type="TextGenNum">
+                                                        <action id="0" name="Set text" sid="124144618931617" type="TextGenNum">
                                                             <param id="0" name="Text">&quot;A bagagem literária deixada pelo escritor é de valor inestimável. Ele escreveu poesias líricas e épicas, peças teatrais, e sonetos que, em sua maior parte, são verdadeiras obras de arte.&quot;</param>
                                                         </action>
-                                                        <action id="-3" name="Set position" type="TextGenNum">
+                                                        <action id="-3" name="Set position" sid="8441795307480587" type="TextGenNum">
                                                             <param id="0" name="X">437</param>
                                                             <param id="1" name="Y">121</param>
                                                         </action>
-                                                        <action id="-15" name="Set visible" type="TextGenNum">
+                                                        <action id="-15" name="Set visible" sid="6224066680264444" type="TextGenNum">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
                                                     </actions>
@@ -997,62 +997,62 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block any="1">
+                <event-block any="1" sid="3028874706650618">
                     <conditions>
-                        <condition id="6" name="On object clicked" type="Mouse">
+                        <condition id="6" name="On object clicked" sid="4081752317124169" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">Seta</param>
                         </condition>
-                        <condition id="3" name="On touched object" type="Touch">
+                        <condition id="3" name="On touched object" sid="7296747856883301" type="Touch">
                             <param id="0" name="Object">Seta</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" type="Seta">
+                        <action id="-3" name="Set position" sid="8184932860038102" type="Seta">
                             <param id="0" name="X">655</param>
                             <param id="1" name="Y">-49</param>
                         </action>
-                        <action id="-15" name="Set visible" type="TextGenNum">
+                        <action id="-15" name="Set visible" sid="8639602240718403" type="TextGenNum">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="8356553003822299" type="System">
                             <param id="0" name="Group name">&quot;Categorias&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block>
+                        <event-block sid="1219565258307557">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                <condition id="-7" name="Compare instance variable" sid="3179870420751983" type="TextGenNum">
                                     <param id="0" name="Instance variable">num</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">99</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-15" name="Set visible" type="TextGenNum">
+                                <action id="-15" name="Set visible" sid="6943195056147631" type="TextGenNum">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" type="TextGenNum">
+                                <action id="-3" name="Set position" sid="9271496886812001" type="TextGenNum">
                                     <param id="0" name="X">943</param>
                                     <param id="1" name="Y">28</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="5271246484587834">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" type="TextGenNum">
+                                <condition id="-7" name="Compare instance variable" sid="2572898587876327" type="TextGenNum">
                                     <param id="0" name="Instance variable">num</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">98</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-15" name="Set visible" type="TextGenNum">
+                                <action id="-15" name="Set visible" sid="6782610089793876" type="TextGenNum">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" type="TextGenNum">
+                                <action id="-3" name="Set position" sid="46856493110746" type="TextGenNum">
                                     <param id="0" name="X">943</param>
                                     <param id="1" name="Y">28</param>
                                 </action>
@@ -1062,44 +1062,44 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" title="SOUND">
+        <event-group description="" sid="9168795743594931" title="SOUND">
             <sub-events>
-                <event-group collapsed="1" description="" title="SoundMouseClick">
+                <event-group description="" sid="2328167188208861" title="SoundMouseClick">
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="7662252335288584">
                             <conditions>
-                                <condition id="6" name="On object clicked" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="6326304249681855" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundMusic</param>
                                 </condition>
-                                <condition id="3" name="On touched object" type="Touch">
+                                <condition id="3" name="On touched object" sid="889814540526023" type="Touch">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block>
+                                <event-block sid="4568003122743215">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" type="System">
+                                        <condition id="-14" name="Compare variable" sid="3745192442176989" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="1872164872900866" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block>
+                                <event-block sid="5520943654114391">
                                     <conditions>
-                                        <condition id="-22" name="Else" type="System" />
+                                        <condition id="-22" name="Else" sid="1484312508523244" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" type="System">
+                                        <action id="-9" name="Set value" sid="28315938665947" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -1109,60 +1109,60 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" title="Atualizacao dos icones">
+                <event-group description="" sid="608444182154331" title="Atualizacao dos icones">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="3598545397054433">
                             <conditions>
-                                <condition id="-1" name="Every tick" type="System" />
+                                <condition id="-1" name="Every tick" sid="9076455368933198" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" type="SoundMusic">
+                                <action id="5" name="Set frame" sid="1899451324382519" type="SoundMusic">
                                     <param id="0" name="Frame number">musica</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" title="Musica">
+                <event-group description="" sid="1551580862436601" title="Musica">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="1360364433687028">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="4572686511742758" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="2209341600368903" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="2808682918488834" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6255275857965748">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="8360826739022166" type="System">
                                     <param id="0" name="Variable">musica</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="8994655535290433" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Set muted" type="Audio">
+                                <action id="2" name="Set muted" sid="3655695699944814" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1">
+                        <event-block disabled="1" sid="3748121290224202">
                             <conditions>
-                                <condition disabled="1" id="-3" name="On end of layout" type="System" />
+                                <condition disabled="1" id="-3" name="On end of layout" sid="1070319740188172" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="6" name="Stop" type="Audio">
+                                <action disabled="1" id="6" name="Stop" sid="9337212223142579" type="Audio">
                                     <param id="0" name="Tag">&quot;BGmusic&quot;</param>
                                 </action>
                             </actions>
@@ -1171,53 +1171,53 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" title="MouseLayoutEnciclopedia">
+        <event-group description="" sid="1311351722983828" title="MouseLayoutEnciclopedia">
             <sub-events>
-                <event-block>
+                <event-block sid="5673830113780678">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="2154841517741438" type="Mouse">
                             <param id="0" name="Object">TextGenNum</param>
                         </condition>
-                        <condition id="-15" name="Is group active" type="System">
+                        <condition id="-15" name="Is group active" sid="467314285049907" type="System">
                             <param id="0" name="Group name">&quot;Categorias&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="3999339482781512" type="Mouse">
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="3707976984817687">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="3689596932730718" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="9399709882555449">
                             <conditions>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="7469839521874691" type="Mouse">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="8274218908400027" type="Mouse">
                                     <param id="0" name="Object">BotaoVoltar</param>
                                 </condition>
-                                <condition id="7" name="Cursor is over object" type="Mouse">
+                                <condition id="7" name="Cursor is over object" sid="992512142622226" type="Mouse">
                                     <param id="0" name="Object">Seta</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" type="Mouse">
+                                <action id="0" name="Set cursor style" sid="1464090009207688" type="Mouse">
                                     <param id="0" name="Cursor style">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3105848896248255">
                             <conditions>
-                                <condition id="-22" name="Else" type="System" />
+                                <condition id="-22" name="Else" sid="8707916826629562" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" type="Mouse">
+                                <action id="0" name="Set cursor style" sid="869713840071786" type="Mouse">
                                     <param id="0" name="Cursor style">0</param>
                                 </action>
                             </actions>

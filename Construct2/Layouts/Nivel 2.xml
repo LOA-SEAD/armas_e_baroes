@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Nivel 2</name>
+    <sid>5569749064625422</sid>
     <event-sheet>ES Nivel 2</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background">
+        <layer name="background" sid="9347141174039635">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Nivel2bg">
+                <instance type="Nivel2bg" uid="51">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>300</x>
                         <y>300</y>
@@ -44,8 +51,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="mainInv">
+        <layer name="mainInv" sid="932126674432582">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -56,13 +64,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="AreaObjetivo">
+                <instance type="AreaObjetivo" uid="52">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>536</x>
                         <y>516</y>
@@ -76,11 +90,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Spawner">
+                <instance type="Spawner" uid="53">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <wave>0</wave>
@@ -88,6 +103,8 @@
                         <numMonstros>0</numMonstros>
                         <spawnTime>0</spawnTime>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>16</x>
                         <y>527</y>
@@ -101,15 +118,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="54">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>0</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>66</x>
                         <y>478</y>
@@ -123,15 +143,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="55">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>1</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>132</x>
                         <y>360</y>
@@ -145,15 +168,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="56">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>2</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>164</x>
                         <y>258</y>
@@ -167,15 +193,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="57">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>3</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>102.5</x>
                         <y>204.5</y>
@@ -189,15 +218,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="58">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>5</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>391</x>
                         <y>216</y>
@@ -211,15 +243,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="59">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>6</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>324.531158447</x>
                         <y>287.975067139</y>
@@ -233,15 +268,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="60">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>7</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>409</x>
                         <y>438</y>
@@ -255,15 +293,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="61">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>4</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
                         <y>99</y>
@@ -277,15 +318,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="62">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>8</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>486</x>
                         <y>520</y>
@@ -299,11 +343,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Torre2">
+                <instance type="Torre2" uid="63">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <raioAlcance>0</raioAlcance>
@@ -316,6 +361,8 @@
                     <behavior-instances>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>405</x>
                         <y>-136</y>
@@ -329,11 +376,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Torre3">
+                <instance type="Torre3" uid="64">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <raioAlcance>120</raioAlcance>
@@ -344,6 +392,8 @@
                         <dano>0</dano>
                         <slow>0</slow>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>444</x>
                         <y>-131</y>
@@ -357,11 +407,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tiro1">
+                <instance type="Tiro1" uid="65">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <targetUID>-1</targetUID>
@@ -374,9 +425,12 @@
                             <properties>
                                 <stepping-mode>None</stepping-mode>
                                 <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>362</x>
                         <y>-99</y>
@@ -390,11 +444,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tiro2">
+                <instance type="Tiro2" uid="66">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <torreMaeUID>-1</torreMaeUID>
@@ -408,9 +463,12 @@
                             <properties>
                                 <stepping-mode>None</stepping-mode>
                                 <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>406</x>
                         <y>-99</y>
@@ -424,11 +482,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tiro3">
+                <instance type="Tiro3" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <targetUID>-1</targetUID>
@@ -442,9 +501,12 @@
                             <properties>
                                 <stepping-mode>None</stepping-mode>
                                 <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>444</x>
                         <y>-97</y>
@@ -458,15 +520,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite">
+                <instance type="Sprite" uid="68">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypoint>9</waypoint>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>536</x>
                         <y>518</y>
@@ -481,8 +546,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="main">
+        <layer name="main" sid="6574967487988222">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -493,16 +559,22 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="RaioTorre">
+                <instance type="RaioTorre" uid="69">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>277</x>
                         <y>-132</y>
@@ -516,11 +588,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Monstro">
+                <instance type="Monstro" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <waypointObj>0</waypointObj>
@@ -534,10 +607,13 @@
                             <properties>
                                 <stepping-mode>None</stepping-mode>
                                 <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>281</x>
                         <y>-63</y>
@@ -551,11 +627,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Torre1">
+                <instance type="Torre1" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <raioAlcance>0</raioAlcance>
@@ -568,6 +645,8 @@
                     <behavior-instances>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>363</x>
                         <y>-132</y>
@@ -581,11 +660,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="72">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -594,6 +674,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>86</x>
                         <y>290</y>
@@ -607,11 +689,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="73">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -620,6 +703,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>407</x>
                         <y>299</y>
@@ -633,11 +718,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="74">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -646,6 +732,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>268</x>
                         <y>213</y>
@@ -659,11 +747,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="75">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -672,6 +761,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>218</x>
                         <y>213</y>
@@ -685,11 +776,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="76">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -698,6 +790,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>65</x>
                         <y>195</y>
@@ -711,11 +805,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="77">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -724,6 +819,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>110</x>
                         <y>158</y>
@@ -737,11 +834,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="78">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -750,6 +848,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>152</x>
                         <y>126</y>
@@ -763,11 +863,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="79">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -776,6 +877,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>197</x>
                         <y>89</y>
@@ -789,11 +892,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="80">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -802,6 +906,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>292</x>
                         <y>96</y>
@@ -815,11 +921,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="81">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -828,6 +935,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>339</x>
                         <y>130</y>
@@ -841,11 +950,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="82">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -854,6 +964,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>385</x>
                         <y>164</y>
@@ -867,11 +979,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="83">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -880,6 +993,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>433</x>
                         <y>199</y>
@@ -893,11 +1008,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="84">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -906,6 +1022,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>70</x>
                         <y>339</y>
@@ -919,11 +1037,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="85">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -932,6 +1051,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>43</x>
                         <y>396</y>
@@ -945,11 +1066,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="86">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -958,6 +1080,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>427</x>
                         <y>349</y>
@@ -971,11 +1095,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="87">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -984,6 +1109,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>357</x>
                         <y>445</y>
@@ -997,11 +1124,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TowerConstructor">
+                <instance type="TowerConstructor" uid="88">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <apto>false</apto>
@@ -1010,6 +1138,8 @@
                         <raioT2>0</raioT2>
                         <raioT3>0</raioT3>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>388</x>
                         <y>493</y>
@@ -1024,8 +1154,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="GUI">
+        <layer name="GUI" sid="2245631288349759">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -1036,17 +1167,24 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Debug">
+                <instance type="Debug" uid="89">
                     <properties>
                         <text>DEBUG</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-4</x>
                         <y>-152</y>
@@ -1060,16 +1198,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPause">
+                <instance type="TextPause" uid="90">
                     <properties>
                         <text>PAUSE</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>171</x>
                         <y>-234</y>
@@ -1083,12 +1225,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIbg">
+                <instance type="GUIbg" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>590</x>
                         <y>-19</y>
@@ -1102,11 +1247,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIcompraTorres">
+                <instance type="GUIcompraTorres" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <torreX>3</torreX>
@@ -1114,6 +1260,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>752</x>
                         <y>339</y>
@@ -1127,11 +1275,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIcompraTorres">
+                <instance type="GUIcompraTorres" uid="93">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <torreX>2</torreX>
@@ -1139,6 +1288,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>696</x>
                         <y>339</y>
@@ -1152,11 +1303,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIcompraTorres">
+                <instance type="GUIcompraTorres" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <torreX>1</torreX>
@@ -1164,6 +1316,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>639</x>
                         <y>339</y>
@@ -1177,16 +1331,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUIinformacaoTorre">
+                <instance type="TextGUIinformacaoTorre" uid="95">
                     <properties>
                         <text>Selecione uma das torres acima para ver sua descrição.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>700</x>
                         <y>441</y>
@@ -1200,12 +1358,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIavatar">
+                <instance type="GUIavatar" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>699</x>
                         <y>83</y>
@@ -1219,12 +1380,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUImolduraNomePersonagem">
+                <instance type="GUImolduraNomePersonagem" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>700</x>
                         <y>164</y>
@@ -1238,16 +1402,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUInomeAvatar">
+                <instance type="TextGUInomeAvatar" uid="98">
                     <properties>
                         <text>D. Jõao</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>700</x>
                         <y>164</y>
@@ -1261,16 +1429,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUInomeNivel">
+                <instance type="TextGUInomeNivel" uid="99">
                     <properties>
                         <text>Nível 2</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>647</x>
                         <y>203</y>
@@ -1284,16 +1456,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUIturno">
+                <instance type="TextGUIturno" uid="100">
                     <properties>
                         <text>Turno X</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>740</x>
                         <y>204</y>
@@ -1307,12 +1483,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIbotao">
+                <instance type="GUIbotao" uid="101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>700</x>
                         <y>565</y>
@@ -1326,16 +1505,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIlife">
+                <instance type="GUIlife" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <Step>0</Step>
                         <maxlife>0</maxlife>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>659</x>
                         <y>263</y>
@@ -1349,16 +1531,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUIlife">
+                <instance type="TextGUIlife" uid="103">
                     <properties>
                         <text>20</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>659</x>
                         <y>300</y>
@@ -1372,12 +1558,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIgold">
+                <instance type="GUIgold" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>728</x>
                         <y>263</y>
@@ -1391,16 +1580,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGUIgold">
+                <instance type="TextGUIgold" uid="105">
                     <properties>
                         <text>100</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,102,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>731</x>
                         <y>301</y>
@@ -1414,12 +1607,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="106">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>637</x>
                         <y>512</y>
@@ -1433,12 +1629,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundFx">
+                <instance type="SoundFx" uid="107">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>705</x>
                         <y>512</y>
@@ -1452,12 +1651,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ResetButton">
+                <instance type="ResetButton" uid="108">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>758.361022949</x>
                         <y>511.213317871</y>
@@ -1471,12 +1673,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIbotaoPause">
+                <instance type="GUIbotaoPause" uid="109">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>600</x>
                         <y>-140</y>
@@ -1490,12 +1695,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GUIbotaoSpeed">
+                <instance type="GUIbotaoSpeed" uid="110">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>540</x>
                         <y>-140</y>
@@ -1509,12 +1717,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="restartButton">
+                <instance type="restartButton" uid="111">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>645</x>
                         <y>-141</y>
@@ -1529,7 +1740,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances />
+    <effects />
 </c2layout>

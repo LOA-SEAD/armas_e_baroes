@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Personagens</name>
+    <sid>6565632614012092</sid>
     <event-sheet>ES Personagens</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="7341642821823649">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="PersonagensBG">
+                <instance type="PersonagensBG" uid="723">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -43,12 +50,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BotaoVoltar">
+                <instance type="BotaoVoltar" uid="724">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>760</x>
                         <y>590</y>
@@ -63,8 +73,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="personagens">
+        <layer name="personagens" sid="4712547411820988">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -75,17 +86,23 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="725">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>0</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>314</x>
                         <y>256</y>
@@ -99,16 +116,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="726">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>1</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>122</x>
                         <y>404</y>
@@ -122,16 +142,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="727">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>2</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>691</x>
                         <y>87</y>
@@ -145,16 +168,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="728">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>3</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>3</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>143</x>
                         <y>87</y>
@@ -168,16 +194,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="729">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>4</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>4</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>364</x>
                         <y>451</y>
@@ -191,16 +220,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="730">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>5</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>5</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>701</x>
                         <y>239</y>
@@ -214,16 +246,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="731">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>9</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>9</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>495</x>
                         <y>206</y>
@@ -237,16 +272,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="732">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>6</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>6</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>323</x>
                         <y>77</y>
@@ -260,16 +298,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="733">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>7</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>7</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>673</x>
                         <y>471</y>
@@ -283,16 +324,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObraArte">
+                <instance type="ObraArte" uid="734">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>8</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <num>8</num>
                         <descoberto>0</descoberto>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>124</x>
                         <y>214</y>
@@ -307,8 +351,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="perguntas">
+        <layer name="perguntas" sid="6825338340594661">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -319,13 +364,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="735">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -339,12 +390,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JanelaBg">
+                <instance type="JanelaBg" uid="736">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1060</x>
                         <y>284</y>
@@ -358,15 +412,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPersonagens">
+                <instance type="TextPersonagens" uid="737">
                     <properties>
                         <text>O episódio do gigante Adamastor representa:</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <alternativa>0</alternativa>
@@ -374,6 +430,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>910</x>
                         <y>171</y>
@@ -387,15 +445,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPersonagens">
+                <instance type="TextPersonagens" uid="738">
                     <properties>
                         <text>a. Um monstro que realmente apareceu na passagem do cabo das tormentas.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <alternativa>1</alternativa>
@@ -403,6 +463,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>910</x>
                         <y>228</y>
@@ -416,15 +478,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPersonagens">
+                <instance type="TextPersonagens" uid="739">
                     <properties>
                         <text>b.  A atitude dos portugueses diante de desafios desconhecidos.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <alternativa>2</alternativa>
@@ -432,6 +496,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>910</x>
                         <y>271</y>
@@ -445,15 +511,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPersonagens">
+                <instance type="TextPersonagens" uid="740">
                     <properties>
                         <text>c.       A fome sentida pelos marinheiros</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <alternativa>3</alternativa>
@@ -461,6 +529,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>910</x>
                         <y>314</y>
@@ -474,15 +544,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextPersonagens">
+                <instance type="TextPersonagens" uid="741">
                     <properties>
                         <text>d.      Um monte intransponível</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <alternativa>4</alternativa>
@@ -490,6 +562,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>910</x>
                         <y>358</y>
@@ -504,10 +578,11 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="ConteudosLiberados">
+        <instance type="ConteudosLiberados" uid="742">
             <properties>
                 <width>10</width>
                 <height>1</height>
@@ -515,4 +590,5 @@
             </properties>
         </instance>
     </nonworld-instances>
+    <effects />
 </c2layout>

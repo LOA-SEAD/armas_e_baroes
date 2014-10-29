@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Poema</name>
+    <sid>4398205920202371</sid>
     <event-sheet>ES Poema</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="393354227030624">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundoPoema">
+                <instance type="fundoPoema" uid="693">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -44,8 +51,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="circulos">
+        <layer name="circulos" sid="4123132635404903">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -56,13 +64,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="694">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>9</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -76,12 +90,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="695">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>8</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -95,12 +112,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="696">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>7</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -114,12 +134,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="697">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>6</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -133,12 +156,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="698">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>5</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -152,12 +178,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="699">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>4</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -171,12 +200,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="700">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>3</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -190,12 +222,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="701">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -209,12 +244,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="702">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -228,12 +266,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaCirculos">
+                <instance type="PoemaCirculos" uid="703">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
                         <y>300</y>
@@ -247,12 +288,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="704">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -267,8 +311,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="main">
+        <layer name="main" sid="2527694097364784">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -279,13 +324,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BotaoVoltar">
+                <instance type="BotaoVoltar" uid="705">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>760</x>
                         <y>590</y>
@@ -299,19 +350,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="706">
                     <properties>
                         <text>I</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>1</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>22</x>
                         <y>300</y>
@@ -325,19 +380,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="707">
                     <properties>
                         <text>II</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>2</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>62</x>
                         <y>300</y>
@@ -351,19 +410,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="708">
                     <properties>
                         <text>III</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>3</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>101</x>
                         <y>300</y>
@@ -377,19 +440,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="709">
                     <properties>
                         <text>IV</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>4</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>142</x>
                         <y>300</y>
@@ -403,19 +470,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="710">
                     <properties>
                         <text>V</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>5</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
                         <y>300</y>
@@ -429,19 +500,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="711">
                     <properties>
                         <text>VI</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>6</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>218</x>
                         <y>300</y>
@@ -455,19 +530,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="712">
                     <properties>
                         <text>VII</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>7</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>257</x>
                         <y>300</y>
@@ -481,19 +560,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="713">
                     <properties>
                         <text>IX</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>9</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>341</x>
                         <y>300</y>
@@ -507,19 +590,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="714">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>10</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>385</x>
                         <y>300</y>
@@ -533,12 +620,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaBoxPoesia">
+                <instance type="PoemaBoxPoesia" uid="715">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>600</x>
                         <y>303</y>
@@ -552,15 +642,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botaoFechar">
+                <instance type="botaoFechar" uid="716">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>732.00177002</x>
                         <y>96.272506714</y>
@@ -574,19 +667,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextGenNum">
+                <instance type="TextGenNum" uid="717">
                     <properties>
                         <text>VIII</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <num>8</num>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>300</x>
                         <y>300</y>
@@ -601,8 +698,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="texto">
+        <layer name="texto" sid="5592303098388748">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -613,8 +711,11 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="PoemaPoesia">
+                <instance type="PoemaPoesia" uid="718">
                     <properties>
                         <text>As armas e os barões assinalados,</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -626,6 +727,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>446</x>
                         <y>115.954406738</y>
@@ -639,11 +742,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JanelaXbutton">
+                <instance type="JanelaXbutton" uid="719">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <disable>false</disable>
@@ -651,6 +755,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>756</x>
                         <y>533</y>
@@ -664,19 +770,23 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PoemaTitulo">
+                <instance type="PoemaTitulo" uid="720">
                     <properties>
                         <text>Canto X</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>597.272888184</x>
                         <y>97.727783203</y>
@@ -690,11 +800,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JanelaXbutton">
+                <instance type="JanelaXbutton" uid="721">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <disable>true</disable>
@@ -702,6 +813,8 @@
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>444</x>
                         <y>533</y>
@@ -716,13 +829,15 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="TimeLine2">
+        <instance type="TimeLine2" uid="722">
             <properties>
                 <game-time>Yes</game-time>
             </properties>
         </instance>
     </nonworld-instances>
+    <effects />
 </c2layout>

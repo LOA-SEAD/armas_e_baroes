@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Selecao Nivel</name>
+    <sid>4152822124467943</sid>
     <event-sheet>ES Selecao Nivel</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg">
+        <layer name="bg" sid="9797748292707737">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,13 +24,19 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="MainMenuAgua">
+                <instance type="MainMenuAgua" uid="760">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>300</y>
@@ -43,12 +50,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="selecaoNivelEmbar">
+                <instance type="selecaoNivelEmbar" uid="761">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>450</y>
@@ -62,12 +72,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fios">
+                <instance type="fios" uid="762">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>190</y>
@@ -82,8 +95,9 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
-        <layer name="main">
+        <layer name="main" sid="3168334822134509">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -94,16 +108,22 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="763">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>0</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
                         <y>178</y>
@@ -117,15 +137,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="764">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>1</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>280</x>
                         <y>178</y>
@@ -139,15 +162,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="765">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>2</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>178</y>
@@ -161,15 +187,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="766">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>3</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>520</x>
                         <y>178</y>
@@ -183,15 +212,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="767">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>4</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
                         <y>178</y>
@@ -205,15 +237,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="768">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>5</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
                         <y>347</y>
@@ -227,15 +262,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="769">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>6</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>280</x>
                         <y>347</y>
@@ -249,15 +287,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="770">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>7</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>347</y>
@@ -271,15 +312,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="771">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>8</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>520</x>
                         <y>347</y>
@@ -293,15 +337,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SNbtnNivel">
+                <instance type="SNbtnNivel" uid="772">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <nivel>9</nivel>
                     </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
                         <y>347</y>
@@ -315,12 +362,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundMusic">
+                <instance type="SoundMusic" uid="773">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
                         <y>32</y>
@@ -334,12 +384,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SoundFx">
+                <instance type="SoundFx" uid="774">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>89</x>
                         <y>32</y>
@@ -353,12 +406,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BotaoVoltar">
+                <instance type="BotaoVoltar" uid="775">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <collisions>Enabled</collisions>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>750</x>
                         <y>596</y>
@@ -372,16 +428,20 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextNomeNiveis">
+                <instance type="TextNomeNiveis" uid="776">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Kristen ITC,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
                     <world>
                         <x>400</x>
                         <y>507</y>
@@ -396,10 +456,11 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="niveis">
+        <instance type="niveis" uid="777">
             <properties>
                 <width>11</width>
                 <height>1</height>
@@ -407,4 +468,5 @@
             </properties>
         </instance>
     </nonworld-instances>
+    <effects />
 </c2layout>
