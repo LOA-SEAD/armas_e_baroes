@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Nivel 7</layout>
-        <event-sheet active="1">ES Nivel 7</event-sheet>
+        <layout>Poema</layout>
+        <event-sheet active="1">ES Poema</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,8 +23,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/Niveis/" />
-        <folder expanded="0" path="layout-folder/Intro Niveis/" />
+        <folder expanded="0" path="layout-folder/Niveis/" />
+        <folder expanded="1" path="layout-folder/Intro Niveis/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Niveis/" />
         <folder expanded="0" path="event-folder/Intro niveis/" />

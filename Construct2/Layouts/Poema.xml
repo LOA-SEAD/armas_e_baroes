@@ -828,6 +828,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="TextoPoesia" uid="562">
+                    <properties>
+                        <text>As armas e os barões assinalados,</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Kristen ITC,-15,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>446</x>
+                        <y>115.95400238</y>
+                        <z>0</z>
+                        <width>309</width>
+                        <height>410</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

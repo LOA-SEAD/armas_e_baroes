@@ -19,15 +19,15 @@
                         <action id="-16" name="Set opacity" sid="2884406117947535" type="JanelaBg">
                             <param id="0" name="Opacity">90</param>
                         </action>
-                        <action id="2" name="Setup text-typing" sid="3618506915140027" type="TextIntros">
-                            <param id="0" name="Timeline">TimeLine</param>
-                        </action>
                         <action id="-9" name="Set value" sid="1042374569410041" type="System">
                             <param id="0" name="Variable">fluxoIntros</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="0" name="Set cursor style" sid="9068188740905317" type="Mouse">
                             <param id="0" name="Cursor style">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="7689066696202638" type="IntroTexto">
+                            <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -48,9 +48,20 @@
                             <param id="0" name="Variable">fluxoIntros</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="3" name="Type text" sid="4652990714138585" type="TextIntros">
+                        <action id="0" name="Set text" sid="373693027744824" type="IntroTexto">
                             <param id="0" name="Text">&quot;Os valentes portugueses iam navegando pelo Oceano Índico, à procura do caminho marítimo para a Índia, terra das especiarias.&quot;</param>
-                            <param id="1" name="Speed">typingSpeed2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9749812418738679">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8165659911095204" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="2694665424250149" type="IntroTexto">
+                            <param id="0" name="Opacity">IntroTexto.Opacity+1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -94,13 +105,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Type text" sid="1724044731101025" type="TextIntros">
-                                    <param id="0" name="Text">&quot;A reunião terminou em Júpiter mantendo sua decisão: a de que o Destino daria    glória para as Armas e os Barões assinalados!&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="8372502183072772" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">7</param>
+                                </action>
+                                <action id="0" name="Set text" sid="7269313426090865" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;A reunião terminou em Júpiter mantendo sua decisão: a de que o Destino daria    glória para as Armas e os Barões assinalados!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -113,10 +123,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Type text" sid="2389613198230274" type="TextIntros">
-                                    <param id="0" name="Text">&quot;Mas a deusa Vênus, que se afeiçoava aos portugueses por lembrarem seus amados romanos em coração e idioma, dizia que faria de tudo para ajudar os portugueses em sua jornada.&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-10" name="Set value" sid="1937940609277878" type="IntrosBg2">
                                     <param id="0" name="Instance variable">ordem</param>
                                     <param id="1" name="Value">1</param>
@@ -124,6 +130,9 @@
                                 <action id="-9" name="Set value" sid="1919726515157404" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="0" name="Set text" sid="4870223711355028" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;Mas a deusa Vênus, que se afeiçoava aos portugueses por lembrarem seus amados romanos em coração e idioma, dizia que faria de tudo para ajudar os portugueses em sua jornada.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -136,13 +145,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Type text" sid="6830117024477569" type="TextIntros">
-                                    <param id="0" name="Text">&quot;Baco, o deus do vinho, não concordava com aquilo, pois os feitos dos portugueses apagariam a glória que possuía no Oriente.&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="4370262300896527" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="0" name="Set text" sid="4997529282340247" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;Baco, o deus do vinho, não concordava com aquilo, pois os feitos dos portugueses apagariam a glória que possuía no Oriente.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -159,13 +167,12 @@
                                 <action id="5" name="Set frame" sid="1917304788879115" type="IntrosBg">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
-                                <action id="3" name="Type text" sid="9854480865523924" type="TextIntros">
-                                    <param id="0" name="Text">&quot;Enquanto isso, os deuses se reuniam no Olimpo para decidirem sobre o futuro do Oriente. Júpiter, o pai sublime, dizia que o Destino já havia decidido que os fortes lusitanos realizariam proezas inesquecíveis e teriam o domínio dos mares orientais.&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="1007421736525127" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="0" name="Set text" sid="6561372648079138" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;Enquanto isso, os deuses se reuniam no Olimpo para decidirem sobre o futuro do Oriente. Júpiter, o pai sublime, dizia que o Destino já havia decidido que os fortes lusitanos realizariam proezas inesquecíveis e teriam o domínio dos mares orientais.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -178,13 +185,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Type text" sid="6904746919222165" type="TextIntros">
-                                    <param id="0" name="Text">&quot;Nesse ponto da viagem, já haviam ultrapassado os limites conhecidos, indo por mares nunca dantes navegados.&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="5340638744533162" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1758354149173337" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;Nesse ponto da viagem, já haviam ultrapassado os limites conhecidos, indo por mares nunca dantes navegados.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -197,13 +203,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Type text" sid="9449990650092454" type="TextIntros">
-                                    <param id="0" name="Text">&quot;Eram quatro navios. O honroso Vasco da Gama comandava o navio São Gabriel e chefiava a esquadra.&quot;</param>
-                                    <param id="1" name="Speed">typingSpeed2</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="3310565227985462" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="0" name="Set text" sid="6599980400493931" type="IntroTexto">
+                                    <param id="0" name="Text">&quot;Eram quatro navios. O honroso Vasco da Gama comandava o navio São Gabriel e chefiava a esquadra.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

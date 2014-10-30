@@ -191,30 +191,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TextIntros" uid="609">
-                    <properties>
-                        <text></text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <hotspot>Center</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>661</x>
-                        <y>238</y>
-                        <z>0</z>
-                        <width>209</width>
-                        <height>215</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="TextIntro" uid="814">
                     <properties>
                         <text></text>

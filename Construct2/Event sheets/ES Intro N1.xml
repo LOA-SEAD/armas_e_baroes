@@ -21,9 +21,6 @@
                 <action id="-16" name="Set opacity" sid="8803712031895935" type="JanelaBg">
                     <param id="0" name="Opacity">90</param>
                 </action>
-                <action id="2" name="Setup text-typing" sid="3996091321957352" type="TextIntros">
-                    <param id="0" name="Timeline">TimeLine</param>
-                </action>
                 <action id="0" name="Set cursor style" sid="8361361632709872" type="Mouse">
                     <param id="0" name="Cursor style">0</param>
                 </action>

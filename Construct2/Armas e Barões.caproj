@@ -2056,14 +2056,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextJanela" sid="254746911819955">
-            <plugin id="Rex_TextPlus" />
-            <behaviors>
-                <behavior-type name="Pin" sid="1374788045068641">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
         <object-type global="1" name="TimeLine" sid="5474343035271104">
             <plugin id="Rex_TimeLine" />
         </object-type>
@@ -2579,9 +2571,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TextIntros" sid="8366486063382285">
-            <plugin id="Rex_TextPlus" />
         </object-type>
         <object-type name="TextIntrosNivel" sid="4237463041387106">
             <plugin id="Text" />
@@ -3279,6 +3268,25 @@
         </object-type>
         <object-type name="TextIntro" sid="1469785537266789">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="JanelaTexto" sid="9524411417555607">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="765899902045614">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="IntroTexto" sid="1789259737713567">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextoPoesia" sid="6484425090892799">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4098662635175146">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
