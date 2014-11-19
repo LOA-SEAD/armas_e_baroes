@@ -416,7 +416,7 @@
                     <properties>
                         <text>O episódio do gigante Adamastor representa:</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-13,400,0</font>
+                        <font>Modern Antiqua,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -449,7 +449,7 @@
                     <properties>
                         <text>a. Um monstro que realmente apareceu na passagem do cabo das tormentas.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-13,400,0</font>
+                        <font>Modern Antiqua,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -482,7 +482,7 @@
                     <properties>
                         <text>b.  A atitude dos portugueses diante de desafios desconhecidos.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-13,400,0</font>
+                        <font>Modern Antiqua,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -515,7 +515,7 @@
                     <properties>
                         <text>c.       A fome sentida pelos marinheiros</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-13,400,0</font>
+                        <font>Modern Antiqua,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -548,7 +548,7 @@
                     <properties>
                         <text>d.      Um monte intransponível</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-13,400,0</font>
+                        <font>Modern Antiqua,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

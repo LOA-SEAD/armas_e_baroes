@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1414701230
+#1416424204
 index.html
 c2runtime.js
 jquery-2.0.0.min.js
@@ -18,8 +18,6 @@ images/areaobjetivo-sheet0.png
 images/towerconstructor-sheet0.png
 images/towerconstructor-sheet1.png
 images/towerconstructor-sheet2.png
-images/torre2-sheet0.png
-images/torre3-sheet0.png
 images/tiro1-sheet0.png
 images/tiro2-sheet0.png
 images/tiro3-sheet0.png
@@ -89,6 +87,7 @@ images/logosloa-sheet0.png
 images/logos-sheet0.png
 images/logos-sheet1.png
 images/logos-sheet2.png
+images/tiledbackground.png
 media/hit1.m4a
 media/hit1.ogg
 media/musicintro.m4a

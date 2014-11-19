@@ -23,47 +23,28 @@
                             <param id="0" name="Variable">fluxoIntros</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="9717436688071385" type="TextIntrosNivel">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="3349907866204292" type="TextIntrosNivel2">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
                         <action id="0" name="Set cursor style" sid="1299107733856003" type="Mouse">
                             <param id="0" name="Cursor style">0</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="281262228267509" type="TextIntrosNivel">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" inactive="1" sid="835304005193211" title="TEXTO NIVEL FIM">
-            <sub-events>
-                <event-block sid="352230465771239">
+                <event-block sid="8652752208365502">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="2137725326695006" type="System">
-                            <param id="0" name="First value">TextIntrosNivel.Opacity</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">100</param>
+                        <condition id="-6" name="Every X seconds" sid="1691522596985941" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="5396851753199945">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="9057435804007003" type="System">
-                                    <param id="0" name="Interval (seconds)">0.1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Set opacity" sid="4014235411384543" type="TextIntrosNivel">
-                                    <param id="0" name="Opacity">TextIntrosNivel.Opacity + 4</param>
-                                </action>
-                                <action id="-16" name="Set opacity" sid="208602667581105" type="TextIntrosNivel2">
-                                    <param id="0" name="Opacity">TextIntrosNivel2.Opacity + 4</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="438197202885227" type="IntrosBg2">
+                            <param id="0" name="Opacity">IntrosBg2.Opacity + 1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="5082949102689746" type="TextEncerramento">
+                            <param id="0" name="Opacity">TextEncerramento.Opacity + 5</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="8198824429785073">
                     <conditions>
@@ -75,7 +56,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="2847377841980047" type="System">
-                            <param id="0" name="Seconds">4.0</param>
+                            <param id="0" name="Seconds">2.</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9887697410171012" type="TextIntrosNivel" />
                         <action id="2" name="Set at X" sid="2039944254771578" type="niveis">
@@ -88,6 +69,22 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="2700418136821683" type="System">
                             <param id="0" name="Layout">Tela Liberados</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="5203235121913258" title="Fade FIM">
+            <sub-events>
+                <event-block sid="3298990036005418">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9467891714063747" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="9432247028168714" type="TextIntrosNivel">
+                            <param id="0" name="Opacity">TextIntrosNivel.Opacity + 5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -107,6 +104,9 @@
                         <action id="-9" name="Set value" sid="2283741774900756" type="System">
                             <param id="0" name="Variable">fluxoIntros</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9661662163029396" type="TextEncerramento">
+                            <param id="0" name="Text">&quot;Finalmente, os Lusíadas cumpriram sua missão. Cortando o mar sereno, retornaram a Portugal, onde foram recebidos com muita festa.&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -140,8 +140,8 @@
                                     <param id="0" name="Layer">&quot;botoes&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="4550120262784808" type="System">
-                                    <param id="0" name="Group name">&quot;TEXTO NIVEL FIM&quot;</param>
+                                <action id="-12" name="Set group active" sid="334464914773772" type="System">
+                                    <param id="0" name="Group name">&quot;Fade FIM&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
@@ -158,6 +158,9 @@
                                 <action id="-9" name="Set value" sid="407057495392261" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>
                                     <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8040927523079889" type="TextEncerramento">
+                                    <param id="0" name="Text">&quot;As Armas e os Barões assinalados proporcionaram muitas glórias ao povo lusitano e ao rei D. Manuel.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

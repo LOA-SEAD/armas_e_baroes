@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Tutorial</name>
     <events>
+        <variable constant="0" name="tutorialcompleto" sid="9431347681324423" static="0" type="number">0</variable>
         <variable comment="determina o fluxo de acontecimentos do tutorial" constant="0" name="fluxoTutorial" sid="7908254240698062" static="0" type="number">0</variable>
         <event-group description="" sid="6195623212212538" title="Inicializacao">
             <sub-events>
@@ -69,6 +70,48 @@
                         <action behavior="Pin" id="0" name="Pin to object" sid="9360210611326845" type="JanelaTexto">
                             <param id="0" name="Pin to">JanelaBg</param>
                             <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5946773032313122">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2420985458963061" type="GUIcompraTorres">
+                            <param id="0" name="Instance variable">torreX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4427839223971355" type="GUIcompraTorres">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5342972667385946">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4848114627041922" type="GUIcompraTorres">
+                            <param id="0" name="Instance variable">torreX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2582331178113744" type="GUIcompraTorres">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9870178586400715">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="487492265813182" type="GUIcompraTorres">
+                            <param id="0" name="Instance variable">torreX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="7313916674668574" type="GUIcompraTorres">
+                            <param id="0" name="Frame number">2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -140,6 +183,7 @@
                                         <action id="-9" name="Destroy" sid="6559081937783082" type="Seta" />
                                     </actions>
                                 </event-block>
+                                <comment>ARRUMAR ESSA PARTE = FAZER LIBERAR AS TRÊS RECOMPENSAS JUNTAS: O CANTO, A ENCICLOPEDIA E A GALERA</comment>
                                 <event-block sid="7362892982994554">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="7229009936725399" type="System">
@@ -149,16 +193,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="6191531910656639" type="System">
-                                            <param id="0" name="Variable">nivelTerminado</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-9" name="Set value" sid="7605794277731128" type="System">
+                                            <param id="0" name="Variable">tutorialcompleto</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="2" name="Set at X" sid="6066447566065821" type="niveis">
-                                            <param id="0" name="X">10</param>
-                                            <param id="1" name="Value">2</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="9064466863468557" type="System">
-                                            <param id="0" name="Layout">Tela Liberados</param>
+                                        <action id="-2" name="Go to layout" sid="2781926027455054" type="System">
+                                            <param id="0" name="Layout">Main Menu</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -421,7 +461,7 @@
                             <param id="0" name="Text">&quot;Pontos de ânimo. Use-os para adquirir guerreiros, onde cada um irá precisar de uma certa quantidade. Derrotar inimigos incrementará seu ânimo.&quot;</param>
                         </action>
                         <action id="3" name="Set font size" sid="6884401790081107" type="JanelaTexto">
-                            <param id="0" name="Size (pt)">12</param>
+                            <param id="0" name="Size (pt)">11</param>
                         </action>
                     </actions>
                 </event-block>
@@ -552,7 +592,7 @@
                             <param id="0" name="Text">&quot;Esses ratos danados querem roubar nossos suprimentos de viagem! Selecione os guerreiros e os posicione em um lugar da trilha. Mas pense bem, já que, uma vez posicionados, eles não poderão mudar de lugar!&quot;</param>
                         </action>
                         <action id="3" name="Set font size" sid="5301717407124615" type="JanelaTexto">
-                            <param id="0" name="Size (pt)">10</param>
+                            <param id="0" name="Size (pt)">9.5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2193,6 +2233,10 @@
                                             <param id="0" name="Instance variable">torreMaeUID</param>
                                             <param id="1" name="Value">Torre1.UID</param>
                                         </action>
+                                        <action id="-22" name="Set angle toward position" sid="7583755515569703" type="Torre1">
+                                            <param id="0" name="X">Monstro.X</param>
+                                            <param id="1" name="Y">Monstro.Y</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -2234,6 +2278,10 @@
                                             <param id="0" name="Instance variable">torreMaeUID</param>
                                             <param id="1" name="Value">Torre2.UID</param>
                                         </action>
+                                        <action id="-22" name="Set angle toward position" sid="3575803550844491" type="Torre2">
+                                            <param id="0" name="X">Monstro.X</param>
+                                            <param id="1" name="Y">Monstro.Y</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -2274,6 +2322,10 @@
                                         <action id="-10" name="Set value" sid="6539665549137926" type="Tiro3">
                                             <param id="0" name="Instance variable">torreMaeUID</param>
                                             <param id="1" name="Value">Torre3.UID</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="2511994290037756" type="Torre3">
+                                            <param id="0" name="X">Monstro.X</param>
+                                            <param id="1" name="Y">Monstro.Y</param>
                                         </action>
                                     </actions>
                                 </event-block>

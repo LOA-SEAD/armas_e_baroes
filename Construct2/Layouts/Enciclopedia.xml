@@ -87,7 +87,7 @@
                     <properties>
                         <text>Resposta</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -117,7 +117,7 @@
                     <properties>
                         <text>Os Lusíadas</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -147,7 +147,7 @@
                     <properties>
                         <text>Velho do Restelo</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -243,7 +243,7 @@
                     <properties>
                         <text>Resposta</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -273,7 +273,7 @@
                     <properties>
                         <text>Grandes Navegações</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -303,7 +303,7 @@
                     <properties>
                         <text>Inês de Castro</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -333,7 +333,7 @@
                     <properties>
                         <text>Cabo das Tormentas</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -363,7 +363,7 @@
                     <properties>
                         <text>Doze de Inglaterra</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -393,7 +393,7 @@
                     <properties>
                         <text>Conhecimentos Marítimos</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -423,7 +423,7 @@
                     <properties>
                         <text>Alegorias Mitológicas</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -453,7 +453,7 @@
                     <properties>
                         <text>Máquina do Mundo</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -483,7 +483,7 @@
                     <properties>
                         <text>Luís de Camões</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

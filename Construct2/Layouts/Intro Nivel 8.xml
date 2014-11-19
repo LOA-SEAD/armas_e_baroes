@@ -79,7 +79,7 @@
                     <properties>
                         <text>Nível 8</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-64,400,0</font>
+                        <font>Modern Antiqua,-64,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -90,23 +90,23 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>400</x>
+                        <x>415</x>
                         <y>257</y>
                         <z>0</z>
-                        <width>226</width>
+                        <width>256</width>
                         <height>88</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.99000001</opacity>
                     </world>
                 </instance>
                 <instance type="TextIntrosNivel2" uid="614">
                     <properties>
                         <text>&quot;Em que os assinalados barões vislumbram a Máquina do Mundo, fabricada pelo ilimitado Saber&quot;</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-21,400,0</font>
+                        <font>Modern Antiqua,-21,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -195,7 +195,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

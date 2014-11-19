@@ -135,7 +135,7 @@
                 </instance>
                 <instance type="TextGenNum" uid="801">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -165,7 +165,7 @@
                 </instance>
                 <instance type="TextGenNum" uid="802">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -195,7 +195,7 @@
                 </instance>
                 <instance type="TextGenNum" uid="803">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>

@@ -101,10 +101,10 @@
                     <properties>
                         <text>Nível 1</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-64,400,0</font>
+                        <font>Modern Antiqua,-64,400,0</font>
                         <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -121,14 +121,14 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.99000001</opacity>
                     </world>
                 </instance>
                 <instance type="TextIntrosNivel2" uid="560">
                     <properties>
                         <text>“Em que os bravos portugueses enfrentam os mouros de Moçambique”</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-21,400,0</font>
+                        <font>Modern Antiqua,-21,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -140,10 +140,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>403.5</x>
-                        <y>322</y>
+                        <y>334</y>
                         <z>0</z>
                         <width>677</width>
-                        <height>61</height>
+                        <height>85</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -195,7 +195,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

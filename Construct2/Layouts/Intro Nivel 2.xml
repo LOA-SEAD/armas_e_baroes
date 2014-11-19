@@ -54,7 +54,7 @@
                     <properties>
                         <text>Nível 2</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-64,400,0</font>
+                        <font>Modern Antiqua,-64,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -74,14 +74,14 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.99000001</opacity>
                     </world>
                 </instance>
                 <instance type="TextIntrosNivel2" uid="566">
                     <properties>
                         <text>&quot;Em que Vasco da Gama conta ao rei de Melinde sobre a histórica Batalha de Aljubarrota&quot;</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-21,400,0</font>
+                        <font>Modern Antiqua,-21,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -170,7 +170,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

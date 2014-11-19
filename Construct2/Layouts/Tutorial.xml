@@ -367,11 +367,11 @@
                         <x>405</x>
                         <y>-136</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>41</height>
+                        <width>26.560976028</width>
+                        <height>34.03125</height>
                         <depth>0</depth>
-                        <hotspotX>0.463414639</hotspotX>
-                        <hotspotY>0.53125</hotspotY>
+                        <hotspotX>0.515151501</hotspotX>
+                        <hotspotY>0.515151501</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -629,7 +629,7 @@
                         <width>33</width>
                         <height>33</height>
                         <depth>0</depth>
-                        <hotspotX>0.515151501</hotspotX>
+                        <hotspotX>0.484848499</hotspotX>
                         <hotspotY>0.515151501</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -1111,8 +1111,8 @@
                         <x>696</x>
                         <y>339</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>41</height>
+                        <width>33</width>
+                        <height>33</height>
                         <depth>0</depth>
                         <hotspotX>0.515151501</hotspotX>
                         <hotspotY>0.515151501</hotspotY>
@@ -1152,7 +1152,7 @@
                     <properties>
                         <text>Selecione uma das torres acima para ver sua descrição.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1223,7 +1223,7 @@
                     <properties>
                         <text>Vasco da Gama</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1250,7 +1250,7 @@
                     <properties>
                         <text>Nível 0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1277,7 +1277,7 @@
                     <properties>
                         <text>Turno X</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1352,7 +1352,7 @@
                     <properties>
                         <text>20</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1401,7 +1401,7 @@
                     <properties>
                         <text>100</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,102,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1560,7 +1560,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

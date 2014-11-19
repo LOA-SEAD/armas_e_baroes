@@ -54,7 +54,7 @@
                     <properties>
                         <text>Nível 6</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-64,400,0</font>
+                        <font>Modern Antiqua,-64,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -65,23 +65,23 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>400</x>
+                        <x>405</x>
                         <y>295</y>
                         <z>0</z>
-                        <width>225</width>
+                        <width>235</width>
                         <height>90</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.99000001</opacity>
                     </world>
                 </instance>
                 <instance type="TextIntrosNivel2" uid="597">
                     <properties>
                         <text>&quot;Em que os Portugueses enfrentam uma tempestade provocada pelos deuses&quot;</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-21,400,0</font>
+                        <font>Modern Antiqua,-21,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -195,7 +195,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Kristen ITC,-16,400,0</font>
+                        <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
