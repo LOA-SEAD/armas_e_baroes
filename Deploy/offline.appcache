@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1431365582
+#1431378538
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -104,6 +104,9 @@ media/construir.ogg
 media/largada.ogg
 media/escolha_nivel.ogg
 media/dano.ogg
+media/pers10.ogg
+media/pers11.ogg
+media/pers9.ogg
 media/musicintro.ogg
 media/the%20magic%20of%20reading%20-%20historias.ogg
 media/this%20is%20all%20yours%20-%20rec.ogg

@@ -2516,7 +2516,14 @@
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="0" name="Play" sid="2489578115651344" type="Audio">
+                                            <param id="0" name="Audio file">pers9</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;t1&quot;</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2625,7 +2632,14 @@
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="0" name="Play" sid="4563355056320583" type="Audio">
+                                            <param id="0" name="Audio file">pers10</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;t2&quot;</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2776,7 +2790,14 @@
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="0" name="Play" sid="7115886366677919" type="Audio">
+                                            <param id="0" name="Audio file">pers11</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;t3&quot;</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>

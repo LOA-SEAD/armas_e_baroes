@@ -3552,6 +3552,9 @@
         <file name="largada.ogg" />
         <file name="escolha_nivel.ogg" />
         <file name="dano.ogg" />
+        <file name="pers10.ogg" />
+        <file name="pers11.ogg" />
+        <file name="pers9.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="MusicIntro.ogg" />

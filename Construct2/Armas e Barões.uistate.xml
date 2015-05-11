@@ -14,11 +14,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">ES Nivel 1</event-sheet>
         <event-sheet order="2">ES Nivel 2</event-sheet>
         <event-sheet order="3">ES Nivel 3</event-sheet>
-        <event-sheet order="4">ES Nivel 4</event-sheet>
-        <event-sheet order="5">ES Nivel 5</event-sheet>
-        <event-sheet order="6">ES Nivel 6</event-sheet>
-        <event-sheet order="7">ES Nivel 7</event-sheet>
-        <event-sheet active="1" order="8">ES Nivel 8</event-sheet>
+        <event-sheet active="1" order="4">ES Nivel 4</event-sheet>
+        <event-sheet order="5">ES Nivel 6</event-sheet>
+        <event-sheet order="6">ES Nivel 7</event-sheet>
+        <event-sheet order="7">ES Nivel 8</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
