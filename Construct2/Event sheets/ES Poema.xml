@@ -3,9 +3,59 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Poema</name>
     <events>
+        <variable constant="0" name="pagY" sid="5483950936658724" static="0" type="number">0</variable>
+        <variable constant="0" name="pagX" sid="7401664355349478" static="0" type="number">0</variable>
         <variable constant="0" name="controle_texto" sid="6071305459443426" static="0" type="number">0</variable>
         <event-group description="" sid="9855859728470173" title="Inicializacao">
             <sub-events>
+                <event-block sid="1297559956672664">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5609334385751786" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="3956040871394481" type="TextNumPag">
+                            <param id="0" name="Text">&quot;Página &quot; &amp; pagX &amp; &quot;/&quot; &amp; pagY</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9400308342458908">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3841373948679141" type="System">
+                                    <param id="0" name="Variable">pagX</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="9386234117195619" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1696458622659611" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4177614385609036">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9666693240069637" type="System">
+                                    <param id="0" name="Variable">pagX</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6399603166226426" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="8779906875226501" type="JanelaXbutton">
+                                    <param id="0" name="X">444</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="3631866851079219">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="897718793693822" type="System" />
@@ -15,7 +65,7 @@
                             <param id="0" name="Pin to">PoemaBoxPoesia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="5674647459509677" type="JanelaXbutton">
+                        <action behavior="Pin" disabled="1" id="0" name="Pin to object" sid="5674647459509677" type="JanelaXbutton">
                             <param id="0" name="Pin to">PoemaBoxPoesia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -347,9 +397,6 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="4515170682886788" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="1325075450081824" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;As armas e os barões assinalados,&#x0D;&#x0A;Que da ocidental praia Lusitana,&#x0D;&#x0A;Por mares nunca de antes navegados,&#x0D;&#x0A;Passaram ainda além da Taprobana,&#x0D;&#x0A;Em perigos e guerras esforçados,&#x0D;&#x0A;Mais do que prometia a força humana,&#x0D;&#x0A;E entre gente remota edificaram&#x0D;&#x0A;Novo Reino, que tanto sublimaram;&#x0D;&#x0A;&#x0D;&#x0A;E também as memórias gloriosas&#x0D;&#x0A;Daqueles Reis, que foram dilatando&#x0D;&#x0A;A Fé, o Império, e as terras viciosas&#x0D;&#x0A;De África e de Ásia andaram devastando;&#x0D;&#x0A;E aqueles, que por obras valerosas&#x0D;&#x0A;Se vão da lei da morte libertando;&#x0D;&#x0A;Cantando espalharei por toda parte,&#x0D;&#x0A;Se a tanto me ajudar o engenho e arte.&quot;</param>
                                 </action>
@@ -371,9 +418,6 @@
                                 <action id="-9" name="Set value" sid="2588950890997593" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">200</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="4696066990067708" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="3711356084416753" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Já neste tempo o lúcido Planeta,&#x0D;&#x0A;Que as horas vai do dia distinguindo, &#x0D;&#x0A;Chegava à desejada e lenta meta,&#x0D;&#x0A;A luz celeste às gentes encobrindo,&#x0D;&#x0A;E da casa marítima secreta&#x0D;&#x0A;Lhe estava o Deus Noturno a porta abrindo,&#x0D;&#x0A;Quando as infidas gentes se chegaram&#x0D;&#x0A;As naus, que pouco havia que ancoraram.&#x0D;&#x0A;&#x0D;&#x0A;Dentre eles um, que traz encomendado&#x0D;&#x0A;O mortífero engano, assim dizia:&#x0D;&#x0A;&quot;&quot;Capitão valeroso, que cortado&#x0D;&#x0A;Tens de Neptuno o reino e salsa via,&#x0D;&#x0A;O Rei que manda esta ilha, alvoroçado&#x0D;&#x0A;Da vinda tua, tem tanta alegria,&#x0D;&#x0A;Que não deseja mais que agasalhar-te,&#x0D;&#x0A;Ver-te, e do necessário reformar-te.&quot;</param>
@@ -397,9 +441,6 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">300</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="9165814405315602" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="150412694771273" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Agora tu, Calíope, me ensina &#x0D;&#x0A;O que contou ao Rei o ilustre Gama: &#x0D;&#x0A;Inspira imortal canto e voz divina &#x0D;&#x0A;Neste peito mortal, que tanto te ama. &#x0D;&#x0A;Assim o claro inventor da Medicina, &#x0D;&#x0A;De quem Orfeu pariste, ó linda Dama, &#x0D;&#x0A;Nunca por Dafne, Clície ou Leucotoe, &#x0D;&#x0A;Te negue o amor devido, como soe. &#x0D;&#x0A;&#x0D;&#x0A;Põe tu, Ninfa, em efeito meu desejo, &#x0D;&#x0A;Como merece a gente Lusitana; &#x0D;&#x0A;Que veja e saiba o mundo que do Tejo &#x0D;&#x0A;O licor de Aganipe corre e mana. &#x0D;&#x0A;Deixa as flores de Pindo, que já vejo &#x0D;&#x0A;Banhar-me Apolo na água soberana; &#x0D;&#x0A;Senão direi que tens algum receio, &#x0D;&#x0A;Que se escureça o teu querido Orfeio. &#x0D;&#x0A;&quot;</param>
                                 </action>
@@ -421,9 +462,6 @@
                                 <action id="-9" name="Set value" sid="1621803869332934" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">400</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="5591759528899914" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="3908389208016975" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;&quot;&quot;Depois de procelosa tempestade, &#x0D;&#x0A;Noturna sombra e sibilante vento, &#x0D;&#x0A;Traz a manhã serena claridade, &#x0D;&#x0A;Esperança de porto e salvamento; &#x0D;&#x0A;Aparta o sol a negra escuridade, &#x0D;&#x0A;Removendo o temor do pensamento: &#x0D;&#x0A;Assim no Reino forte aconteceu, &#x0D;&#x0A;Depois que o Rei Fernando faleceu. &#x0D;&#x0A;&#x0D;&#x0A;&quot;&quot;Porque, se muito os nossos desejaram &#x0D;&#x0A;Quem os danos e ofensas vá vingando &#x0D;&#x0A;Naqueles que tão bem se aproveitaram &#x0D;&#x0A;Do descuido remisso de Fernando, &#x0D;&#x0A;Depois de pouco tempo o alcançaram, &#x0D;&#x0A;Joane, sempre ilustre, alevantando &#x0D;&#x0A;Por Rei, como de Pedro único herdeiro,&#x0D;&#x0A;(Ainda que bastardo) verdadeiro. &quot;</param>
@@ -447,9 +485,6 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">500</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="5367676428155056" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="3392310745847543" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;&quot;&quot;Estas sentenças tais o velho honrado&#x0D;&#x0A;Vociferando estava, quando abrimos&#x0D;&#x0A;As asas ao sereno e sossegado&#x0D;&#x0A;Vento, e do porto amado nos partimos.&#x0D;&#x0A;E, como é já no mar costume usado,&#x0D;&#x0A;A vela desfraldando, o céu ferimos,&#x0D;&#x0A;Dizendo: &quot;&quot;Boa viagem&quot;&quot;, logo o vento&#x0D;&#x0A;Nos troncos fez o usado movimento.&#x0D;&#x0A;&#x0D;&#x0A;&quot;&quot;Entrava neste tempo o eterno lume &#x0D;&#x0A;No animal Nemeio truculento,&#x0D;&#x0A;E o mundo, que com tempo se consume, &#x0D;&#x0A;Na sexta idade andava enfermo e lento: &#x0D;&#x0A;Nela vê, como tinha por costume, &#x0D;&#x0A;Cursos do sol quatorze vezes cento, &#x0D;&#x0A;Com mais noventa e sete, em que corria, &#x0D;&#x0A;Quando no mar a armada se estendia.&quot;</param>
                                 </action>
@@ -471,9 +506,6 @@
                                 <action id="-9" name="Set value" sid="905732996585413" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">600</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="7900525503385068" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="7095305478568549" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Não sabia em que modo festejasse &#x0D;&#x0A;O Rei Pagão os fortes navegantes, &#x0D;&#x0A;Para que as amizades alcançasse &#x0D;&#x0A;Do Rei Cristão, das gentes tão possantes; &#x0D;&#x0A;Pesa-lhe que tão longe o aposentasse &#x0D;&#x0A;Das Européias terras abundantes &#x0D;&#x0A;A ventura, que não no fez vizinho &#x0D;&#x0A;Donde Hércules ao mar abriu caminho. &#x0D;&#x0A;&#x0D;&#x0A;Com jogos, danças e outras alegrias, &#x0D;&#x0A;A segundo a polícia Melindana, &#x0D;&#x0A;Com usadas e ledas pescarias, &#x0D;&#x0A;Com que a Lageia António alegra e engana &#x0D;&#x0A;Este famoso Rei, todos os dias, &#x0D;&#x0A;Festeja a companhia Lusitana, &#x0D;&#x0A;Com banquetes, manjares desusados, &#x0D;&#x0A;Com frutas, aves, carnes e pescados. &quot;</param>
@@ -497,9 +529,6 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">700</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="3327737157394346" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="2930149396511251" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Já se viam chegados junto à terra, &#x0D;&#x0A;Que desejada já de tantos fora, &#x0D;&#x0A;Que entre as correntes Indicas se encerra, &#x0D;&#x0A;E o Ganges, que no céu terreno mora. &#x0D;&#x0A;Ora, sus, gente forte, que na guerra &#x0D;&#x0A;Quereis levar a palma vencedora, &#x0D;&#x0A;Já sois chegados, já tendes diante &#x0D;&#x0A;A terra de riquezas abundante. &#x0D;&#x0A;&#x0D;&#x0A;A vós, ó geração de Luso, digo, &#x0D;&#x0A;Que tão pequena parte sois no inundo; &#x0D;&#x0A;Não digo ainda no mundo, mas no amigo &#x0D;&#x0A;Curral de quem governa o céu rotundo; &#x0D;&#x0A;Vós, a quem não somente algum perigo &#x0D;&#x0A;Estorva conquistar o povo imundo, &#x0D;&#x0A;Mas nem cobiça, ou pouca obediência &#x0D;&#x0A;Da Madre, que nos céus está em essência; &quot;</param>
                                 </action>
@@ -521,9 +550,6 @@
                                 <action id="-9" name="Set value" sid="4263187122553606" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">800</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="3733994581242283" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="853204669314698" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Na primeira figura se detinha&#x0D;&#x0A;O Catual que vira estar pintada,&#x0D;&#x0A;Que por divisa um ramo na mão tinha,&#x0D;&#x0A;A barba branca, longa e penteada:&#x0D;&#x0A;&quot;&quot;Quem era, e por que causa lhe convinha&#x0D;&#x0A;A divisa, que tem na mão tomada?&quot;&quot;&#x0D;&#x0A;Paulo responde, cuja voz discreta&#x0D;&#x0A;O Mauritano sábio lhe interpreta.&#x0D;&#x0A;&#x0D;&#x0A;&quot;&quot;Estas figuras todas que aparecem,&#x0D;&#x0A;Bravos em vista e feros nos aspectos,&#x0D;&#x0A;Mais bravos e mais feros se conhecem,&#x0D;&#x0A;Pela fama, nas obras e nos feitos:&#x0D;&#x0A;Antigos são, mas ainda resplandecem&#x0D;&#x0A;Colo nome, entre os engenhos mais perfeito&#x0D;&#x0A;Este que vês é Luso, donde a fama&#x0D;&#x0A;O nosso Reino Lusitânia chama.&quot;</param>
@@ -547,9 +573,6 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">900</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="87652005012854" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="3199273719180846" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Tiveram longamente na cidade, &#x0D;&#x0A;Sem vender-se, a fazenda os dois feitores &#x0D;&#x0A;Que os infiéis, por manha e falsidade, &#x0D;&#x0A;Fazem que não lha comprem mercadores; &#x0D;&#x0A;Que todo seu propósito e vontade &#x0D;&#x0A;Era deter ali os descobridores &#x0D;&#x0A;Da Índia tanto tempo, que viessem &#x0D;&#x0A;De Meca as naus, que as suas desfizessem. &#x0D;&#x0A;&#x0D;&#x0A;Lá no seio Eritreu, onde fundada &#x0D;&#x0A;Arsínoe foi do Egípcio Ptolomeu, &#x0D;&#x0A;Do nome da irmã sua assim chamada, &#x0D;&#x0A;Que depois em Suez se converteu, &#x0D;&#x0A;Não longe o porto jaz da nomeada &#x0D;&#x0A;Cidade Meca, que se engrandeceu &#x0D;&#x0A;Com a superstição falsa e profana &#x0D;&#x0A;Da religiosa água Maumetana. &quot;</param>
                                 </action>
@@ -571,9 +594,6 @@
                                 <action id="-9" name="Set value" sid="2931085734096121" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">1000</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="6304650049715497" type="JanelaXbutton">
-                                    <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="6056520284843642" type="TextoPoesia">
                                     <param id="0" name="Text">&quot;&#x0D;&#x0A;Mas já o claro amador da Larisséia&#x0D;&#x0A;Adúltera inclinava os animais&#x0D;&#x0A;Lá pera o grande lago que rodeia&#x0D;&#x0A;Temistitão, nos fins Ocidentais;&#x0D;&#x0A;O grande ardor do Sol Favónio enfreia&#x0D;&#x0A;Co sopro que nos tanques naturais&#x0D;&#x0A;Encrespa a água serena e despertava&#x0D;&#x0A;Os lírios e jasmins, que a calma agrava,&#x0D;&#x0A;&#x0D;&#x0A;Quando as fermosas Ninfas, cos amantes&#x0D;&#x0A;Pela mão, já conformes e contentes,&#x0D;&#x0A;Subiam pera os paços radiantes&#x0D;&#x0A;E de metais ornados reluzentes,&#x0D;&#x0A;Mandados da Rainha, que abundantes&#x0D;&#x0A;Mesas d&apos;altos manjares excelentes&#x0D;&#x0A;Lhe tinha aparelhados, que a fraqueza&#x0D;&#x0A;Restaurem da cansada natureza.&quot;</param>
@@ -606,6 +626,12 @@
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="4827856733403956" type="Audio">
+                                    <param id="0" name="Audio file">paginaVirando</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;pagina&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5742887315083467">
@@ -618,6 +644,12 @@
                                 <action id="-11" name="Subtract from" sid="1948337691315147" type="System">
                                     <param id="0" name="Variable">controle_texto</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="403514195623391" type="Audio">
+                                    <param id="0" name="Audio file">paginaVirando</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;pagina&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1836,9 +1868,6 @@
                                         <action id="-9" name="Set value" sid="3052841185261321" type="System">
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="4804822761209463" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="5090790916887631" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;O recado que trazem é de amigos,&#x0D;&#x0A;Mas debaixo o veneno vem coberto;&#x0D;&#x0A;Que os pensamentos eram de inimigos,&#x0D;&#x0A;Segundo foi o engano descoberto.&#x0D;&#x0A;Ó grandes e gravíssimos perigos!&#x0D;&#x0A;Ó caminho de vida nunca certo: &#x0D;&#x0A;Que aonde a gente põe sua esperança,&#x0D;&#x0A;Tenha a vida tão pouca segurança!&#x0D;&#x0A;&#x0D;&#x0A;No mar tanta tormenta, e tanto dano,&#x0D;&#x0A;Tantas vezes a morte apercebida!&#x0D;&#x0A;Na terra tanta guerra, tanto engano,&#x0D;&#x0A;Tanta necessidade avorrecida!&#x0D;&#x0A;Onde pode acolher-se um fraco humano,&#x0D;&#x0A;Onde terá segura a curta vida,&#x0D;&#x0A;Que não se arme, e se indigne o Céu sereno&#x0D;&#x0A;Contra um bicho da terra tão pequeno?&quot;</param>
@@ -3154,9 +3183,6 @@
                                         <action id="-9" name="Set value" sid="1980883065079439" type="System">
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="8209772615916399" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="3207540544615812" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;&quot;&quot;Queimou o sagrado templo de Diana,&#x0D;&#x0A;Do subtil Tesifónio fabricado,&#x0D;&#x0A;Heróstrato, por ser da gente humana&#x0D;&#x0A;Conhecido no mundo e nomeado:&#x0D;&#x0A;Se também com tais obras nos engana&#x0D;&#x0A;O desejo de um nome avantajado,&#x0D;&#x0A;Mais razão há que queira eterna glória&#x0D;&#x0A;Quem faz obras tão dignas de memória.&quot;&quot; &quot;</param>
@@ -4818,9 +4844,6 @@
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="6942702013540939" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="1101268483931584" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;&quot;&quot;Quem viu um olhar seguro, um gesto brando,&#x0D;&#x0A;Uma suave e angélica excelência,&#x0D;&#x0A;Que em si está sempre as almas transformando,&#x0D;&#x0A;Que tivesse contra ela resistência?&#x0D;&#x0A;Desculpado por certo está Fernando,&#x0D;&#x0A;Para quem tem de amor experiência;&#x0D;&#x0A;Mas antes, tendo livre a fantasia,&#x0D;&#x0A;Por muito mais culpado o julgaria.&quot;</param>
                                         </action>
@@ -6021,9 +6044,6 @@
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="9614894482541567" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="9840548275550276" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;- &quot;&quot;Trouxe o filho de Jápeto do Céu&#x0D;&#x0A;O fogo que ajuntou ao peito humano,&#x0D;&#x0A;Fogo que o mundo em armas acendeu&#x0D;&#x0A;Em mortes, em desonras (grande engano).&#x0D;&#x0A;Quanto melhor nos fora, Prometeu,&#x0D;&#x0A;E quanto para o mundo menos dano,&#x0D;&#x0A;Que a tua estátua ilustre não tivera&#x0D;&#x0A;Fogo de altos desejos, que a movera!&#x0D;&#x0A;&#x0D;&#x0A;- &quot;&quot;Não cometera o moço miserando&#x0D;&#x0A;O carro alto do pai, nem o ar vazio&#x0D;&#x0A;O grande Arquiteto co&apos;o filho, dando&#x0D;&#x0A;Um, nome ao mar, e o outro, fama ao rio.&#x0D;&#x0A;Nenhum cometimento alto e nefando,&#x0D;&#x0A;Por fogo, ferro, água, calma e frio,&#x0D;&#x0A;Deixa intentado a humana geração.&#x0D;&#x0A;Mísera sorte, estranha condição!&quot;&quot; &quot;</param>
                                         </action>
@@ -7177,9 +7197,6 @@
                                         <action id="-9" name="Set value" sid="5390491492353248" type="System">
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="7865231057283377" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="1574847634082349" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;As Musas agradeça o nosso Gama&#x0D;&#x0A;o Muito amor da Pátria, que as obriga&#x0D;&#x0A;A dar aos seus na lira nome e fama&#x0D;&#x0A;De toda a ilustro e bélica fadiga:&#x0D;&#x0A;Que ele, nem quem na estirpe seu se chama,&#x0D;&#x0A;Calíope não tem por tão amiga,&#x0D;&#x0A;Nem as filhas do Tejo, que deixassem&#x0D;&#x0A;As telas douro fino, e que o cantassem.&#x0D;&#x0A;&#x0D;&#x0A;Porque o amor fraterno e puro gosto&#x0D;&#x0A;De dar a todo o Lusitano feito&#x0D;&#x0A;Seu louvor, é somente o pressuposto&#x0D;&#x0A;Das Tágides gentis, e seu respeito.&#x0D;&#x0A;Porém não deixe enfim de ter disposto&#x0D;&#x0A;Ninguém a grandes obras sempre o peito,&#x0D;&#x0A;Que por esta, ou por outra qualquer via,&#x0D;&#x0A;Não perderá seu preço, e sua valia.&quot;</param>
@@ -8335,9 +8352,6 @@
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="5662822656342433" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="1738107979790134" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;Destarte se esclarece o entendimento,&#x0D;&#x0A;Que experiências fazem repousado,&#x0D;&#x0A;E fica vendo, corno de alto assento,&#x0D;&#x0A;O baixo trato humano embaraçado.&#x0D;&#x0A;Este, onde tiver força o regimento&#x0D;&#x0A;Direito, e não de afeitos ocupado,&#x0D;&#x0A;Subirá (como deve) a ilustre mando,&#x0D;&#x0A;Contra vontade sua, e não rogando.&quot;</param>
                                         </action>
@@ -9353,9 +9367,6 @@
                                         <action id="-9" name="Set value" sid="1322382686379537" type="System">
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="3169417783976555" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="1525377785674325" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;Aqueles sós direi, que aventuraram &#x0D;&#x0A;Por seu Deus, por seu Rei, a amada vida,&#x0D;&#x0A;Onde, perdendo-a, em fama a dilataram,&#x0D;&#x0A;Tão bem de suas obras merecida. &#x0D;&#x0A;Apolo, e as Musas que me acompanharam, &#x0D;&#x0A;Me dobrarão a fúria concedida, &#x0D;&#x0A;Enquanto eu tomo alento descansado,&#x0D;&#x0A;Por tornar ao trabalho, mais folgado.&quot;</param>
@@ -10511,9 +10522,6 @@
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="8601402425583555" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="7524288179596062" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;Este interpreta mais que sutilmente. &#x0D;&#x0A;Os textos; este faz e desfaz leis; &#x0D;&#x0A;Este causa os perjúrios entre a gente, &#x0D;&#x0A;E mil vezes tiranos torna os Reis. &#x0D;&#x0A;Até os que só a Deus Onipotente &#x0D;&#x0A;Se dedicam, mil vezes ouvireis &#x0D;&#x0A;Que corrompe este encantador, e ilude; &#x0D;&#x0A;Mas não sem cor, contudo, de virtude.&quot;</param>
                                         </action>
@@ -11625,9 +11633,6 @@
                                         <action id="-9" name="Set value" sid="3025081674808904" type="System">
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="4843712173642066" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="6043466252234875" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;E fareis claro o Rei, que tanto amais, &#x0D;&#x0A;Agora com os conselhos bem cuidados, &#x0D;&#x0A;Agora com as espadas, que imortais &#x0D;&#x0A;Vos farão, como os vossos já passados; &#x0D;&#x0A;Impossibilidades não façais, &#x0D;&#x0A;Que quem quis sempre pôde; e numerados &#x0D;&#x0A;Sereis entre os Heróis esclarecidos, &#x0D;&#x0A;E nesta Ilha de Vénus recebidos.&quot;</param>
@@ -13427,9 +13432,6 @@
                                             <param id="0" name="Variable">aux</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="7930348513801496" type="JanelaXbutton">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="8609911949476372" type="TextoPoesia">
                                             <param id="0" name="Text">&quot;&#x0D;&#x0A;Pera servir-vos, braço às armas feito, &#x0D;&#x0A;Pera cantar-vos, mente às Musas dada; &#x0D;&#x0A;Só me falece ser a vós aceito, &#x0D;&#x0A;De quem virtude deve ser prezada. &#x0D;&#x0A;Se me isto o Céu concede, e o vosso peito &#x0D;&#x0A;Dina empresa tomar de ser cantada, &#x0D;&#x0A;Como a pres[s]aga mente vaticina &#x0D;&#x0A;Olhando a vossa inclinação divina, &#x0D;&#x0A;&#x0D;&#x0A;Ou fazendo que, mais que a de Medusa,&#x0D;&#x0A;A vista vossa tema o monte Atlante,&#x0D;&#x0A;Ou rompendo nos campos de Ampelusa&#x0D;&#x0A;Os muros de Marrocos e Trudante,&#x0D;&#x0A;A minha já estimada e leda Musa&#x0D;&#x0A;Fico que em todo o mundo de vós cante,&#x0D;&#x0A;De sorte que Alexandro em vós se veja,&#x0D;&#x0A;Sem à dita de Aquiles ter enveja.&quot;</param>
                                         </action>
@@ -13437,6 +13439,615 @@
                                 </event-block>
                             </sub-events>
                         </event-group>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2017360405029915" title="Paginação">
+            <sub-events>
+                <event-block sid="3649572604734854">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1526239110028137" type="System" />
+                        <condition id="-14" name="Compare variable" sid="5642069960398745" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8100674746259961" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">153</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1055431959992126" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">53</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4102594433375402" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 99</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4179399864690699">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6978617018364001" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="4729045839789749" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6785129008639316">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1286790991598872" type="System" />
+                        <condition id="-14" name="Compare variable" sid="1972706677911489" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">200</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="481443011437285" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">257</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="505266646505072" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">57</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3056791880645417" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 199</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6282333167640336">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7248056084845685" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="5325943427522012" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2596882606895234">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3588780384074361" type="System" />
+                        <condition id="-14" name="Compare variable" sid="8573624131146365" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">300</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3367844050063707" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">372</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3598762101426093" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">72</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7745009072807015" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 299</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6598619892758022">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5771410254424764" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1832542735173999" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5160258477262957">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5793979172588094" type="System" />
+                        <condition id="-14" name="Compare variable" sid="320372072658932" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">400</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6755786087616782" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">452</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5159224982184104" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">52</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5789659651431572" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 399</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6984502077355539">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5638033934369377" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="3546192442441148" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8676064657044214">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8691529368808511" type="System" />
+                        <condition id="-14" name="Compare variable" sid="3035521454692003" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">500</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8941570096439072" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">550</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3120071123406208" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9948393689186842" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 499</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="619878238179721">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1985260030386823" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="8620040056989638" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8271008978236684">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8613704009499086" type="System" />
+                        <condition id="-14" name="Compare variable" sid="124956730970136" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">600</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7196269550894046" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">650</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5175514336381776" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5958886288431581" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 599</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4266818868153899">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7618414730511359" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1176889482892423" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="46331211484932">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="9977140393951943" type="System" />
+                        <condition id="-14" name="Compare variable" sid="7666436403599753" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">700</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1778614849185665" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">744</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5490561895187442" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">44</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4718938846508358" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 699</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3205246573079748">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8469190524595028" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9754311482175144" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3068353257968834">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="172555082832164" type="System" />
+                        <condition id="-14" name="Compare variable" sid="1149888920055145" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">800</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="129266414051522" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">850</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2807042440705718" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2808625620685774" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 799</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8872858029998793">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="658082182706561" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9809897131399348" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8589642164030236">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="529194340477671" type="System" />
+                        <condition id="-14" name="Compare variable" sid="2221984071249152" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">900</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5754344625707231" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">948</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7510215543621214" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">48</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5113282755814041" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 899</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6515769486170478">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1062578394050352" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="2777857305107006" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9817228648935565">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1458773152390306" type="System" />
+                        <condition id="-14" name="Compare variable" sid="4730917510421332" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1000</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4099780256113645" type="System">
+                            <param id="0" name="Variable">controle_texto</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1078</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6702470575008029" type="System">
+                            <param id="0" name="Variable">pagY</param>
+                            <param id="1" name="Value">78</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2367184916639232" type="System">
+                            <param id="0" name="Variable">pagX</param>
+                            <param id="1" name="Value">controle_texto - 999</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5572684788956252">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8233960766150301" type="JanelaXbutton">
+                                    <param id="0" name="Instance variable">disable</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="2185128858611727" type="JanelaXbutton">
+                                    <param id="0" name="X">756</param>
+                                    <param id="1" name="Y">533</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9197289913735343">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1220868519725929" type="JanelaXbutton">
+                            <param id="0" name="Instance variable">disable</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5078590073832846">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8377135030395116" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">152</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="3050327815052143" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">200</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="5824238539168498" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="413848193849646">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4389225812171684" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">256</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="4154684691525899" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">300</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="424886734390977" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2963422753552857">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3868219213589779" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">371</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="1970540625384884" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">400</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1582168528021431" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9266745397939714">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7154024936493646" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">451</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="3989095206265193" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="2464914646244866" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8585894249674462">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9493579889105388" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">549</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="790407847033467" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">600</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="3526814654989924" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7514081649150994">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9562655480510023" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">649</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="6312551589543714" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">700</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="6184557435188788" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="818063589538057">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5804681174821752" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">743</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8966446394179062" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">800</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="4201105992986382" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8463439360850256">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2941070533058431" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">849</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="3053831697678303" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">900</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="3367529202685552" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4938732204138645">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7238076508163337" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">947</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="249253495711636" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">1000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9794348088205774" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2895941480846517">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="617804885022679" type="System">
+                                    <param id="0" name="Variable">controle_texto</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1077</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="8699726139268313" type="JanelaXbutton">
+                                    <param id="0" name="X">850</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>

@@ -37,6 +37,21 @@
                             <param id="0" name="Variable">precoTorre3</param>
                             <param id="1" name="Value">150</param>
                         </action>
+                        <action id="-18" name="Set layer opacity" sid="4218117705807139" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="9789291166845287" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="9148905572894269" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="763176247924779" type="TextPause">
+                            <param id="0" name="Y">-200</param>
+                        </action>
                         <action id="-10" name="Set value" sid="5749841886594104" type="GUIlife">
                             <param id="0" name="Instance variable">maxlife</param>
                             <param id="1" name="Value">vidas</param>
@@ -64,7 +79,7 @@
                         <action id="0" name="Play" sid="2278957844509357" type="Audio">
                             <param id="0" name="Audio file">You Shall Not Pass</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
                         </action>
                         <action id="4" name="Set animation" sid="3218384935906514" type="GUIcompraTorres">
@@ -204,7 +219,14 @@
                             <param id="0" name="Object">GUIbotao</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="7379046440514266" type="Audio">
+                            <param id="0" name="Audio file">largada</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="1661092370042171">
                             <conditions>
@@ -272,7 +294,7 @@
                             <param id="0" name="Text">gold</param>
                         </action>
                         <action id="0" name="Set text" sid="9122200041630394" type="TextGUIturno">
-                            <param id="0" name="Text">&quot;Turno &quot; &amp; Spawner.wave</param>
+                            <param id="0" name="Text">&quot;Turno &quot; &amp; Spawner.wave &amp; &quot;/15&quot;</param>
                         </action>
                         <action id="5" name="Set frame" sid="6375710355383467" type="GUIbotaoPause">
                             <param id="0" name="Frame number">pause</param>
@@ -317,7 +339,7 @@
         </event-group>
         <event-group description="Cria os monstros no mapa" sid="1423916391652937" title="Spawner">
             <sub-events>
-                <comment>Adicionar Cada wave aqui - Para mais waves é sé copiar a estrutura</comment>
+                <comment>Adicionar Cada wave aqui - Para mais waves é só copiar a estrutura</comment>
                 <event-block sid="8682318360650217">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="7000885515699756" type="Spawner">
@@ -363,7 +385,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="4902528997282384" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="813286531596296" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -404,105 +426,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="9869351887431364" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">14</param>
+                                    <param id="1" name="Value">16</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="2794557845173508" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
                                     <param id="1" name="Value">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="4427488130711473">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="6141167036700285" type="Spawner">
-                            <param id="0" name="Instance variable">wave</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="4142397307233672">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="6003420440901425" type="System">
-                                    <param id="0" name="Interval (seconds)">(Spawner.spawnTime)/(speed+1)</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="3544022190576719" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="2208862568733597" type="Spawner">
-                                    <param id="0" name="Object">Monstro</param>
-                                    <param id="1" name="Layer">&quot;main&quot;</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="3273962254490798" type="Monstro">
-                                    <param id="0" name="Animation">&quot;Nivel8&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="1076558105319034" type="Monstro">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="9391448819386772" type="Monstro">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="3658106679579139" type="Monstro">
-                                    <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">45</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="208386766585677" type="Monstro">
-                                    <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">7</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="199011814075875" type="Monstro">
-                                    <param id="0" name="Instance variable">slow</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="9387241274185392" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="496332375856776">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="1044207948945052" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="204423879609379" type="System">
-                                    <param id="0" name="First value">Monstro.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="2434032830479864" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="4178988119857673" type="Spawner">
-                                    <param id="0" name="Instance variable">waitEntreWaves</param>
-                                    <param id="1" name="Value">5/(speed+1)</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="2768885166552908" type="System">
-                                    <param id="0" name="Seconds">Spawner.waitEntreWaves</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="8155501581932544" type="Spawner">
-                                    <param id="0" name="Instance variable">spawnTime</param>
-                                    <param id="1" name="Value">1.3</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="9832670635372157" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">16</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="4688420055046224" type="Spawner">
-                                    <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -513,7 +441,7 @@
                         <condition id="-7" name="Compare instance variable" sid="4090640104829673" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -552,7 +480,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="609193686058869" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">6</param>
+                                    <param id="1" name="Value">8</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="3430960650269765" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -592,117 +520,22 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2361605996565567" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">18</param>
+                                    <param id="1" name="Value">20</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6822256353666475" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">4</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="7909618963035814">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="4582597625620764" type="Spawner">
-                            <param id="0" name="Instance variable">wave</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="7386682206151327">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="8644891456214896" type="System">
-                                    <param id="0" name="Interval (seconds)">(Spawner.spawnTime)/(speed+1)</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="3344969326158844" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="6098450712323824" type="Spawner">
-                                    <param id="0" name="Object">Monstro</param>
-                                    <param id="1" name="Layer">&quot;main&quot;</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="5685462307146345" type="Monstro">
-                                    <param id="0" name="Animation">&quot;Nivel8&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="912791184912962" type="Monstro">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="8754268607451949" type="Monstro">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">26</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="5741283157844006" type="Monstro">
-                                    <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">55</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="4942886929948587" type="Monstro">
-                                    <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">6</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="630657708594445" type="Monstro">
-                                    <param id="0" name="Instance variable">slow</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="6097548630834877" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="3683822509831455">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="9445254923936189" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="7818631378860485" type="System">
-                                    <param id="0" name="First value">Monstro.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="9469751587071391" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="8554115452080494" type="Spawner">
-                                    <param id="0" name="Instance variable">waitEntreWaves</param>
-                                    <param id="1" name="Value">5/(speed+1)</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="7242077766243241" type="System">
-                                    <param id="0" name="Seconds">Spawner.waitEntreWaves</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="6274468738596827" type="Spawner">
-                                    <param id="0" name="Instance variable">spawnTime</param>
-                                    <param id="1" name="Value">1.3</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="8234882406258365" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="1516590979803066" type="Spawner">
-                                    <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>Quinta *</comment>
                 <event-block sid="1867057927077444">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="3949973686687517" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
+                            <param id="2" name="Value">3</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -741,7 +574,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="826545636630473" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="7394185687018109" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -781,105 +614,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1230966681524737" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">14</param>
+                                    <param id="1" name="Value">16</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6390866365905631" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">6</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="9761030847324173">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="3613824978393109" type="Spawner">
-                            <param id="0" name="Instance variable">wave</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">6</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="9453477931200789">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="401231078416797" type="System">
-                                    <param id="0" name="Interval (seconds)">(Spawner.spawnTime)/(speed+1)</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="3625212185157712" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="9553399419483635" type="Spawner">
-                                    <param id="0" name="Object">Monstro</param>
-                                    <param id="1" name="Layer">&quot;main&quot;</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="2881887645633808" type="Monstro">
-                                    <param id="0" name="Animation">&quot;Nivel8&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="9684469431259646" type="Monstro">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="5915321815262187" type="Monstro">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">35</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="2265138628308114" type="Monstro">
-                                    <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">60</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="2532633845670253" type="Monstro">
-                                    <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">7</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="8380773866638092" type="Monstro">
-                                    <param id="0" name="Instance variable">slow</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="5300649504940172" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7181273652105092">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="1024095035004697" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="2188940132731253" type="System">
-                                    <param id="0" name="First value">Monstro.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="733812763900721" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="8875365323299343" type="Spawner">
-                                    <param id="0" name="Instance variable">waitEntreWaves</param>
-                                    <param id="1" name="Value">5/(speed+1)</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="1452732549044404" type="System">
-                                    <param id="0" name="Seconds">Spawner.waitEntreWaves</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="6712959539200576" type="Spawner">
-                                    <param id="0" name="Instance variable">spawnTime</param>
-                                    <param id="1" name="Value">1.3</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="880394801753529" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">16</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="9799671766139496" type="Spawner">
-                                    <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">7</param>
+                                    <param id="1" name="Value">4</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -890,7 +629,7 @@
                         <condition id="-7" name="Compare instance variable" sid="1662950025650791" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">7</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -929,7 +668,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="926086984717345" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">6</param>
+                                    <param id="1" name="Value">8</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="7439888471608792" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -973,18 +712,19 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2880505174531175" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">8</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Quinta *</comment>
                 <event-block sid="4454924931292638">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="9130988361715591" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1023,7 +763,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2018835328195132" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="5121459132855246" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -1063,117 +803,22 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="5243234752675297" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">12</param>
+                                    <param id="1" name="Value">20</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="9464988759479665" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">9</param>
+                                    <param id="1" name="Value">6</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="1068626285098709">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="8206439961421126" type="Spawner">
-                            <param id="0" name="Instance variable">wave</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">9</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="7658973761179614">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="7853626216204248" type="System">
-                                    <param id="0" name="Interval (seconds)">(Spawner.spawnTime)/(speed+1)</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="6494276686743399" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="2283299373736534" type="Spawner">
-                                    <param id="0" name="Object">Monstro</param>
-                                    <param id="1" name="Layer">&quot;main&quot;</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="9127598111845368" type="Monstro">
-                                    <param id="0" name="Animation">&quot;Nivel8&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="2444504286711669" type="Monstro">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="4517694733307078" type="Monstro">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">49</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="8462818978284325" type="Monstro">
-                                    <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">65</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="7496806308961514" type="Monstro">
-                                    <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">8</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="7625394742893491" type="Monstro">
-                                    <param id="0" name="Instance variable">slow</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="1176083294010108" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="6977194888956421">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="4315032102221829" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="1935585222166151" type="System">
-                                    <param id="0" name="First value">Monstro.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="1790856273279658" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="1516170866331186" type="Spawner">
-                                    <param id="0" name="Instance variable">waitEntreWaves</param>
-                                    <param id="1" name="Value">5/(speed+1)</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="2697572435314276" type="System">
-                                    <param id="0" name="Seconds">Spawner.waitEntreWaves</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="9373830913529764" type="Spawner">
-                                    <param id="0" name="Instance variable">spawnTime</param>
-                                    <param id="1" name="Value">1.3</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="7399746964291163" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="4411196325530858" type="Spawner">
-                                    <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>Decima *</comment>
                 <event-block sid="937203896072835">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="7012012630784917" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">10</param>
+                            <param id="2" name="Value">6</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1212,7 +857,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="849915826845073" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="5005985721024954" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -1256,7 +901,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1512275721826645" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">11</param>
+                                    <param id="1" name="Value">7</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1267,7 +912,7 @@
                         <condition id="-7" name="Compare instance variable" sid="2120180072200825" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">11</param>
+                            <param id="2" name="Value">7</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1306,7 +951,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="179090664169382" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">6</param>
+                                    <param id="1" name="Value">8</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6684841723604645" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -1350,7 +995,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="4707241012513251" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">12</param>
+                                    <param id="1" name="Value">8</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1361,7 +1006,7 @@
                         <condition id="-7" name="Compare instance variable" sid="3802922174632954" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">12</param>
+                            <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1400,7 +1045,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1534754318483206" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">7</param>
+                                    <param id="1" name="Value">9</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="9934953904315382" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -1440,105 +1085,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="6827153667470795" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">14</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="2865029102438763" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">13</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="135896168665536">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="7501340176471345" type="Spawner">
-                            <param id="0" name="Instance variable">wave</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">13</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="561394591045974">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="1720486077254189" type="System">
-                                    <param id="0" name="Interval (seconds)">(Spawner.spawnTime)/(speed+1)</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="7067410168855573" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="9687060341749956" type="Spawner">
-                                    <param id="0" name="Object">Monstro</param>
-                                    <param id="1" name="Layer">&quot;main&quot;</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="347477445534067" type="Monstro">
-                                    <param id="0" name="Animation">&quot;Nivel8&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="5682511946447074" type="Monstro">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="2471200389680315" type="Monstro">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">66</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="9220410521950336" type="Monstro">
-                                    <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">75</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="1739536076395922" type="Monstro">
-                                    <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">8</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="3237669862357348" type="Monstro">
-                                    <param id="0" name="Instance variable">slow</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="4513035299349894" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="1015644201979624">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="1592364273227956" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="8660747987587909" type="System">
-                                    <param id="0" name="First value">Monstro.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="8662107077302249" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="5416089067095067" type="Spawner">
-                                    <param id="0" name="Instance variable">waitEntreWaves</param>
-                                    <param id="1" name="Value">5/(speed+1)</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="9888193217618217" type="System">
-                                    <param id="0" name="Seconds">Spawner.waitEntreWaves</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="2055606654652031" type="Spawner">
-                                    <param id="0" name="Instance variable">spawnTime</param>
-                                    <param id="1" name="Value">1.3</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="3636737660613709" type="Spawner">
-                                    <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">12</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="3131994609584336" type="Spawner">
-                                    <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">14</param>
+                                    <param id="1" name="Value">9</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1549,7 +1100,7 @@
                         <condition id="-7" name="Compare instance variable" sid="6428933814807236" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">14</param>
+                            <param id="2" name="Value">9</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1588,7 +1139,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="8182689415093448" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
-                                    <param id="1" name="Value">9</param>
+                                    <param id="1" name="Value">10</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6657711390406857" type="Monstro">
                                     <param id="0" name="Instance variable">slow</param>
@@ -1632,19 +1183,19 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1987672805673733" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">15</param>
+                                    <param id="1" name="Value">10</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>Decima quinta *</comment>
+                <comment>Decima *</comment>
                 <event-block sid="8680449528707777">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="6380511510949542" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">15</param>
+                            <param id="2" name="Value">10</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1727,7 +1278,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="5753532650670955" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">16</param>
+                                    <param id="1" name="Value">11</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1738,7 +1289,7 @@
                         <condition id="-7" name="Compare instance variable" sid="1108408840619883" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">16</param>
+                            <param id="2" name="Value">11</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1769,7 +1320,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="4190928952629345" type="Monstro">
                                     <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">86</param>
+                                    <param id="1" name="Value">106</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="4749142987702789" type="Monstro">
                                     <param id="0" name="Instance variable">speed</param>
@@ -1821,7 +1372,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="5990475719444419" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">17</param>
+                                    <param id="1" name="Value">12</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1832,7 +1383,7 @@
                         <condition id="-7" name="Compare instance variable" sid="8505504125188912" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">17</param>
+                            <param id="2" name="Value">12</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1863,7 +1414,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1999115892860717" type="Monstro">
                                     <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">91</param>
+                                    <param id="1" name="Value">111</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="5383567420190225" type="Monstro">
                                     <param id="0" name="Instance variable">speed</param>
@@ -1915,7 +1466,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2583232011921384" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">18</param>
+                                    <param id="1" name="Value">13</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1926,7 +1477,7 @@
                         <condition id="-7" name="Compare instance variable" sid="2062785734352006" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">18</param>
+                            <param id="2" name="Value">13</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1957,7 +1508,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2834870077519676" type="Monstro">
                                     <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">106</param>
+                                    <param id="1" name="Value">126</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6117777666927825" type="Monstro">
                                     <param id="0" name="Instance variable">speed</param>
@@ -2005,11 +1556,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1204510132964505" type="Spawner">
                                     <param id="0" name="Instance variable">numMonstros</param>
-                                    <param id="1" name="Value">2</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="1864221226847265" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">19</param>
+                                    <param id="1" name="Value">14</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2020,7 +1571,7 @@
                         <condition id="-7" name="Compare instance variable" sid="8680529512684906" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">19</param>
+                            <param id="2" name="Value">14</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2051,11 +1602,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="9974477686229549" type="Monstro">
                                     <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">123</param>
+                                    <param id="1" name="Value">140</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="941339742465172" type="Monstro">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">85</param>
+                                    <param id="1" name="Value">80</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="1058430185538301" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
@@ -2103,19 +1654,19 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="5586973865064177" type="Spawner">
                                     <param id="0" name="Instance variable">wave</param>
-                                    <param id="1" name="Value">20</param>
+                                    <param id="1" name="Value">15</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>Oitava e ultima wave</comment>
+                <comment>Decima quinta e última wave</comment>
                 <event-block sid="5975290664557427">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="390906399704566" type="Spawner">
                             <param id="0" name="Instance variable">wave</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">20</param>
+                            <param id="2" name="Value">15</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2146,11 +1697,11 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="5983463520501931" type="Monstro">
                                     <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">178</param>
+                                    <param id="1" name="Value">193</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="3775163653788593" type="Monstro">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">95</param>
+                                    <param id="1" name="Value">86</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="9724046370189872" type="Monstro">
                                     <param id="0" name="Instance variable">goldGain</param>
@@ -2179,6 +1730,11 @@
                                     <param id="2" name="Second value">0</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="235547621641173" type="System" />
+                                <condition id="-14" name="Compare variable" sid="5703952623448561" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="2" name="Set at X" sid="3495112086698687" type="niveis">
@@ -2193,11 +1749,44 @@
                                     <param id="0" name="Variable">pontuacao</param>
                                     <param id="1" name="Value">(vidas*8) + (gold*4) + 800</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="9796082278596249" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="4503374220018954" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Value">8</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="6048874102736373" type="System">
+                                    <param id="0" name="Layout">Tela Liberados</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5110607537067346">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="416937830008821" type="Spawner">
+                                    <param id="0" name="Instance variable">numMonstros</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="1633130903879478" type="System">
+                                    <param id="0" name="First value">Monstro.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="7507810261513254" type="System" />
+                                <condition id="-14" name="Compare variable" sid="1613121871368146" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9795694283219116" type="System">
+                                    <param id="0" name="Variable">nivelTerminado</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="772148251147313" type="System">
                                     <param id="0" name="Layout">Tela Liberados</param>
                                 </action>
                             </actions>
@@ -2522,6 +2111,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="934151050513435" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="7158816880379704" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -2571,6 +2166,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="687040562060973" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="8408416792525162" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -2620,6 +2221,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="8885881026317476" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="1685681523586024" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -2827,6 +2434,12 @@
                                     <actions>
                                         <action id="0" name="Set cursor style" sid="3198932459496233" type="Mouse">
                                             <param id="0" name="Cursor style">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="5154841427571384" type="Audio">
+                                            <param id="0" name="Audio file">construir</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">volume</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -3262,6 +2875,12 @@
                             <param id="0" name="Variable">vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Play" sid="7622195256016762" type="Audio">
+                            <param id="0" name="Audio file">dano</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="3256615759465081" type="Monstro" />
                     </actions>
                 </event-block>
@@ -3553,7 +3172,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="5734546204595649" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers1</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;t1&quot;</param>
@@ -3669,7 +3288,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="6233468274912325" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers2</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;t2&quot;</param>
@@ -3827,7 +3446,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="9206609855322766" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers4</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;t3&quot;</param>
@@ -4172,6 +3791,10 @@
                                             <param id="0" name="Variable">soundfx</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="8925501472471623" type="System">
+                                            <param id="0" name="Variable">volume</param>
+                                            <param id="1" name="Value">-100</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="9360535144704525">
@@ -4181,6 +3804,10 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="4605924332616696" type="System">
                                             <param id="0" name="Variable">soundfx</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="224593599816548" type="System">
+                                            <param id="0" name="Variable">volume</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
@@ -4301,6 +3928,13 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="5774629696557724" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4700830801442759" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="2853906903930275" type="System">
                             <param id="0" name="Layout">Selecao Nivel</param>
                         </action>

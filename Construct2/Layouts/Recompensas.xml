@@ -25,6 +25,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -51,7 +52,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Main" sid="8592885730281827">
+        <layer name="Main1" sid="8592885730281827">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -63,6 +64,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -125,27 +127,24 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="RecEnciclopedia" uid="690">
+                <instance type="BotaoVoltar" uid="692">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>382</x>
-                        <y>441</y>
+                        <x>760</x>
+                        <y>590</y>
                         <z>0</z>
-                        <width>307</width>
-                        <height>322</height>
+                        <width>56</width>
+                        <height>42</height>
                         <depth>0</depth>
-                        <hotspotX>0.501628637</hotspotX>
-                        <hotspotY>0.503105581</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -172,24 +171,27 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BotaoVoltar" uid="692">
+                <instance type="RecEnciclopedia" uid="690">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>760</x>
-                        <y>590</y>
+                        <x>382</x>
+                        <y>441</y>
                         <z>0</z>
-                        <width>56</width>
-                        <height>42</height>
+                        <width>307</width>
+                        <height>322</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotX>0.501628637</hotspotX>
+                        <hotspotY>0.503105581</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

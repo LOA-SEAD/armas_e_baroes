@@ -3,15 +3,42 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Personagens</name>
     <events>
+        <variable constant="0" name="moedas" sid="7707430770926011" static="0" type="number">0</variable>
         <variable constant="0" name="pergunta" sid="5442627677120999" static="0" type="number">-1</variable>
         <event-group description="" sid="5431546028008677" title="Inicializacao">
             <sub-events>
                 <comment>Bloqueia acesso a niveis nao liberados</comment>
+                <event-block sid="6712994842411172">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5691501807461096" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="2645538485216714" type="TextSaldo">
+                            <param id="0" name="Text">&quot;Moedas: &quot; &amp; moedas</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3012683287490191">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="7097964229013268" type="Moeda">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="8762965261647407" type="Moeda">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="4562303170479665">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="9957727908567762" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="6" name="Set speed" sid="7458755597186802" type="Moeda">
+                            <param id="0" name="Speed">10</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="9009161148481453">
                             <conditions>
@@ -955,6 +982,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="8149158570021881" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Set position" sid="1686619104674278" type="JanelaBg">
@@ -1854,6 +1886,77 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <event-block sid="6524413201307507">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="8303838738193171" type="ObraArte">
+                                            <param id="0" name="Instance variable">descoberto</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="2612947849078542" type="System">
+                                            <param id="0" name="Variable">aux</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="5413612243139474" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="6723164939375205" type="JanelaBg">
+                                            <param id="0" name="X">400</param>
+                                            <param id="1" name="Y">300</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="3857641402706762" type="JanelaBg" />
+                                        <action id="-7" name="Set size" sid="4032276117963766" type="JanelaBg">
+                                            <param id="0" name="Width">320</param>
+                                            <param id="1" name="Height">90</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="4989845614134646" type="TextErro">
+                                            <param id="0" name="X">400</param>
+                                            <param id="1" name="Y">300</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8580488898246156" type="TextPersonagens">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="3748774163843679" type="System">
+                                            <param id="0" name="Group name">&quot;ObraArte&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="5496672226734743" type="BotaoVoltar">
+                                            <param id="0" name="X">1200</param>
+                                            <param id="1" name="Y">300</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="8939467271019199" type="System">
+                                            <param id="0" name="Seconds">9</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="4845209968692292" type="TextErro">
+                                            <param id="0" name="X">1061</param>
+                                            <param id="1" name="Y">458</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1500367347514082" type="TextPersonagens">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="3286757838386336" type="JanelaBg">
+                                            <param id="0" name="X">1060</param>
+                                            <param id="1" name="Y">284</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="2394560910911979" type="System">
+                                            <param id="0" name="Variable">pergunta</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="5977324341468031" type="System">
+                                            <param id="0" name="Group name">&quot;ObraArte&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="1011965496613407" type="BotaoVoltar">
+                                            <param id="0" name="X">760</param>
+                                            <param id="1" name="Y">590</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="3629899299987613">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="1181324528170801" type="ObraArte">
@@ -2650,8 +2753,14 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
-                                <event-block sid="6110441613485188">
-                                    <conditions />
+                                <event-block sid="1687678722667176">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="12013950532506" type="TextPersonagens">
+                                            <param id="0" name="Instance variable">alternativa</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
                                     <actions>
                                         <action id="-3" name="Set position" sid="9903908953675639" type="JanelaBg">
                                             <param id="0" name="X">1060</param>
@@ -2668,6 +2777,10 @@
                                         <action id="-12" name="Set group active" sid="6160830348834112" type="System">
                                             <param id="0" name="Group name">&quot;Perguntas&quot;</param>
                                             <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="1207232611144063" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>

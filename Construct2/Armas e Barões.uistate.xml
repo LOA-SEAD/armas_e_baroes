@@ -10,13 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Main Menu</layout>
-        <layout>Intro</layout>
-        <event-sheet active="1">ES Intro</event-sheet>
-        <event-sheet>ES Tutorial</event-sheet>
-        <event-sheet>ES Poema</event-sheet>
-        <event-sheet>ES Personagens</event-sheet>
-        <event-sheet>ES Enciclopedia</event-sheet>
+        <event-sheet order="0">ES Tutorial</event-sheet>
+        <event-sheet order="1">ES Nivel 1</event-sheet>
+        <event-sheet order="2">ES Nivel 2</event-sheet>
+        <event-sheet order="3">ES Nivel 3</event-sheet>
+        <event-sheet order="4">ES Nivel 4</event-sheet>
+        <event-sheet order="5">ES Nivel 5</event-sheet>
+        <event-sheet order="6">ES Nivel 6</event-sheet>
+        <event-sheet order="7">ES Nivel 7</event-sheet>
+        <event-sheet active="1" order="8">ES Nivel 8</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,14 +28,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/Niveis/" />
-        <folder expanded="0" path="layout-folder/Intro Niveis/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="event-folder/Niveis/" />
+        <folder expanded="1" path="layout-folder/Niveis/" />
+        <folder expanded="1" path="layout-folder/Intro Niveis/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="event-folder/Niveis/" />
         <folder expanded="0" path="event-folder/Intro niveis/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/GUIbg/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
@@ -95,7 +99,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fundoPoema/" />
         <folder expanded="1" path="animation-folder/selecaoNivelEmbar/" />
         <folder expanded="1" path="animation-folder/fios/" />
-        <folder expanded="1" path="animation-folder/LogosLOA/" />
         <folder expanded="1" path="animation-folder/Logos/" />
+        <folder expanded="1" path="animation-folder/Moeda/" />
     </folders-expanded>
 </c2uistate>

@@ -33,6 +33,21 @@
                             <param id="0" name="Variable">precoTorre3</param>
                             <param id="1" name="Value">150</param>
                         </action>
+                        <action id="-18" name="Set layer opacity" sid="4581670217468991" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="2706372531881806" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="5806516966240635" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Opacity">100</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9110152838971855" type="TextPause">
+                            <param id="0" name="Y">-200</param>
+                        </action>
                         <action id="-10" name="Set value" sid="683792186322109" type="GUIlife">
                             <param id="0" name="Instance variable">maxlife</param>
                             <param id="1" name="Value">vidas</param>
@@ -194,7 +209,14 @@
                             <param id="0" name="Object">GUIbotao</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="8830197041296438" type="Audio">
+                            <param id="0" name="Audio file">largada</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="474903236549322">
                             <conditions>
@@ -262,7 +284,7 @@
                             <param id="0" name="Text">gold</param>
                         </action>
                         <action id="0" name="Set text" sid="6783355684922416" type="TextGUIturno">
-                            <param id="0" name="Text">&quot;Turno &quot; &amp; Spawner.wave</param>
+                            <param id="0" name="Text">&quot;Turno &quot; &amp; Spawner.wave &amp; &quot;/3&quot;</param>
                         </action>
                         <action id="5" name="Set frame" sid="6203514549429828" type="GUIbotaoPause">
                             <param id="0" name="Frame number">pause</param>
@@ -578,6 +600,11 @@
                                     <param id="2" name="Second value">0</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="9146564881458812" type="System" />
+                                <condition id="-14" name="Compare variable" sid="3004656122994207" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="2" name="Set at X" sid="8709861768928689" type="niveis">
@@ -592,11 +619,44 @@
                                     <param id="0" name="Variable">pontuacao</param>
                                     <param id="1" name="Value">(vidas*8) + (gold*4) + 100</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="6482762513271979" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="3511774793593544" type="System">
                                     <param id="0" name="Variable">nivelTerminado</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="8706991231064447" type="System">
+                                    <param id="0" name="Layout">Tela Liberados</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3321392900726936">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2894147368650808" type="Spawner">
+                                    <param id="0" name="Instance variable">numMonstros</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="3746966235943041" type="System">
+                                    <param id="0" name="First value">Monstro.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="8458487182217954" type="System" />
+                                <condition id="-14" name="Compare variable" sid="2841970041722566" type="System">
+                                    <param id="0" name="Variable">controle_niveis</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5269423627231135" type="System">
+                                    <param id="0" name="Variable">nivelTerminado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="5321536509154236" type="System">
                                     <param id="0" name="Layout">Tela Liberados</param>
                                 </action>
                             </actions>
@@ -921,6 +981,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="9505666905243243" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="3042420489636423" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -970,6 +1036,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="4722997096698893" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="1520530933712136" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -1019,6 +1091,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="307001980274093" type="Audio">
+                                            <param id="0" name="Audio file">selecionar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="5270407570031343" type="TowerConstructor">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -1238,6 +1316,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="9995116855964844" type="Audio">
+                                                    <param id="0" name="Audio file">construir</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volume</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                                 <action id="0" name="Spawn another object" sid="6275427329771372" type="TowerConstructor">
                                                     <param id="0" name="Object">Torre1</param>
                                                     <param id="1" name="Layer">&quot;main&quot;</param>
@@ -1286,6 +1370,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="7703008468880608" type="Audio">
+                                                    <param id="0" name="Audio file">construir</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volume</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                                 <action id="0" name="Spawn another object" sid="3664917128673416" type="TowerConstructor">
                                                     <param id="0" name="Object">Torre2</param>
                                                     <param id="1" name="Layer">&quot;main&quot;</param>
@@ -1334,6 +1424,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="1267830601404678" type="Audio">
+                                                    <param id="0" name="Audio file">construir</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">volume</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                                 <action id="0" name="Spawn another object" sid="6270536197528573" type="TowerConstructor">
                                                     <param id="0" name="Object">Torre3</param>
                                                     <param id="1" name="Layer">&quot;main&quot;</param>
@@ -1656,6 +1752,12 @@
                             <param id="0" name="Variable">vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Play" sid="7122876026777832" type="Audio">
+                            <param id="0" name="Audio file">dano</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="978776628256987" type="Monstro" />
                     </actions>
                 </event-block>
@@ -1947,9 +2049,9 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="6748392069540442" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers1</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
+                                            <param id="3" name="Volume">-10</param>
                                             <param id="1" name="Tag (optional)">&quot;t1&quot;</param>
                                         </action>
                                     </actions>
@@ -2063,9 +2165,9 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="303245007399229" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers3</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
+                                            <param id="3" name="Volume">-10</param>
                                             <param id="1" name="Tag (optional)">&quot;t2&quot;</param>
                                         </action>
                                     </actions>
@@ -2221,7 +2323,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="8306308415175461" type="Audio">
-                                            <param id="0" name="Audio file">Hit1</param>
+                                            <param id="0" name="Audio file">pers4</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;t3&quot;</param>
@@ -2566,6 +2668,10 @@
                                             <param id="0" name="Variable">soundfx</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="9461222256026238" type="System">
+                                            <param id="0" name="Variable">volume</param>
+                                            <param id="1" name="Value">-100</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="3287636859944042">
@@ -2575,6 +2681,10 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="733547546894079" type="System">
                                             <param id="0" name="Variable">soundfx</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="6919746135198304" type="System">
+                                            <param id="0" name="Variable">volume</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
@@ -2610,7 +2720,7 @@
                                 <action id="0" name="Play" sid="6080161507036386" type="Audio">
                                     <param id="0" name="Audio file">You Shall Not Pass</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
                                 </action>
                             </actions>
@@ -2708,6 +2818,13 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="7287702016020907" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3424953780235089" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="1924183763608112" type="System">
                             <param id="0" name="Layout">Selecao Nivel</param>
                         </action>

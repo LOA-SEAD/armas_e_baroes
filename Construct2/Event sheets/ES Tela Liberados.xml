@@ -3,13 +3,35 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Tela Liberados</name>
     <events>
+        <comment>As variáveis globais &quot;controle_moeda&quot; são individuais e funcionam para cada nível, que impedem que a pontuação das moedas sejam atribuídas ao jogador mais de uma vez para cada nível, para o caso dele jogar novamente aquela fase.</comment>
+        <variable constant="0" name="controle_moedas0" sid="5742706833287394" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas1" sid="9470522872810491" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas2" sid="9348637269676648" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas3" sid="6424036676213659" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas4" sid="2435910182697598" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas5" sid="2787535494707823" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas6" sid="8062458910822976" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas7" sid="3592637438673069" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas8" sid="816813341801347" static="0" type="number">0</variable>
+        <variable constant="0" name="controle_moedas9" sid="267941445612927" static="0" type="number">0</variable>
+        <variable constant="0" name="animacao_moeda" sid="9142138664708575" static="0" type="number">0</variable>
         <event-group description="" sid="5606024259425957" title="Inicializacao">
             <sub-events>
                 <event-block sid="1408469695653429">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="7181335274782295" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="941752898195803" type="Audio">
+                            <param id="0" name="Audio file">Victory</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Victory&quot;</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="2888437137092633" type="Moeda">
+                            <param id="0" name="Speed">10</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="9607531542076081">
                             <conditions>
@@ -60,6 +82,44 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="1889219644364234" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Vasco da Gama&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3781447043183699">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5553764109048424" type="System">
+                                            <param id="0" name="Variable">controle_moedas0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="2362034135071895" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="5213432135517751" type="System">
+                                            <param id="0" name="Variable">controle_moedas0</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="9922039629856432" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1866271790578903" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="938797478090124">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1923551169368235" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="5166809571187597" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8813399835749654" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -117,6 +177,44 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="1455319283061486">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="9634315452621337" type="System">
+                                            <param id="0" name="Variable">controle_moedas1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="8208786751928514" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="1799430650459478" type="System">
+                                            <param id="0" name="Variable">controle_moedas1</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="493296707705768" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="951701161946034" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4591892200709174">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="2508644944303151" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4236258637285864" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5834256331065959" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="4774153030333712">
@@ -168,6 +266,44 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="4575612063446531" type="TextGenNum">
                                             <param id="0" name="Text">&quot;D. João&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="8356920632713297">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="3141355013069666" type="System">
+                                            <param id="0" name="Variable">controle_moedas2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="5296716872868316" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="1116833212079924" type="System">
+                                            <param id="0" name="Variable">controle_moedas2</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7708428878519596" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7689776222131157" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7474111727616726">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="2564092356398895" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="2488588310147239" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8310683835403385" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -225,6 +361,44 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="6094950846652432">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="1163783703314443" type="System">
+                                            <param id="0" name="Variable">controle_moedas3</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="9786501457097003" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="5295326869195198" type="System">
+                                            <param id="0" name="Variable">controle_moedas3</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8618128378341692" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="490321053846364" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9224872746511357">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="38795011659069" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4253794587850281" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8703192200728901" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="5082065235159047">
@@ -276,6 +450,44 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="5435102485117354" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Adamastor&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3585435304507548">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="6166849759349964" type="System">
+                                            <param id="0" name="Variable">controle_moedas4</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="9713607511193956" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="1078532151755865" type="System">
+                                            <param id="0" name="Variable">controle_moedas4</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5650539095901341" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="3076578049044397" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2840955104029511">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="3666414323087988" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="5758223995054152" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="6808047021835358" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -333,6 +545,44 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="716208666782108">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="3022604234707988" type="System">
+                                            <param id="0" name="Variable">controle_moedas5</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="8294301234835005" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="2657815776529553" type="System">
+                                            <param id="0" name="Variable">controle_moedas5</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="4173559575430446" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1961549372157947" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6686678189700161">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="7572482739567788" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="7725603527863649" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="6960084052548214" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="2555999160630256">
@@ -384,6 +634,44 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="3000709421429766" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Netuno&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="546971138153128">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="7126241306790563" type="System">
+                                            <param id="0" name="Variable">controle_moedas6</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="7670723203642814" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="2086147609596147" type="System">
+                                            <param id="0" name="Variable">controle_moedas6</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1035866914566247" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1655304454384161" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9195414282336845">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="4824702779024898" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="6828316998391112" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="55482617298643" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -441,6 +729,44 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="9459129478546972">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="6243493705094929" type="System">
+                                            <param id="0" name="Variable">controle_moedas7</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="8531628781276281" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="4878912774280216" type="System">
+                                            <param id="0" name="Variable">controle_moedas7</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8369260109897036" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7405183213629252" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5643162250340846">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5233960861169644" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="6512975011072335" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8389064153236313" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="6246465048418385">
@@ -492,6 +818,44 @@
                                     <actions>
                                         <action id="0" name="Set text" sid="7734904245016433" type="TextGenNum">
                                             <param id="0" name="Text">&quot;Máquina do Mundo&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3813179571844863">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="8674629101153841" type="System">
+                                            <param id="0" name="Variable">controle_moedas8</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="9150372512662684" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="4421139571310291" type="System">
+                                            <param id="0" name="Variable">controle_moedas8</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="583961214671939" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5656578547551588" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="8642324365671553">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5052172028552788" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="1106904970303051" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="9703070844412286" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -549,50 +913,118 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="952429765773796">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="1553481689169558" type="System">
+                                            <param id="0" name="Variable">controle_moedas9</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="5090423509970535" type="System">
+                                            <param id="0" name="Variable">moedas</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="8316664159950063" type="System">
+                                            <param id="0" name="Variable">controle_moedas9</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="9752565442122488" type="Moeda">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7685751213491536" type="TextMoedas">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="8282001161684454">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="6780472545963204" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="1400311930553549" type="Moeda">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="4526509917625732" type="TextMoedas">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" disabled="1" sid="3200957448099845" title="SOUND">
+        <event-block sid="4239571688027844">
+            <conditions>
+                <condition id="4" name="On finished" sid="5810794271770494" type="Moeda">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="8174996104382651" type="Moeda">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1679937580281095">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5197965315844414" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="530590419825466" type="TextPontuacao">
+                    <param id="0" name="Text">&quot;Pontuação atual: &quot; &amp; pontuacao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3200957448099845" title="SOUND">
             <sub-events>
-                <event-group description="" disabled="1" sid="4621077968646368" title="SoundMouseClick">
+                <event-group description="" sid="4621077968646368" title="SoundMouseClick">
                     <sub-events>
-                        <event-block any="1" disabled="1" sid="1699996771200566">
+                        <event-block any="1" sid="1699996771200566">
                             <conditions>
-                                <condition disabled="1" id="6" name="On object clicked" sid="6242578969954215" type="Mouse">
+                                <condition id="6" name="On object clicked" sid="6242578969954215" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">SoundMusic</param>
                                 </condition>
-                                <condition disabled="1" id="3" name="On touched object" sid="4662033542048441" type="Touch">
+                                <condition id="3" name="On touched object" sid="4662033542048441" type="Touch">
                                     <param id="0" name="Object">SoundMusic</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="2682871309033331">
+                                <event-block sid="2682871309033331">
                                     <conditions>
-                                        <condition disabled="1" id="-14" name="Compare variable" sid="9324479374862934" type="System">
+                                        <condition id="-14" name="Compare variable" sid="2686493596124304" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action disabled="1" id="-9" name="Set value" sid="6276709233280346" type="System">
+                                        <action id="2" name="Set muted" sid="6276709233280346" type="Audio">
+                                            <param id="0" name="Tag">&quot;Victory&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="7412815275779056" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="8812585445820076">
+                                <event-block sid="8812585445820076">
                                     <conditions>
-                                        <condition disabled="1" id="-22" name="Else" sid="8420274251459743" type="System" />
+                                        <condition id="-22" name="Else" sid="8420274251459743" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action disabled="1" id="-9" name="Set value" sid="2748937927398881" type="System">
+                                        <action id="2" name="Set muted" sid="2145891336410297" type="Audio">
+                                            <param id="0" name="Tag">&quot;Victory&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="2379101750983026" type="System">
                                             <param id="0" name="Variable">musica</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -600,64 +1032,13 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" disabled="1" sid="6573445044756414" title="Atualizacao dos icones">
-                    <sub-events>
-                        <event-block disabled="1" sid="2620412354474837">
+                        <event-block sid="7975030297419163">
                             <conditions>
-                                <condition disabled="1" id="-1" name="Every tick" sid="4824974263873387" type="System" />
+                                <condition id="-1" name="Every tick" sid="5180540336217723" type="System" />
                             </conditions>
                             <actions>
-                                <action disabled="1" id="5" name="Set frame" sid="7626811033074197" type="SoundMusic">
+                                <action id="5" name="Set frame" sid="9427303077014696" type="SoundMusic">
                                     <param id="0" name="Frame number">musica</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" disabled="1" sid="8329494056553698" title="Musica">
-                    <sub-events>
-                        <event-block disabled="1" sid="5586099706761162">
-                            <conditions>
-                                <condition disabled="1" id="-14" name="Compare variable" sid="5695177618230205" type="System">
-                                    <param id="0" name="Variable">musica</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition disabled="1" id="-4" name="Trigger once while true" sid="7697836096918747" type="System" />
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="0" name="Play" sid="7025618521967051" type="Audio">
-                                    <param id="0" name="Audio file">MusicIntro</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="3099297663291958">
-                            <conditions>
-                                <condition disabled="1" id="-14" name="Compare variable" sid="6657836299906719" type="System">
-                                    <param id="0" name="Variable">musica</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                                <condition disabled="1" id="-4" name="Trigger once while true" sid="4998011524497411" type="System" />
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="6" name="Stop" sid="8818455600814454" type="Audio">
-                                    <param id="0" name="Tag">&quot;Intro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="2091533609861359">
-                            <conditions>
-                                <condition disabled="1" id="-3" name="On end of layout" sid="8000584726924759" type="System" />
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="6" name="Stop" sid="2805067681597389" type="Audio">
-                                    <param id="0" name="Tag">&quot;Intro&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

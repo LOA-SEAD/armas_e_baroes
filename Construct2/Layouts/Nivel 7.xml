@@ -25,6 +25,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -65,6 +66,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -535,6 +537,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -1839,6 +1842,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -2102,7 +2106,7 @@
                 </instance>
                 <instance type="TextGUIturno" uid="436">
                     <properties>
-                        <text>Turno X</text>
+                        <text>Turno X/12</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Modern Antiqua,-16,400,0</font>
                         <color>0,0,0</color>
@@ -2115,10 +2119,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>740</x>
+                        <x>741.5</x>
                         <y>204</y>
                         <z>0</z>
-                        <width>95</width>
+                        <width>108</width>
                         <height>25</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

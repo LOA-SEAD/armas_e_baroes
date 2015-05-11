@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1431357952
+#1431365582
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -88,8 +88,6 @@ images/tiledbackground.png
 images/moeda-sheet0.png
 images/moeda-sheet1.png
 images/moeda-sheet2.png
-media/hit1.m4a
-media/hit1.ogg
 media/selecionar.ogg
 media/cortina.ogg
 media/cosmo.ogg
@@ -105,6 +103,7 @@ media/pers8.ogg
 media/construir.ogg
 media/largada.ogg
 media/escolha_nivel.ogg
+media/dano.ogg
 media/musicintro.ogg
 media/the%20magic%20of%20reading%20-%20historias.ogg
 media/this%20is%20all%20yours%20-%20rec.ogg
@@ -112,7 +111,8 @@ media/you%20shall%20not%20pass.ogg
 media/clear%20the%20way%20-%20menu.ogg
 media/some%20cheese%20and%20vine%20-%20tutorial.ogg
 media/creditos.ogg
-media/los%20armas.ogg
+media/game%20over.ogg
+media/victory.ogg
 icon-16.png
 icon-32.png
 icon-114.png

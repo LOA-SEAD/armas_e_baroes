@@ -13,7 +13,7 @@
                         <action id="0" name="Play" sid="7436721050713335" type="Audio">
                             <param id="0" name="Audio file">The Magic Of Reading - historias</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="9593985962644895" type="JanelaBg">
@@ -148,7 +148,14 @@
                             <param id="0" name="Object">JanelaXbutton</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="7560688703253514" type="Audio">
+                            <param id="0" name="Audio file">paginaVirando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="9883893117819528">
                             <conditions>
@@ -174,7 +181,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="1141288540677456" type="TextIntro">
-                                    <param id="0" name="Text">&quot;A ninfa Tétis, por quem se apaixonou, rejeitou seu amor de maneira       tão humilhante, que ele acabou se transformando no rochedo que chamam de Cabo das Tormentas, foi uma época muito dura...&quot;</param>
+                                    <param id="0" name="Text">&quot;A ninfa Tétis, por quem se apaixonou, rejeitou seu amor de maneira tão humilhante, que ele acabou se transformando no rochedo que chamam de Cabo das Tormentas, foi uma época muito dura...&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="9795262991557759" type="System">
                                     <param id="0" name="Variable">fluxoIntros</param>

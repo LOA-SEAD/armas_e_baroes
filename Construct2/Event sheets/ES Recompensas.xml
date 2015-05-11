@@ -20,6 +20,12 @@
                         <action id="-2" name="Go to layout" sid="4959414180960162" type="System">
                             <param id="0" name="Layout">Enciclopedia</param>
                         </action>
+                        <action id="0" name="Play" sid="3288941861218008" type="Audio">
+                            <param id="0" name="Audio file">paginaVirando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;pagina&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="9965818246224816">
@@ -37,6 +43,12 @@
                         <action id="-2" name="Go to layout" sid="2377738459825727" type="System">
                             <param id="0" name="Layout">Poema</param>
                         </action>
+                        <action id="0" name="Play" sid="3022854752537843" type="Audio">
+                            <param id="0" name="Audio file">cosmo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;cosmo&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="9782561223455441">
@@ -53,6 +65,12 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="4336494428456012" type="System">
                             <param id="0" name="Layout">Personagens</param>
+                        </action>
+                        <action id="0" name="Play" sid="700479524237612" type="Audio">
+                            <param id="0" name="Audio file">cortina</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;cortina&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -237,7 +255,7 @@
                         <action id="0" name="Play" sid="9613051130959169" type="Audio">
                             <param id="0" name="Audio file">This Is All Yours - rec</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;BGmusic&quot;</param>
                         </action>
                     </actions>

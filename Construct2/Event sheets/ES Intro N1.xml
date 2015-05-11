@@ -11,7 +11,7 @@
                 <action id="0" name="Play" sid="41170113353251" type="Audio">
                     <param id="0" name="Audio file">The Magic Of Reading - historias</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-5</param>
                     <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
                 </action>
                 <action id="2" name="Set muted" sid="9720240664416193" type="Audio">
@@ -114,7 +114,14 @@
                             <param id="0" name="Object">JanelaXbutton</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="7178336197226972" type="Audio">
+                            <param id="0" name="Audio file">paginaVirando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volume</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="8812452868493764">
                             <conditions>

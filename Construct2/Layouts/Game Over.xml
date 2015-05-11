@@ -25,6 +25,7 @@
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
             <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
@@ -37,7 +38,7 @@
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>Yes</active-at-start>
-                                <fade-in-time>1</fade-in-time>
+                                <fade-in-time>1.5</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
@@ -55,6 +56,33 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TextGameOver" uid="778">
+                    <properties>
+                        <text>Pressione qualquer tecla ou toque em qualquer lugar para voltar ao Menu Inicial...</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-16,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>672</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

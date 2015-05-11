@@ -26,8 +26,20 @@
                         <action id="0" name="Set cursor style" sid="1299107733856003" type="Mouse">
                             <param id="0" name="Cursor style">0</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="281262228267509" type="TextIntrosNivel">
-                            <param id="0" name="Opacity">0</param>
+                        <action id="-15" name="Set visible" sid="6212894414949356" type="TextIntrosNivel">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3575752156987182" type="System">
+                            <param id="0" name="Group name">&quot;Fade FIM&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="1678578814170762" type="System">
+                            <param id="0" name="Layer">&quot;texto&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2119797004837712" type="System">
+                            <param id="0" name="Layer">&quot;botoes&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -58,7 +70,9 @@
                         <action id="-16" name="Wait" sid="2847377841980047" type="System">
                             <param id="0" name="Seconds">2.</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="9887697410171012" type="TextIntrosNivel" />
+                        <action id="-15" name="Set visible" sid="9887697410171012" type="TextIntrosNivel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="2" name="Set at X" sid="2039944254771578" type="niveis">
                             <param id="0" name="X">9</param>
                             <param id="1" name="Value">2</param>

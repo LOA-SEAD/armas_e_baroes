@@ -8,7 +8,7 @@
     <author-website></author-website>
     <app-id></app-id>
     <unique-id>3m9i18dznqmg9</unique-id>
-    <saved-with-version>18400</saved-with-version>
+    <saved-with-version>19500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
@@ -17,6 +17,7 @@
         <plugin author="Rex.Rainbow" id="Rex_TimeLine" version="1">TimeLine</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -2095,10 +2096,15 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9297421216505837" speed="5">
                     <frame duration="1" hotspotX="0.501279" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.997442" y="0.00166667" />
-                            <point x="0.982097" y="0.5" />
-                            <point x="1" y="1" />
+                            <point x="0" y="0.113333" />
+                            <point x="0.171355" y="0.111667" />
+                            <point x="0.171355" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.451667" />
+                            <point x="0.721227" y="0.45" />
+                            <point x="0.526854" y="0.7" />
+                            <point x="0.79028" y="0.7" />
+                            <point x="0.705882" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
@@ -2125,7 +2131,8 @@
                             <point x="1" y="0.5" />
                             <point x="0.851546" y="0.85124" />
                             <point x="0.498969" y="1" />
-                            <point x="0.146392" y="0.853306" />
+                            <point x="0.328093" y="0.824639" />
+                            <point x="0.200516" y="0.715393" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
@@ -2144,14 +2151,14 @@
                     <frame duration="1" hotspotX="0.501629" hotspotY="0.503106">
                         <image-point name="voltar" x="0.960912" y="0.906832" />
                         <collision-poly>
-                            <point x="0.143322" y="0.136646" />
-                            <point x="0.498371" y="0.00621118" />
-                            <point x="0.856678" y="0.136646" />
-                            <point x="0.684039" y="0.5" />
-                            <point x="0.723127" y="0.736025" />
-                            <point x="0.498371" y="1" />
-                            <point x="0.325733" y="0.689441" />
-                            <point x="0.351792" y="0.5" />
+                            <point x="0.211726" y="0.00310563" />
+                            <point x="0.788274" y="0" />
+                            <point x="1" y="0.397516" />
+                            <point x="0.674267" y="0.409938" />
+                            <point x="0.765472" y="1" />
+                            <point x="0.281759" y="1" />
+                            <point x="0.361564" y="0.416149" />
+                            <point x="0" y="0.406832" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2551,9 +2558,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="txtCreditos" sid="6625124030920672">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Nivel2bg" sid="2494372823604651">
             <plugin id="Sprite" />
             <animation-folder>
@@ -2913,7 +2917,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8309504415029484" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\personagens_bg.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2935,7 +2939,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5056813401271196" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LOA\Desktop\Valério\Armas e Barões (alterando)\Animations\ResetButton\Default\000b.png">
+                        <collision-poly>
+                            <point x="0.242857" y="0.242857" />
+                            <point x="0.871429" y="0.128571" />
+                            <point x="0.885714" y="0.885714" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.157143" y="0.842857" />
+                            <point x="0.0285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -2951,7 +2964,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8491006187780717" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Neto\Desktop\LOA\Projeto - Armas e Barões\Textures\0.conves.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -3204,7 +3217,7 @@
         </object-type>
         <object-type name="LI_bg_img" sid="9824008007827599">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="F:\LOA\Projeto - Armas e Barões\Textures\LI_bg_img.png" />
         </object-type>
         <object-type name="RE_bg_img" sid="4549940745890848">
             <plugin id="TiledBg" />
@@ -3227,40 +3240,26 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="txtApresentam" sid="6343497343936126">
-            <plugin id="Text" />
-            <instance-variables>
-                <instance-variable name="FadeFlag" sid="1455504791920002" type="number" />
-            </instance-variables>
-        </object-type>
-        <object-type name="LogosLOA" sid="4296453638083027">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5386753764313467" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Logos" sid="4164456331604179">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="1820489054977626">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="3924025782657273" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="3924025782657273" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Neto\Desktop\LOA\Créditos - Logos\logos.png">
                         <collision-poly>
-                            <point x="0.321875" y="0.429167" />
-                            <point x="0.5" y="0.195833" />
-                            <point x="0.584375" y="0.554167" />
-                            <point x="0.557813" y="0.5" />
-                            <point x="0.671875" y="0.5625" />
-                            <point x="0.5" y="0.808333" />
-                            <point x="0.415625" y="0.445833" />
-                            <point x="0.298438" y="0.5" />
+                            <point x="0.425" y="0.566667" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.5725" y="0.57" />
+                            <point x="0.5475" y="0.5" />
+                            <point x="0.88625" y="0.848333" />
+                            <point x="0.08625" y="0.885" />
+                            <point x="0.53625" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -3291,6 +3290,151 @@
             <texture />
         </object-type>
         <object-type name="TextEncerramento" sid="8390149097110554">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextNumPag" sid="3140134734284861">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Moeda" sid="2700508746063494">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8751065516982908" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda0.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.69" y="0.31" />
+                            <point x="0.77" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.3" y="0.7" />
+                            <point x="0.22" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda1.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.68" y="0.32" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.31" y="0.69" />
+                            <point x="0.24" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda2.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.67" y="0.67" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.33" y="0.67" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda3.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.62" y="0.38" />
+                            <point x="0.64" y="0.5" />
+                            <point x="0.62" y="0.62" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.38" y="0.62" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda4.png">
+                        <collision-poly>
+                            <point x="0.42" y="0.42" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.59" y="0.41" />
+                            <point x="0.59" y="0.59" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.42" y="0.58" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda5.png">
+                        <collision-poly>
+                            <point x="0.47" y="0.47" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.54" y="0.46" />
+                            <point x="0.54" y="0.54" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.47" y="0.53" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda6.png">
+                        <collision-poly>
+                            <point x="0.41" y="0.41" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.58" y="0.42" />
+                            <point x="0.58" y="0.58" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.41" y="0.59" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda7.png">
+                        <collision-poly>
+                            <point x="0.38" y="0.38" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.62" y="0.38" />
+                            <point x="0.64" y="0.5" />
+                            <point x="0.62" y="0.62" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.38" y="0.62" />
+                            <point x="0.36" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda8.png">
+                        <collision-poly>
+                            <point x="0.34" y="0.34" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.66" y="0.34" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.67" y="0.67" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.33" y="0.67" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\LOA\Projeto - Armas e Barões\Textures\moeda\versao_menor\moeda9.png">
+                        <collision-poly>
+                            <point x="0.32" y="0.32" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.69" y="0.31" />
+                            <point x="0.76" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.78" />
+                            <point x="0.31" y="0.69" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextMoedas" sid="4562868891035333">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextSaldo" sid="4714919786330964">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox" sid="9636241852282464">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextErro" sid="531724973178132">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextPontuacao" sid="3331430758119766">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextCreditos" sid="7353599172303193">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextGameOver" sid="7814465478383729">
             <plugin id="Text" />
         </object-type>
     </object-folder>
@@ -3392,24 +3536,33 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="Hit1.m4a" />
-        <file name="Hit1.ogg" />
+        <file name="selecionar.ogg" />
+        <file name="cortina.ogg" />
+        <file name="cosmo.ogg" />
+        <file name="paginaVirando.ogg" />
+        <file name="pers1.ogg" />
+        <file name="pers2.ogg" />
+        <file name="pers3.ogg" />
+        <file name="pers4.ogg" />
+        <file name="pers5.ogg" />
+        <file name="pers6.ogg" />
+        <file name="pers7.ogg" />
+        <file name="pers8.ogg" />
+        <file name="construir.ogg" />
+        <file name="largada.ogg" />
+        <file name="escolha_nivel.ogg" />
+        <file name="dano.ogg" />
     </sounds-folder>
     <music-folder>
-        <file name="MusicIntro.m4a" />
         <file name="MusicIntro.ogg" />
-        <file name="The Magic Of Reading - historias.m4a" />
         <file name="The Magic Of Reading - historias.ogg" />
-        <file name="This Is All Yours - rec.m4a" />
         <file name="This Is All Yours - rec.ogg" />
-        <file name="You Shall Not Pass.m4a" />
         <file name="You Shall Not Pass.ogg" />
-        <file name="Clear The Way - menu.m4a" />
         <file name="Clear The Way - menu.ogg" />
-        <file name="Some Cheese And Vine - tutorial.m4a" />
         <file name="Some Cheese And Vine - tutorial.ogg" />
-        <file name="creditos.m4a" />
         <file name="creditos.ogg" />
+        <file name="Game Over.ogg" />
+        <file name="Victory.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

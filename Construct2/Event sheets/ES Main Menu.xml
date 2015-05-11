@@ -14,7 +14,14 @@
                     <param id="0" name="Object">MainMenuButton</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="5770657816500462" type="Audio">
+                    <param id="0" name="Audio file">selecionar</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">volume</param>
+                    <param id="1" name="Tag (optional)">&quot;BtMenu&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="8348239332316123">
                     <conditions>
@@ -327,6 +334,38 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="7332705594337853">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6494473071493696" type="System">
+                                    <param id="0" name="Variable">soundfx</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="65623867170749" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9316431653485471" type="System">
+                                    <param id="0" name="Variable">volume</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6082374252489726">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2721408157511239" type="System">
+                                    <param id="0" name="Variable">soundfx</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="2310430797473283" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8696697701568907" type="System">
+                                    <param id="0" name="Variable">volume</param>
+                                    <param id="1" name="Value">-100</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
@@ -336,10 +375,10 @@
                 <condition id="-2" name="On start of layout" sid="6343292592712342" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="5191775834148237" type="Audio">
+                <action id="0" name="Play" sid="7802389171750783" type="Audio">
                     <param id="0" name="Audio file">Clear The Way - menu</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-5</param>
                     <param id="1" name="Tag (optional)">&quot;Mmenu&quot;</param>
                 </action>
                 <action id="4" name="Preload" sid="130096674811125" type="Audio">
@@ -354,15 +393,9 @@
                 <action id="4" name="Preload" sid="2364993691264499" type="Audio">
                     <param id="0" name="Audio file">Some Cheese And Vine - tutorial</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="4940818197104519">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="5900165110879233" type="System" />
-            </conditions>
-            <actions>
-                <action disabled="1" id="6" name="Stop" sid="7152514454613118" type="Audio">
-                    <param id="0" name="Tag">&quot;Mmenu&quot;</param>
+                <action id="-9" name="Set value" sid="1193841859581313" type="System">
+                    <param id="0" name="Variable">volume</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
