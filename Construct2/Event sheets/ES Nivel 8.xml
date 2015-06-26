@@ -2031,7 +2031,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="0" name="Set text" sid="9942143750458081" type="TextGUIinformacaoTorre">
-                                                    <param id="0" name="Text">&quot;Nobre: Ataca com suas setas de ouro o alvo. Dano Médio.&quot; &amp; newline &amp; &quot;Custo: &quot; &amp; precoTorre1</param>
+                                                    <param id="0" name="Text">&quot;Barão: Redime com sua espada dourada os males. Dano Forte.&quot; &amp; newline &amp; &quot;Custo: &quot; &amp; precoTorre1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2045,7 +2045,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="0" name="Set text" sid="7878266964386521" type="TextGUIinformacaoTorre">
-                                                    <param id="0" name="Text">&quot;Barão: Redime com sua espada dourada os males. Dano Forte.&quot; &amp; newline &amp; &quot;Custo: &quot; &amp; precoTorre2</param>
+                                                    <param id="0" name="Text">&quot;Nobre: Ataca com suas setas de ouro o alvo. Dano Médio.&quot; &amp; newline &amp; &quot;Custo: &quot; &amp; precoTorre2</param>
                                                 </action>
                                             </actions>
                                         </event-block>

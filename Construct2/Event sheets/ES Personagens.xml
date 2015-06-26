@@ -17,6 +17,16 @@
                             <param id="0" name="Text">&quot;Moedas: &quot; &amp; moedas</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="3640852555214706">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="130762543844056" type="System">
+                                    <param id="0" name="Group name">&quot;Perguntas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="3012683287490191">
                     <conditions>
@@ -574,8 +584,65 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-3" name="Set position" sid="6376464635658013" type="JanelaBg">
+                            <param id="0" name="X">1060</param>
+                            <param id="1" name="Y">284</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="6307740138615526" type="botaoFechar">
+                            <param id="0" name="X">1206</param>
+                            <param id="1" name="Y">176</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="8892876891601164" type="System">
+                            <param id="0" name="Group name">&quot;ObraArte&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="8134232095039916" type="System">
+                            <param id="0" name="Group name">&quot;Perguntas&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="5526807106756689" type="System">
                             <param id="0" name="Layout">Recompensas</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="3294548784993372">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="5226326241545965" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">botaoFechar</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="454831368095501" type="Touch">
+                            <param id="0" name="Object">botaoFechar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="8577903473211552" type="JanelaBg">
+                            <param id="0" name="X">1060</param>
+                            <param id="1" name="Y">284</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="1975997455511629" type="botaoFechar">
+                            <param id="0" name="X">1206</param>
+                            <param id="1" name="Y">176</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3642071937647841" type="System">
+                            <param id="0" name="Group name">&quot;ObraArte&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="8167322583790343" type="System">
+                            <param id="0" name="Group name">&quot;Perguntas&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9291524213643818" type="BotaoVoltar">
+                            <param id="0" name="X">760</param>
+                            <param id="1" name="Y">590</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3040052560402272" type="TextErro">
+                            <param id="0" name="X">1061</param>
+                            <param id="1" name="Y">458</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2604113471127987" type="TextPersonagens">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -992,6 +1059,10 @@
                                         <action id="-3" name="Set position" sid="1686619104674278" type="JanelaBg">
                                             <param id="0" name="X">400</param>
                                             <param id="1" name="Y">300</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="7543961867266362" type="botaoFechar">
+                                            <param id="0" name="X">545</param>
+                                            <param id="1" name="Y">190</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="1431591550994901" type="JanelaBg" />
                                         <action id="-12" name="Set group active" sid="1959659989572906" type="System">
@@ -1914,6 +1985,10 @@
                                             <param id="0" name="Width">320</param>
                                             <param id="1" name="Height">90</param>
                                         </action>
+                                        <action id="-3" name="Set position" sid="7421227792733443" type="botaoFechar">
+                                            <param id="0" name="X">545</param>
+                                            <param id="1" name="Y">270</param>
+                                        </action>
                                         <action id="-3" name="Set position" sid="4989845614134646" type="TextErro">
                                             <param id="0" name="X">400</param>
                                             <param id="1" name="Y">300</param>
@@ -1925,35 +2000,13 @@
                                             <param id="0" name="Group name">&quot;ObraArte&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
-                                        <action id="-3" name="Set position" sid="5496672226734743" type="BotaoVoltar">
-                                            <param id="0" name="X">1200</param>
-                                            <param id="1" name="Y">300</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="8939467271019199" type="System">
-                                            <param id="0" name="Seconds">9</param>
-                                        </action>
-                                        <action id="-3" name="Set position" sid="4845209968692292" type="TextErro">
-                                            <param id="0" name="X">1061</param>
-                                            <param id="1" name="Y">458</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="1500367347514082" type="TextPersonagens">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-3" name="Set position" sid="3286757838386336" type="JanelaBg">
-                                            <param id="0" name="X">1060</param>
-                                            <param id="1" name="Y">284</param>
-                                        </action>
                                         <action id="-9" name="Set value" sid="2394560910911979" type="System">
                                             <param id="0" name="Variable">pergunta</param>
                                             <param id="1" name="Value">-1</param>
                                         </action>
-                                        <action id="-12" name="Set group active" sid="5977324341468031" type="System">
-                                            <param id="0" name="Group name">&quot;ObraArte&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action id="-3" name="Set position" sid="1011965496613407" type="BotaoVoltar">
-                                            <param id="0" name="X">760</param>
-                                            <param id="1" name="Y">590</param>
+                                        <action id="-3" name="Set position" sid="5496672226734743" type="BotaoVoltar">
+                                            <param id="0" name="X">1200</param>
+                                            <param id="1" name="Y">300</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2766,6 +2819,10 @@
                                             <param id="0" name="X">1060</param>
                                             <param id="1" name="Y">284</param>
                                         </action>
+                                        <action id="-3" name="Set position" sid="9028670986722396" type="botaoFechar">
+                                            <param id="0" name="X">1206</param>
+                                            <param id="1" name="Y">176</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="1266477331670961" type="System">
                                             <param id="0" name="Variable">pergunta</param>
                                             <param id="1" name="Value">-1</param>
@@ -2825,6 +2882,9 @@
                                 </condition>
                                 <condition id="7" name="Cursor is over object" sid="8279012811861256" type="Mouse">
                                     <param id="0" name="Object">SoundMusic</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="1409981422636522" type="Mouse">
+                                    <param id="0" name="Object">botaoFechar</param>
                                 </condition>
                             </conditions>
                             <actions>
