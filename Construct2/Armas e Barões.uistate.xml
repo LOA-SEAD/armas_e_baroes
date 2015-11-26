@@ -9,7 +9,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs />
+    <open-tabs>
+        <layout active="1" order="0">Creditos</layout>
+        <event-sheet order="1">ES Creditos</event-sheet>
+    </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -20,8 +23,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/Niveis/" />
-        <folder expanded="1" path="layout-folder/Intro Niveis/" />
+        <folder expanded="0" path="layout-folder/Niveis/" />
+        <folder expanded="0" path="layout-folder/Intro Niveis/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Niveis/" />
         <folder expanded="0" path="event-folder/Intro niveis/" />
